@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,8 @@ Route::get('locale/{locale}', function($locale){
     session()->put('locale',$locale);
     return Redirect::back();
 });
+
+Route::get('contactanos', [ContactoController::class, 'index'])->name('contactanos.index') ;
+
+
+Route::post('contactanos', [ContactoController::class, 'store'])->name('contactanos.store');

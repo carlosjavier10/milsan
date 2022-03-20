@@ -1,26 +1,26 @@
   <nav>
-    <ul class="menu">
+    <ul class="menu nav">
       <li class="logo">
         {{-- <a href="#"><img class="logoh" src="{{ asset('/storage/images/logo_header_white.png') }}"></a> --}}
         <a href="#"><img class="logoh" src="{{ asset('/images/logo_header_white.png') }}"></a>
       </li>
-      <li class="item">
-        <a href="#">Home</a>
+      <li class="item nav-item">
+        <a class="nav-link" href="#">Home</a>
       </li>
-      <li class="item">
-        <a href="#">About</a>
+      <li class="item nav-item">
+        <a class="nav-link" href="#">About</a>
       </li>
-      <li class="item">
-        <a href="#">Services</a>
+  <li class="item nav-item">
+        <a class="nav-link" href="#">Services</a>
       </li>
-      <li class="item">
-        <a href="#">Features</a>
+  <li class="item nav-item">
+        <a class="nav-link" href="#">Features</a>
       </li>
-      <li class="item">
-        <a href="#">Blog</a>
+  <li class="item nav-item">
+        <a class="nav-link" href="#">Blog</a>
       </li>
-      <li class="item">
-        <a href="#">Contact</a>
+  <li class="item nav-item">
+        <a class="nav-link {{ request()->routeIs('contactanos.index') ? 'active' : '' }}" href="{{ route('contactanos.index') }} ">Contact</a>
 {{--    </li>
       <li class="itaem button">
         <a href="#">Log In</a>
