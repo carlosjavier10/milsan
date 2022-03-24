@@ -2,7 +2,7 @@
     <ul class="menu nav">
       <li class="logo">
         {{-- <a href="#"><img class="logoh" src="{{ asset('/storage/images/logo_header_white.png') }}"></a> --}}
-        <a href="#"><img class="logoh" src="{{ asset('/images/logo_header_white.png') }}"></a>
+        <a href="#"><img class="logoh" src="{{ asset('/images/MSarquitecta logo header black.png') }}"></a>
       </li>
       <li class="item nav-item">
         <a class="nav-link" href="#">Home</a>
