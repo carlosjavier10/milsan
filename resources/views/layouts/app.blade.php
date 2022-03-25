@@ -1,14 +1,7 @@
 <!DOCTYPE html>
-<!--
-Template Name: Sislaf
-Author: <a href="https://www.os-templates.com/">OS Templates</a>
-Author URI: https://www.os-templates.com/
-Copyright: OS-Templates.com
-Licence: Free to use under our free template licence terms
-Licence URI: https://www.os-templates.com/template-terms
--->
+
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<!-- ############################################################# -->
 <head>
   <title>{{ config('app.name') }} @yield('title') </title>
   <link rel="icon" type="image/x-icon" href=" {{ asset('/images/MSarquitecta favicon.svg') }} ">
