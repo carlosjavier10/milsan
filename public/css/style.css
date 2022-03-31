@@ -23,7 +23,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #18d36e;
+  color: #414141;
   outline: none;
   text-decoration: none;
 }
@@ -1542,9 +1542,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
 
+
+
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) {  /*tablets*/
   #testimonials .testimonial-item p {
     width: 80%;
   }
@@ -1561,12 +1563,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 
     font-size: 0.8em !important;
   }
-
-
-
+  .member-info-mobil {
+    display: none;
+  }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 991px) {
+  .member-info {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {   /*desktop*/
   #header #logo {
     padding-left: 60px;
   }
@@ -1597,9 +1605,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 0.8em !important;
   }
 
+
+
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*tablets*/
   .back-to-top {
     bottom: 15px;
   }
@@ -1635,7 +1646,56 @@ body.mobile-nav-active #mobile-nav-toggle {
   .nav-menu a{
     font-size: 0.8em !important;
   }
+}
 
+
+/* add styles bootstap */
+
+.sombra {
+  border-radius: 8px;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card-body h5 a {
+  text-decoration: none;
+  font-family:  "Montserrat", sans-serif !important;
+  font-size: 20px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.card-body h5 a:hover  {
+  color: #eabe3f !important;;
 
 }
 
+
+.member-info-mobil {
+   margin-top: -15px !important;
+  text-align: center;
+
+}
+.member-info-mobil  h4 {
+   margin-bottom: -5px;
+   font-weight: bold;
+
+}
+
+.member-info-mobil span {
+  margin-top: -25px !important;;
+
+}
+.member-info-mobil .social a{
+  font-size: 1.5em !important;
+  margin: 10px;
+}
+
+/*Footer logo image*/
+.footer-logo {
+  width: 100%;
+  margin-bottom: 15px;
+}

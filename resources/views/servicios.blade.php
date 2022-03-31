@@ -17,11 +17,8 @@ contact
 footer
  --}}
 
-@include('sections.mainproyects')
-@include('sections.callaction')
-{{-- @include('sections.skills') --}}
-@include('sections.facts')
-@include('sections.clients')
+
+@include('sections.servicios')
 
 
 
