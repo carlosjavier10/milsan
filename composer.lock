@@ -64,16 +64,16 @@
         },
         {
             "name": "austintoddj/canvas",
-            "version": "v6.0.38",
+            "version": "v6.0.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/austintoddj/canvas.git",
-                "reference": "a934fd2424a78ee3b59d5ac2198c8cd4bb86a9d3"
+                "reference": "e35fceb8c80bb259381859dadf0fa32135fcaee0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/austintoddj/canvas/zipball/a934fd2424a78ee3b59d5ac2198c8cd4bb86a9d3",
-                "reference": "a934fd2424a78ee3b59d5ac2198c8cd4bb86a9d3",
+                "url": "https://api.github.com/repos/austintoddj/canvas/zipball/e35fceb8c80bb259381859dadf0fa32135fcaee0",
+                "reference": "e35fceb8c80bb259381859dadf0fa32135fcaee0",
                 "shasum": ""
             },
             "require": {
@@ -129,7 +129,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-04T22:24:55+00:00"
+            "time": "2022-03-29T17:39:36+00:00"
         },
         {
             "name": "brick/math",
