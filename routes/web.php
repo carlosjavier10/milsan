@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,13 @@ Route::get('locale/{locale}', function($locale){
 
 Route::get('contactanos', [ContactoController::class, 'index'])->name('contactanos.index') ;
 Route::post('contactanos', [ContactoController::class, 'store'])->name('contactanos.store');
+
+/*POST ROUTES*/
+
+Route::get('/blog', [PostController::class , 'index']);
+Route::get('/post/{slug}', [PostController::class, 'view']);
+
+/*Canvas UI*/
 Route::prefix('canvas-ui')->group(function () {
     Route::prefix('api')->group(function () {
         Route::get('posts', [\App\Http\Controllers\CanvasUiController::class, 'getPosts']);

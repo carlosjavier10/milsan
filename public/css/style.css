@@ -1,10 +1,3 @@
-/*
-  Theme Name: BizPage
-  Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -18,6 +11,7 @@ body {
 a {
   color: #eabe3f;
   transition: 0.5s;
+  text-decoration: none;
 }
 
 a:hover,
@@ -1541,7 +1535,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 0.6em !important;
   }
 
-
+/*add by bootstrap*/
+.bd-placeholder-img-lg {
+  font-size: 3.5rem;
+}
 
 
 }
@@ -1675,13 +1672,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 .member-info-mobil {
-   margin-top: -15px !important;
-  text-align: center;
+ margin-top: -15px !important;
+ text-align: center;
 
 }
 .member-info-mobil  h4 {
-   margin-bottom: -5px;
-   font-weight: bold;
+ margin-bottom: -5px;
+ font-weight: bold;
 
 }
 
@@ -1698,4 +1695,56 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer-logo {
   width: 100%;
   margin-bottom: 15px;
+}
+
+.intro-headers img {
+  width: 100%;
+  height: 7em;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+
+.blog-image {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  border-radius: 1em;
+
+}
+
+.card,.h-100 {
+  border-radius: 1em;
+}
+
+.bg-dark {
+  border-radius: 1em;
+}
+
+.card-img-top {
+  border-radius: 1em;
+}
+
+.card,.h-100 {
+  border-radius: 1em;
+}
+
+.card .section-header h3 {
+  font-size: 1.1em ;
+}
+
+/*margentes en blog entre secciones*/
+.y-5,.text-center,.container  {
+  padding-bottom: 0px !important;
+}
+
+.py-lg-5 {
+
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
 }

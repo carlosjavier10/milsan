@@ -40,11 +40,6 @@
 
 @include('layouts.nav-menu')
 
-@include('layouts.carrousel')
-
-
-
-
 @yield('content')
 
 @include('sections.footer')
@@ -52,7 +47,7 @@
   <!-- JavaScript Libraries -->
   <script src=" {{ asset('lib/jquery/jquery.min.js') }} "></script>
   <script src=" {{ asset('lib/jquery/jquery-migrate.min.js') }} "></script>
-{{--   <script src=" {{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }} "></script> --}}
+  <script src=" {{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src=" {{ asset('lib/easing/easing.min.js') }} "></script>

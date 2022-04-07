@@ -16,7 +16,7 @@
           <li><a href="nosotros">Nosotros</a></li>
           <li><a href="servicios">Servicios</a></li>
           <li><a href="proyectos">Proyectos</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="blog">Blog</a></li>
 {{--           <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
