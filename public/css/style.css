@@ -1712,14 +1712,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 
 .blog-image {
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
   border-radius: 1em;
 
-}
-
-.card,.h-100 {
-  border-radius: 1em;
 }
 
 .bg-dark {
@@ -1728,6 +1724,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .card-img-top {
   border-radius: 1em;
+  width: 100%;
+  max-height: 300px
+
 }
 
 .card,.h-100 {
@@ -1747,4 +1746,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+}
+
+.album {
+  background-color: #969691 !important;
+  background-color: transparent;
+  margin: 1% ;
+  border-radius: 15px
 }

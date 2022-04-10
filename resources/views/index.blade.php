@@ -4,7 +4,12 @@
 
 @section('content')
 
-{{-- @include('sections.feature')
+
+
+@include('layouts.carrousel')
+
+
+@include('sections.feature')
 @include('sections.nosotros')
 @include('sections.servicios')
 @include('sections.callaction')
@@ -15,17 +20,15 @@
 @include('sections.team')
 @include('sections.contact')
 @include('sections.footer')
- --}}
 
 
-@include('layouts.carrousel')
 
 
-@include('sections.mainproyects')
+
+{{-- @include('sections.mainproyects')
 @include('sections.callaction')
-{{-- @include('sections.skills') --}}
 @include('sections.facts')
-@include('sections.clients')
+@include('sections.clients') --}}
 
 
 
