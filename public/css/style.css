@@ -1754,3 +1754,28 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 1% ;
   border-radius: 15px
 }
+
+.blog-header-image {
+
+  padding: 0px !important;
+  margin: auto !important;
+  margin-bottom: 2em !important;
+}
+
+.blog-header-image img {
+
+  max-block-size: 400px
+}
+
+.card-img-overlay{
+  color: #969691
+}
+
+
+.card-img-overlay h3 {
+    font-size: 5em !important;
+    font-weight:  bold;
+}
+.card-img-overlay p {
+  font-size: 1.5em;
+}
