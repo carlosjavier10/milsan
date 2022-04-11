@@ -38,6 +38,11 @@ Route::post('contactanos', [ContactoController::class, 'store'])->name('contacta
 Route::get('/blog', [PostController::class , 'index']);
 Route::get('/post/{slug}', [PostController::class, 'view']);
 
+/*TOPIC ROUTES*/
+
+Route::get('/post/topic/{slug}', [PostController::class, 'getPostByTopicAll']);
+
+
 /*Canvas UI*/
 Route::prefix('canvas-ui')->group(function () {
     Route::prefix('api')->group(function () {
