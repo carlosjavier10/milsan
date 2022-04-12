@@ -37,10 +37,11 @@ Route::post('contactanos', [ContactoController::class, 'store'])->name('contacta
 
 Route::get('/blog', [PostController::class , 'index']);
 Route::get('/post/{slug}', [PostController::class, 'view']);
-
-/*TOPIC ROUTES*/
-
 Route::get('/post/topic/{slug}', [PostController::class, 'getPostByTopicAll']);
+Route::get('/post/month/{slug}', [PostController::class, 'showbymonth']);
+
+
+
 
 
 /*Canvas UI*/
