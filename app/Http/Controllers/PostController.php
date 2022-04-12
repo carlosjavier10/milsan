@@ -12,7 +12,9 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::published()->get();
-        return view('blog', ['posts' => $posts]);
+        $envista = 'Todas las publicaciones';
+
+        return view('blog', ['posts' => $posts, 'envista' => $envista ]);
     }
 
     public function view(Request $request, $slug)
@@ -26,6 +28,9 @@ class PostController extends Controller
     public function getPostByTopicAll ($slug){
         $topic = Topic::where('slug', $slug)->first();
         $posts = $topic->posts()->get();
-        return view('blog', ['posts' => $posts]);
+
+        $envista = 'Publicaciones del tema <b> '. $topic->name.'</b>';
+
+        return view('blog', ['posts' => $posts, 'envista' => $envista]);
     }
 }

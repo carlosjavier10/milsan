@@ -16,8 +16,8 @@
 
     </div>
   </div>
+  <h4>{!! $envista !!}</h4>
 </section>
-
 <div class="album py-5 bg-light">
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2 g-4">

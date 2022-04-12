@@ -1779,3 +1779,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 .card-img-overlay p {
   font-size: 1.5em;
 }
+
+.lastpost-img{
+  max-height: 150px
+}
+.lastpost-div{
+  max-width: 250px;
+}
+
+.lastpost-section{
+  padding-bottom: 3em;
+}
+
+.blog-tags {
+  padding-bottom: 2em;
+}
+.blog-tags a{
+  margin-right: 1em;
+  border-radius: 15em
+}
