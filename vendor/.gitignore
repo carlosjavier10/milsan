@@ -1,5 +1,4 @@
 /asm89
-
 /bin
 /brick
 /composer
@@ -13,7 +12,7 @@
 /fruitcake
 /graham-campbell
 /guzzlehttp
-//hamcrest
+/hamcrest
 /laravel
 /league
 /mockery
