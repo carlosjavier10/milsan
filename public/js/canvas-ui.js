@@ -94793,7 +94793,7 @@ var render = function () {
                   "navbar-brand hover font-weight-bolder font-serif mr-3",
                 attrs: { to: { name: "posts" } },
               },
-              [_vm._v("\n                Canvas\n            ")]
+              [_vm._v("\n                MSArquitecta\n            ")]
             ),
             _vm._v(" "),
             _c(
