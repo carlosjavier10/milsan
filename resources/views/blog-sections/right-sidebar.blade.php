@@ -7,7 +7,7 @@
 
         @inject('postservice','App\Http\Controllers\PostService')
 
-        {{ $postservice->postgroupmonth() }}
+
 
         <div class="p-4">
             <h4 class="fst-italic">Archives</h4>

@@ -39,7 +39,7 @@
 
                     <div class="form-group row">
                         <div class="col-12">
-                            <button class="btn btn-success btn-block mt-3" type="submit">Enviar enlace de reseteo de password</button>
+                            <button class="btn btn-success btn-block mt-3" type="submit">Enviar enlace de restablecimiento de password</button>
                         </div>
                     </div>
                 </form>

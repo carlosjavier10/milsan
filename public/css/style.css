@@ -1798,3 +1798,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-right: 1em;
   border-radius: 15em
 }
+
+/*imagen en post*/
+.blog-body img {
+  width: 100%
+}
