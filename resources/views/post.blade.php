@@ -50,7 +50,7 @@ footer --}}
             @include('blog-sections.right-sidebar')
         </div>
 
-        <h3 class="text-center">Ultimas Publicaciones </h3> >
+        <h3 class="text-center">Ultimas Publicaciones </h3>
         @include('blog-sections.last-post')
     </main>
 @endsection

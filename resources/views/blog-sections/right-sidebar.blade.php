@@ -10,7 +10,7 @@
 
 
         <div class="p-4">
-            <h4 class="fst-italic">Archives</h4>
+            <h4 class="fst-italic">Publicaciones en</h4>
             <ol class="list-unstyled mb-0">
 
                 @foreach ($postservice->postgroupmonth() as $month)
@@ -21,7 +21,7 @@
         </div>
 
         <div class="p-4">
-            <h4 class="fst-italic">Elsewhere</h4>
+            <h4 class="fst-italic">Nuetras redes</h4>
             <ol class="list-unstyled">
                 <li><a href="#">GitHub</a></li>
                 <li><a href="#">Twitter</a></li>

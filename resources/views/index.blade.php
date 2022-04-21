@@ -10,8 +10,10 @@
 
 
 @include('sections.feature')
-@include('sections.nosotros')
+@include('sections.mainproyects')
 @include('sections.servicios')
+@include('sections.textpro')
+@include('sections.nosotros')
 @include('sections.callaction')
 @include('sections.skills')
 @include('sections.facts')
@@ -20,15 +22,6 @@
 @include('sections.team')
 @include('sections.contact')
 @include('sections.footer')
-
-
-
-
-
-{{-- @include('sections.mainproyects')
-@include('sections.callaction')
-@include('sections.facts')
-@include('sections.clients') --}}
 
 
 

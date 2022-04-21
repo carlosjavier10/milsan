@@ -12,10 +12,10 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a  href="/">Inicio</a></li>
-          <li><a href="nosotros">Nosotros</a></li>
-          <li><a href="servicios">Servicios</a></li>
-          <li><a href="proyectos">Proyectos</a></li>
+          <li class="menu-active"><a  href="{{ url('/') }}">Inicio</a></li>
+          <li><a href="{{ url('nosotros') }}">Nosotros</a></li>
+          <li><a href="{{ url('servicios') }}">Servicios</a></li>
+          <li><a href=" {{ url('proyectos') }}"> Proyectos</a></li>
           <li><a href=" {{ url('blog') }}">Blog</a></li>
 {{--           <li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
@@ -25,7 +25,7 @@
               <li><a href="#">Drop Down 5</a></li>
             </ul>
           </li> --}}
-          <li><a href="contacto">Contacto</a></li>
+          <li><a href="{{ url('contacto') }}">Contacto</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
