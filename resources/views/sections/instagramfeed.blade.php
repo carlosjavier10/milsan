@@ -9,7 +9,7 @@
         <h1>ESTRO AL IF</h1>
 
       @foreach ($feeds->feeds() as $feed)
-
+        {{ $feed['url']}}
       @endforeach
       @else
 
