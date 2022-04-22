@@ -642,9 +642,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
+
+}#instagramfeed {
+  background: url("../images/instragram-feed-bg.jpg") center top no-repeat fixed;
+  background-size: 100% 100%;
+  padding: 60px 0 40px 0;
+  position: relative;
 }
 
-#about::before {
+#about::before,#instagramfeed::before {
   content: '';
   position: absolute;
   left: 0;
@@ -655,7 +661,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   z-index: 9;
 }
 
-#about .container {
+#about .container,#instagramfeed .container  {
   position: relative;
   z-index: 10;
 }
