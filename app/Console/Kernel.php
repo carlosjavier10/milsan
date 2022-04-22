@@ -15,7 +15,14 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+
+
+
+        $schedule->call( function() {
+            Profile::where('username','testethecode')->first()->refreshFeed(9);
+        })->twiceDaily();
+
+        $schedule->command('instagram-feed:refresh-tokens')->monthlyOn( 15, '03:00')->timezone('America/Caracas');
     }
 
     /**
