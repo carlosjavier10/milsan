@@ -20,7 +20,7 @@
                       @case('image')
 
                         <div class="col">
-                          <div class="card card-cover overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url(' {{ $feed['url'] }}  ');  background-size: 100% ;">
+                          <div class="card card-cover overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url(' {{ $feed['url'] }}  ');  background-size: 100% 100%;">
                             <div  id="iffi" class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                               {{-- <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2> --}}
                               <ul class="d-flex list-unstyled mt-auto">
