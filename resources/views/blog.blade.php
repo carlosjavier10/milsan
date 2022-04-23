@@ -25,7 +25,11 @@
       @foreach ($posts as $post)
       <div class="col">
         <div class="card">
+          @if (!empty($post->featured_image))
           <a href="{{ url('post/'.$post->slug) }}"> <img src="{{ url($post->featured_image )}}" class="card-img-top" alt="..."> </a>
+          @else
+           <a href="{{ url('post/'.$post->slug) }}"> <img src="{{ asset('images/no-image-post.jpg') }}" class="card-img-top" alt="..."> </a>
+          @endif
           <div class="card-body section-header">
             <h3 class="card-title"><a href="{{ url('post/'.$post->slug) }}">{{ $post->title }}</a></h3>
             <p class="card-text">{{ $post->summary }} </p>
