@@ -1,14 +1,8 @@
 @extends('layouts.app')
-
 @section('title','Home')
 
 @section('content')
-
-
-
 @include('layouts.carrousel')
-
-
 @include('sections.feature')
 @include('sections.mainproyects')
 @include('sections.servicios')
@@ -23,10 +17,6 @@
 @include('sections.clients')
 @include('sections.team')
 @include('sections.contact')
-
- --}}
 @include('sections.footer')
-
-
-
+ --}}
 @endsection
