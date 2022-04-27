@@ -138,6 +138,8 @@ h6 {
 
 #header #logo {
   float: left;
+  position: absolute;
+  z-index: 9 !important;
 }
 
 #header #logo h1 {
@@ -160,6 +162,19 @@ h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+}
+
+.intro-headers img {
+  width: 100%;
+  height: 7em;
+}
+
+.about-headers img{
+  width: 100%;
+}
+
+.about-headers {
+  padding-bottom: 3em;
 }
 
 /*--------------------------------------------------------------
@@ -1714,10 +1729,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
 }
 
-.intro-headers img {
-  width: 100%;
-  height: 7em;
-}
+
+
+
 
 .bd-placeholder-img {
   font-size: 1.125rem;

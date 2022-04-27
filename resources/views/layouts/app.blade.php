@@ -32,6 +32,8 @@
 
   <!-- Main Stylesheet File -->
   <link href=" {{ asset('css/style.css') }}  " rel="stylesheet">
+  {{-- stylesheet pushed --}}
+  @stack('css')
 
 
 </head>
@@ -65,5 +67,7 @@
 
   <!-- Template Main Javascript File -->
   <script src=" {{ asset('js/main.js') }} "></script>
+  {{-- js scripts pushed --}}
+  @stack('script')
 </body>
 </html>

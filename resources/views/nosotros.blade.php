@@ -1,23 +1,43 @@
 @extends('layouts.app')
-
 @section('title','Home')
+
+@push('css')
+    <link href="{{ asset('css/about.css') }}" type="text/css" rel="stylesheet" />
+@endpush
 
 @section('content')
 
-{{-- feature
-nosotros
-servicios
-call action
-skiil
-facts
-portfoio
-clients
-team
-contact
-footer
- --}}
-
+@include('layouts.about-us-background-header')
+@include('sections.ourhistory')
 @include('sections.nosotros')
 @include('sections.team')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @endsection
