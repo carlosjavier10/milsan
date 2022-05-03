@@ -12,7 +12,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::published()->get();
+        $posts = Post::published()->paginate(6);
         $envista = 'Todas las publicaciones';
 
         return view('blog', ['posts' => $posts, 'envista' => $envista ]);

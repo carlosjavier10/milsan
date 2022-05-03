@@ -1,8 +1,36 @@
 @extends('layouts.app')
 
-@section('title','Home')
+@section('title','Blog')
 
 
+@push('css')
+<style type="text/css">
+  #paginate-arrow svg {
+    width: 3em;
+  }
+
+  #paginate-arrow p {
+    padding-top: 1em
+  }
+  #paginate-arrow {
+    text-align: center !important;
+
+  }
+
+  @media (max-width: 390px) {
+    #paginate-arrow {
+      font-size: 0.7em !important;
+    }
+  }
+
+  @media (max-width: 344px) {
+    #paginate-arrow {
+      font-size: 0.5em !important;
+    }
+  }
+</style>
+
+@endpush
 
 @section('content')
 @include('layouts.blog-background-header')
@@ -28,7 +56,7 @@
           @if (!empty($post->featured_image))
           <a href="{{ url('post/'.$post->slug) }}"> <img src="{{ url($post->featured_image )}}" class="card-img-top" alt="..."> </a>
           @else
-           <a href="{{ url('post/'.$post->slug) }}"> <img src="{{ asset('images/no-image-post.jpg') }}" class="card-img-top" alt="..."> </a>
+          <a href="{{ url('post/'.$post->slug) }}"> <img src="{{ asset('images/no-image-post.jpg') }}" class="card-img-top" alt="..."> </a>
           @endif
           <div class="card-body section-header">
             <h3 class="card-title"><a href="{{ url('post/'.$post->slug) }}">{{ $post->title }}</a></h3>
@@ -37,7 +65,22 @@
         </div>
       </div>
       @endforeach
-      @else
+
+    </div>
+  </div>
+</div>
+
+<div id="paginate-arrow">
+  <nav aria-label="Page navigation ">
+    {{ $posts->links()}}
+  </nav>
+</div>
+
+@else
+
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card">
           {{-- <a href="{{ url('post/'.$post->slug) }}"> <img src="{{ url($post->featured_image )}}" class="card-img-top" alt="..."> </a> --}}
@@ -47,12 +90,12 @@
           </div>
         </div>
       </div>
-      @endif
     </div>
   </div>
 </div>
-@endsection
+@endif
 
+@endsection
 
 
 

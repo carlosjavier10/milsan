@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Home')
+@section('title','Inicio')
 
 @section('content')
 {{-- @include('layouts.nav-menu') --}}

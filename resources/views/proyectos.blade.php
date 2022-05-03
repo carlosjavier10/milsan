@@ -1,9 +1,13 @@
 @extends('layouts.app')
 
-@section('title','Home')
+@section('title','Proyectos')
+
+@push('css')
+    <link href="{{ asset('css/about.css') }}" type="text/css" rel="stylesheet" />
+@endpush
 
 @section('content')
-
+@include('layouts.proyects-header-background')
 {{-- feature
 nosotros
 servicios

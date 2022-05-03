@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Canvas\Models\Post;
+use Canvas\Models\Topic;
 use Illuminate\Support\Facades\DB;
 
 class PostService extends Controller
@@ -21,6 +22,14 @@ class PostService extends Controller
         ->groupBy('months')
         ->get();
         return $months;
+    }
+
+
+    public function proyectos(){
+
+        $tag = Topic::where('slug','proyectos')->first();
+        $proyectos = $tag->posts()->orderByDesc('published_at')->take(18)->get();
+        return $proyectos;
     }
 
 }
