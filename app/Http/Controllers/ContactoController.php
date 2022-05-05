@@ -24,12 +24,10 @@ class ContactoController extends Controller
             'mensaje'=> 'required',
         ]);
 
-
         $correo = new ContactoMailable($request->all());
         Mail::to('carlosjavier10@gmail.com')->send($correo);
-        return redirect()->route('contactanos.index')->with('info','Gracias por contactarnos');
 
-
+        return 'OK';
     }
 
 }

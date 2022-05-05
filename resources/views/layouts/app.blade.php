@@ -44,6 +44,7 @@
 
 @yield('content')
 
+
 @include('sections.footer')
 
   <!-- JavaScript Libraries -->

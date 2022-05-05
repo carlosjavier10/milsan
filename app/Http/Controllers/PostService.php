@@ -28,7 +28,14 @@ class PostService extends Controller
     public function proyectos(){
 
         $tag = Topic::where('slug','proyectos')->first();
+
+        if (isset($tag)) {
         $proyectos = $tag->posts()->orderByDesc('published_at')->take(18)->get();
+        }
+        else{
+            $proyectos = null;
+        }
+
         return $proyectos;
     }
 

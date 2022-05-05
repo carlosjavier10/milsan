@@ -26,6 +26,9 @@
 
           <div class="row portfolio-container">
 
+            @if($proyectos->proyectos() != null)
+
+
             @if ($proyectos->proyectos()->count() > 0)
 
 
@@ -72,8 +75,10 @@
 
             @endforeach
             @endif
-
+            @endif
           </div>
 
         </div>
+
+
     </section><!-- #portfolio -->
