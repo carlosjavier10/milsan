@@ -23,7 +23,6 @@ Route::get('/contacto', function () {return view('contacto');});
 
 
 
-
 /*Mail routes*/
 Route::get('locale/{locale}', function($locale){
     session()->put('locale',$locale);

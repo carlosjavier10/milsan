@@ -6,6 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
+  @stack('meta')
 
   <!-- Favicons -->
   <link rel="icon" href=" {{ asset('/images/MSarquitecta favicon.svg')}} " sizes="any" type="image/svg+xml">
@@ -34,7 +35,7 @@
   <link href=" {{ asset('css/style.css') }}  " rel="stylesheet">
   {{-- stylesheet pushed --}}
   @stack('css')
-
+  @stack('headscripts')
 
 </head>
 

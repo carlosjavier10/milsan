@@ -4,8 +4,8 @@ jQuery(document).ready(function($) {
   //Contact
   $('form.contactForm').submit(function() {
     var f = $(this).find('.form-group'),
-      ferror = false,
-      emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+    ferror = false,
+    emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
     f.children('input').each(function() { // run all inputs
 
@@ -24,35 +24,35 @@ jQuery(document).ready(function($) {
 
         switch (rule) {
           case 'required':
-            if (i.val() === '') {
-              ferror = ierror = true;
-            }
-            break;
+          if (i.val() === '') {
+            ferror = ierror = true;
+          }
+          break;
 
           case 'minlen':
-            if (i.val().length < parseInt(exp)) {
-              ferror = ierror = true;
-            }
-            break;
+          if (i.val().length < parseInt(exp)) {
+            ferror = ierror = true;
+          }
+          break;
 
           case 'email':
-            if (!emailExp.test(i.val())) {
-              ferror = ierror = true;
-            }
-            break;
+          if (!emailExp.test(i.val())) {
+            ferror = ierror = true;
+          }
+          break;
 
           case 'checked':
-            if (! i.is(':checked')) {
-              ferror = ierror = true;
-            }
-            break;
+          if (! i.is(':checked')) {
+            ferror = ierror = true;
+          }
+          break;
 
           case 'regexp':
-            exp = new RegExp(exp);
-            if (!exp.test(i.val())) {
-              ferror = ierror = true;
-            }
-            break;
+          exp = new RegExp(exp);
+          if (!exp.test(i.val())) {
+            ferror = ierror = true;
+          }
+          break;
         }
         i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
@@ -74,16 +74,16 @@ jQuery(document).ready(function($) {
 
         switch (rule) {
           case 'required':
-            if (i.val() === '') {
-              ferror = ierror = true;
-            }
-            break;
+          if (i.val() === '') {
+            ferror = ierror = true;
+          }
+          break;
 
           case 'minlen':
-            if (i.val().length < parseInt(exp)) {
-              ferror = ierror = true;
-            }
-            break;
+          if (i.val().length < parseInt(exp)) {
+            ferror = ierror = true;
+          }
+          break;
         }
         i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
@@ -95,21 +95,28 @@ jQuery(document).ready(function($) {
       action = 'contactform/contactform.php';
     }
     $.ajax({
+
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      },
+
       type: "POST",
-      url: action,
+      dataType: 'json',
       data: str,
+      url:  "/contactanos",
+
       success: function(msg) {
         // alert(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
-        } else {
+          }
+          else {
           $("#sendmessage").removeClass("show");
           $("#errormessage").addClass("show");
           $('#errormessage').html(msg);
-        }
-
+          }
       }
     });
     return false;

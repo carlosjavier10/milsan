@@ -2,7 +2,15 @@
 
 @section('title','Contacto')
 @push('css')
-    <link href="{{ asset('css/about.css') }}" type="text/css" rel="stylesheet" />
+<link href="{{ asset('css/about.css') }}" type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+    .wassend {
+      color:#eabe3f !important;
+      border-radius: 15em;
+  }
+
+</style>
 @endpush
 
 
@@ -21,7 +29,7 @@ clients
 team
 contact
 footer
- --}}
+--}}
 
 
 

@@ -2,10 +2,6 @@
     Proyects header Section
   ============================-->
 
-  <style type="text/css">
-
-  </style>
-
   <section class="about-headers">
     <div class="intro-container">
       <div id="" class="slide fadein" data-ride="carousel">
