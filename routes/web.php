@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\testController;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +32,13 @@ Route::get('locale/{locale}', function($locale){
 
 Route::get('contactanos', [ContactoController::class, 'index'])->name('contactanos.index') ;
 Route::post('contactanos', [ContactoController::class, 'store'])->name('contactanos.store');
+
+/*rutas de prueba */
+
+/*Route::get('formtest', [testController::class, 'index'])->name('formtest.index') ;
+Route::post('formtest', [testController::class, 'store'])->name('formtest.store') ;
+*/
+
 
 /*POST ROUTES*/
 

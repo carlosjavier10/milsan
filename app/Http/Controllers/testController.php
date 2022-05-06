@@ -1,17 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Mail\ContactoMailable;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use Session;
 
-class ContactoController extends Controller
+class testController extends Controller
 {
+    //
 
     public function index(){
 
-        return view('contacto');
+        return view('test.form');
 
 
     }
@@ -23,18 +25,22 @@ class ContactoController extends Controller
             'correo'=> 'required|email',
             'mensaje'=> 'required',
             'g-recaptcha-response' => function ($attribute, $value, $fail) {
-                /*$secretKey = config('services-recaptcha.secret');*/
+                $secretKey = config('services-recaptcha.secret');
                 $secretKey = '6Lcr68gfAAAAAAtsJij6stTsJ-VDFvbQBsuazBFm';
+
+
                 $response = $value;
                 $userIP = $_SERVER['REMOTE_ADDR'];
                 $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$response&remoteip=$userIP ";
+
+
                 $response = \file_get_contents($url);
                 $response = json_decode($response);
-               /* dd($response);*/
+                /* dd($response);*/
                 if (!$response->success){
                     Session::flash('g-recaptcha-response','Por favor Marcar la Recaptcha');
                     Session::flash('alert-class','alert-danger');
-                    $fail($attribute.' google reCaptha failed');
+                    $fail($attribute.'google reCaptha failed');
 
                 }
             },

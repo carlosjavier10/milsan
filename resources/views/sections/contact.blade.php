@@ -79,13 +79,13 @@
                 <div class="validation"></div>
               </div>
 
-              <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+              <div class="g-recaptcha" data-sitekey=" {{config('services.recaptcha.key')}}"></div>
               <br/>
 
 
               @if (Session::has('g-recaptcha-response'))
 
-                  <p class="alert {{ $Session::get('alert-class','alert-info')}} ">
+                  <p class="alert {{ Session::get('alert-class','alert-info')}} ">
 
                     {{ Session::get('g-recaptcha-response')}}
                   </p>
