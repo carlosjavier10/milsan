@@ -34,6 +34,7 @@ class ContactoController extends Controller
                     Session::flash('g-recaptcha-response','Por favor Marcar la Recaptcha');
                     Session::flash('alert-class','alert-danger');
                     $fail($attribute.' google reCaptha failed');
+                    return $response;
 
                 }
             },
@@ -45,7 +46,6 @@ class ContactoController extends Controller
         $msg='OK';
         //return 'OK';
         Return response()->json('OK', 200);
-               // return redirect()->route('contactanos.index')->with('msg','OK');
     }
 
 }

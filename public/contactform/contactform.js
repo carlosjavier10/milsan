@@ -1,10 +1,7 @@
 jQuery(document).ready(function($) {
   "use strict";
-
   //Contact
-
   $('form.contactForm').submit(function() {
-
     var f = $(this).find('.form-group'),
     ferror = false,
     emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
@@ -90,49 +87,46 @@ jQuery(document).ready(function($) {
         i.next('.validation').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
-
-
-
     if (ferror) {
-      console.log('hay ferror');
       return false;}
-    else
-    console.log('else de ferror');
-    $("#submit").attr("disabled", true);
-    var str = $(this).serialize();
-    var action = $(this).attr('action');
-    if( ! action ) {
-      action = 'contactform/contactform.php';
-      console.log('negacion de action !action');
-    }
+      else
+        $("#submit").attr("disabled", true);
+      var str = $(this).serialize();
+      var action = $(this).attr('action');
+      if( ! action ) {
+        action = 'contactform/contactform.php';
+        }
+      $.ajax({
+        headers: {
+          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
 
+        type: "POST",
+        dataType: 'json',
+        data: str,
+        url:  "/contactanos",
 
-    $.ajax({
-      headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-      },
-
-      type: "POST",
-      dataType: 'json',
-      data: str,
-      url:  "/contactanos",
-
-      success: function(msg) {
+        success: function(msg) {
         // alert(msg);
         if (msg == 'OK') {
           $("#sendmessage").addClass("show");
           $("#errormessage").removeClass("show");
           $('.contactForm').find("input, textarea").val("");
-          }
-          else {
+          $("#recaptch-fail").attr("style", 'display:none;');
+        }
+        else {
           $("#sendmessage").removeClass("show");
           $("#errormessage").addClass("show");
           $('#errormessage').html(msg);
-          }
-        $("#submit").attr("disabled", false);
-      }
+        }
+
+      },
+      error: function(errors){
+       $("#recaptch-fail").attr("style", 'display:block;');
+     }
+   });
+      $("#submit").attr("disabled", false);
+      return false;
     });
-    return false;
-  });
 
 });

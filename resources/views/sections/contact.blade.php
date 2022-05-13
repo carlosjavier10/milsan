@@ -49,14 +49,11 @@
           <div class="form">
             <div  class="wassend" id="sendmessage">Su mensaje ha sido enviado, Muchas gracias por escribirnos</div>
             <div id="errormessage">
-
               @foreach ($errors->all() as $error)
               <li>{{ $error }}</li>
               @endforeach
 
             </div>
-
-
             <form action="" method="post" role="form" class="contactForm">
               @csrf
 
@@ -82,15 +79,17 @@
               <div class="g-recaptcha" data-sitekey=" {{config('services.recaptcha.key')}}"></div>
               <br/>
 
+              <p id="recaptch-fail" class="alert alert-danger" style="display:none;">
+                Por favor verifique el recaptcha
+              </p>
+              {{-- @if (Session::has('g-recaptcha-response'))
 
-              @if (Session::has('g-recaptcha-response'))
+              <p id="recaptch-fail" class="alert {{ Session::get('alert-class','alert-info')}} ">
 
-                  <p class="alert {{ Session::get('alert-class','alert-info')}} ">
-
-                    {{ Session::get('g-recaptcha-response')}}
-                  </p>
-                {{-- expr --}}
-              @endif
+                Por favor verifique el recaptcha
+                {{ Session::get('g-recaptcha-response')}}
+              </p>
+              @endif --}}
 
               <div class="text-center"><button id="submit" type="submit">Enviar</button></div>
             </form>
