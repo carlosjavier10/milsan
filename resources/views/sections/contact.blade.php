@@ -62,16 +62,16 @@
 
               <div class="form-row">
                 <div class="form-group col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre" data-rule="minlen:4" data-msg="por favor ingrese al menos 4 caracteres" />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="email" class="form-control" name="correo" id="email" placeholder="Correo Electr&oacute;nico" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="correo" id="email" placeholder="Correo Electr&oacute;nico" data-rule="email" data-msg="Por favor ingrese un email valido" />
                   <div class="validation"></div>
                 </div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor use al menos 8 caracteres" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
@@ -92,7 +92,7 @@
                 {{-- expr --}}
               @endif
 
-              <div class="text-center"><button type="submit">Enviar</button></div>
+              <div class="text-center"><button id="submit" type="submit">Enviar</button></div>
             </form>
           </div>
 

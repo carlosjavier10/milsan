@@ -23,8 +23,7 @@ class ContactoController extends Controller
             'correo'=> 'required|email',
             'mensaje'=> 'required',
             'g-recaptcha-response' => function ($attribute, $value, $fail) {
-                /*$secretKey = config('services-recaptcha.secret');*/
-                $secretKey = '6Lcr68gfAAAAAAtsJij6stTsJ-VDFvbQBsuazBFm';
+                $secretKey = config('services.recaptcha.secret');
                 $response = $value;
                 $userIP = $_SERVER['REMOTE_ADDR'];
                 $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$response&remoteip=$userIP ";
@@ -41,18 +40,12 @@ class ContactoController extends Controller
 
         ]);
 
-
         $correo = new ContactoMailable($request->all());
         Mail::to('carlosjavier10@gmail.com')->send($correo);
-
         $msg='OK';
-
         //return 'OK';
         Return response()->json('OK', 200);
                // return redirect()->route('contactanos.index')->with('msg','OK');
-
-
-
     }
 
 }

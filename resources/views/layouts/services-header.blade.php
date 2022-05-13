@@ -14,7 +14,7 @@
         <div class="container">
           <div class="carousel-caption text-start">
             <h1>Dise&ntilde;o</h1>
-            <p>tenologia de vanguardia e innovaci&ocute;n</p>
+            <p>tenologia de vanguardia e innovaci&oacute;n</p>
             <p><a href="#" class="btn-get-started scrollto">Ver mas...</a></p>
           </div>
         </div>
