@@ -13,9 +13,9 @@
             <div class="carousel-background"><img src=" {{ asset('/images/intro-carousel/1.jpg') }} " alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>We are professional</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#" class="btn-get-started scrollto">Get Started</a>
+                <h2>!Hacemos realidad lo imaginado!</h2>
+                <p>Un equipo comprometido con esta mágica profesión que día a día apuesta por seguir construyendo sueños…</p>
+                <a href="{{ url('/proyectos') }}" class="btn-get-started scrollto">Ver Proyectos</a>
               </div>
             </div>
           </div>
@@ -24,9 +24,9 @@
             <div class="carousel-background"><img src="{{ asset('/images//intro-carousel/2.jpg') }} " alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>At vero eos et accusamus</h2>
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut.</p>
-                <a href="#" class="btn-get-started scrollto">Get Started</a>
+                <h2>Comprometidos con los resultado</h2>
+                <p>Analizar todos los aspectos, aplicar estrategias y buscar las mejores soluciónes, es la etapa en la que mas nos enfocamos y destacamos.</p>
+                <a href="{{ url('/proyectos') }}" class="btn-get-started scrollto">Ver Proyectos</a>
               </div>
             </div>
           </div>
@@ -35,9 +35,9 @@
             <div class="carousel-background"><img src=" {{ asset('/images/intro-carousel/3.jpg') }} " alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Temporibus autem quibusdam</h2>
-                <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-                <a href="#" class="btn-get-started scrollto">Get Started</a>
+                <h2>Arte Habitable</h2>
+                <p>Es donde la ciencia y el arte se equilibran, es hacer realidad lo imaginado...</p>
+                <a href="{{ url('/proyectos') }}" class="btn-get-started scrollto">Proyectos</a>
               </div>
             </div>
           </div>
@@ -46,9 +46,9 @@
             <div class="carousel-background"><img src=" {{ asset('/images//intro-carousel/4.jpg') }} " alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Nam libero tempore</h2>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
-                <a href="#" class="btn-get-started scrollto">Get Started</a>
+                <h2>Personas con Valores y Principios</h2>
+                <p>Que unen sus fuerzas en común, para consolidarse como un equipo de trabajo productivo en todos los sentidos, que no deja de superarse cada día para llevar el éxito de nuestra empresa a otro nivel</p>
+                <a href="{{ url('/nosotros') }}" class="btn-get-started scrollto">Más Sobre MS</a>
               </div>
             </div>
           </div>
@@ -57,9 +57,9 @@
             <div class="carousel-background"><img src=" {{ asset('/images/intro-carousel/5.jpg') }} " alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Magnam aliquam quaerat</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="#" class="btn-get-started scrollto">Get Started</a>
+                <h2> Tecnología Inmersiva </h2>
+                <p> Una experiencia real del proyecto y sus detalles estéticos, Ahorre tiempo y optimice su presupuesto. Nos mantenemos en constante actualización con nuevas tecnologias</p>
+                <a href="{{ url('/proyectos') }}" class="btn-get-started scrollto">Ver Proyectos </a>
               </div>
             </div>
           </div>
@@ -68,12 +68,12 @@
 
         <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <span class="sr-only">Anterior</span>
         </a>
 
         <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
           <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <span class="sr-only">Siguiente</span>
         </a>
 
       </div>

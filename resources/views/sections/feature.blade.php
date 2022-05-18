@@ -1,26 +1,31 @@
     <!--==========================
       Featured Services Section
       ============================-->
+
+
+
+
       <section id="featured-services">
         <div class="container">
           <div class="row">
 
             <div class="col-lg-4 box">
-              <i class="ion-ios-bookmarks-outline"></i>
-              <h4 class="title"><a href="">Lorem Ipsum Delino</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+
+              <i class="ion-crop"></i>
+              <h4 class="title"><a href="">Diseño</a></h4>
+              <p class="description">Diseños que se adaptan a las necesidades de los propietarios en cada uno de los detalles que le dan identidad, personalidad y valor a su inversion</p>
             </div>
 
             <div class="col-lg-4 box box-bg">
-              <i class="ion-ios-stopwatch-outline"></i>
-              <h4 class="title"><a href="">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <i class="ion-hammer "></i>
+              <h4 class="title"><a href="">Construcción</a></h4>
+              <p class="description">La organización y la sincronización de todo el equipo en cada una de las actividades es clave para que una obra se lleve a cabo de manera correcta en el tiempo correcto</p>
             </div>
 
             <div class="col-lg-4 box">
-              <i class="ion-ios-heart-outline"></i>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <i class="ion-ios-color-wand "></i>
+              <h4 class="title"><a href="">Remodelación</a></h4>
+              <p class="description">Alcanzar el equilibrio perfecto entre la funcionalidad y la belleza es nuestro objetivo, El uso correcto del mobiliario, su distribución, la iluminación y los colores la forma de lograrlo.</p>
             </div>
 
           </div>

@@ -5,8 +5,8 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>Facts</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <h3>Algunos Datos</h3>
+          <p>Facil de decir, pero no tan facil de lograr</p>
         </header>
 
         <div class="row counters">

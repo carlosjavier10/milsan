@@ -8,7 +8,7 @@
 
           <div class="col-lg-3 col-md-6 footer-info">
             <a href="#"> <img class="footer-logo" src=" {{ asset('/images/MSarquitecta logo Horizontal logo dorado.png') }}"> </a>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+            <p>Somos un grupo de personas con valores y principios que unen sus fuerzas en común, para consolidarse como un equipo de trabajo productivo en todos los sentidos, que no deja de superarse cada día para llevar el éxito de nuestra empresa a otro nivel.</p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
@@ -33,18 +33,18 @@
             </p>
 
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://twitter.com/msarquitecto" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/ms.arquitecta" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/ms.arquitecta/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@ms.arquitecta" class="tiktok"><i class="fa fa-tiktok"><img src="{{ asset('/images/tik-tok.png') }}" alt="" width="20em">  </i></a>
+              {{--  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>  --}}
             </div>
 
           </div>
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+            <h4>Noticias</h4>
+            <p>Suscríbete a nuestro correo de noticias y mantente al día con nuestras publicaciones, No te pierdas las tendencias, moda, estilos y por su puesto nuestros últimos proyectos</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit"  value="Subscribe">
             </form>
