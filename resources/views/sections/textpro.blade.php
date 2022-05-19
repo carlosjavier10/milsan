@@ -10,9 +10,7 @@
             </div>
             <div class="col-lg-6">
                 <h1 class="display-5 fw-bold lh-1 mb-3">MSArquitecto</h1>
-                <p class="lead">No paramos de aprender e innovar para crecer, continuamos estudiando la
-                    realidad y los avances tecnológicos que nos permitan brindarle una mejor experiencia y perfectos
-                    acabados para nuestros inversionistas</p>
+                <p class="lead">No paramos de aprender e innovar para crecer, continuamos estudiando la realidad y los avances tecnológicos que nos permitan brindarle una mejor experiencia y perfectos acabados para nuestros inversionistas</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     <a href="{{ url('/contacto') }}">
                         <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 custombotto">Contacto</button>

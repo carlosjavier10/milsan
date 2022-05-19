@@ -10,6 +10,7 @@
 @include('layouts.about-us-background-header')
 @include('sections.ourhistory')
 @include('sections.nosotros')
+@include('sections.liderazgo')
 @include('sections.team')
 
 

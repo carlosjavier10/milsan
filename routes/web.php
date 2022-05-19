@@ -16,11 +16,11 @@ use App\Http\Controllers\testController;
 |
 */
 
-Route::get('/', function () {return view('index');});
-Route::get('/nosotros', function () {return view('nosotros');});
-Route::get('/servicios', function () {return view('servicios');});
-Route::get('/proyectos', function () {return view('proyectos');});
-Route::get('/contacto', function () {return view('contacto');});
+Route::get('/', function () {return view('index');})->name('index');
+Route::get('/nosotros', function () {return view('nosotros');})->name('nosotros');
+Route::get('/servicios', function () {return view('servicios');})->name('servicios');
+Route::get('/proyectos', function () {return view('proyectos');})->name('proyectos');
+Route::get('/contacto', function () {return view('contacto');})->name('contacto');
 
 
 
@@ -39,8 +39,8 @@ Route::post('contactanos', [ContactoController::class, 'store'])->name('contacta
 Route::post('formtest', [testController::class, 'store'])->name('formtest.store') ;
 */
 
-/*Route::get('/iconos', function () {return view('test.icons');});
-Route::get('/general', function () {return view('test.general');});*/
+/*Route::get('/iconos', function () {return view('test.icons');});*/
+/*Route::get('/general', function () {return view('test.general');})->name('general');*/
 
 
 
