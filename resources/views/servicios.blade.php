@@ -8,9 +8,9 @@
 
 @section('content')
 @include('layouts.services-header')
-@include('sections.servicios')
+@include('sections.disenos')
+@include('sections.construccion')
 @include('sections.milsanword')
-
 @include('sections.clients')
 @include('sections.testimonials')
 

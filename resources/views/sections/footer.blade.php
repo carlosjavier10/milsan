@@ -44,7 +44,7 @@
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Noticias</h4>
-            <p>Suscríbete a nuestro correo de noticias y mantente al día con nuestras publicaciones, No te pierdas las tendencias, moda, estilos y por su puesto nuestros últimos proyectos</p>
+            <p>Suscríbete a nuestro boletin de noticias y mantente al día con nuestras publicaciones, No te pierdas las tendencias, moda, estilos y por su puesto nuestros últimos proyectos</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit"  value="Subscribe">
             </form>

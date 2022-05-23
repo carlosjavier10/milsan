@@ -6,7 +6,7 @@
 @include('layouts.carrousel')
 @include('sections.feature')
 @include('sections.mainproyects')
-@include('sections.servicios')
+@include('sections.disenos')
 @include('sections.textpro')
 @include('sections.instagramfeed')
 @include('sections.facts')

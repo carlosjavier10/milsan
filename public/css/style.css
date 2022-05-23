@@ -6,6 +6,7 @@ body {
   background: #fff;
   color: #666666;
   font-family: "Open Sans", sans-serif;
+  padding-bottom: 0px !important;
 }
 
 a {
@@ -132,7 +133,7 @@ h6 {
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.9);
   padding: 20px 0;
-  height: 72px;
+  height: 77px;
   transition: all 0.5s;
 }
 
@@ -560,7 +561,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /* Sections Header
 --------------------------------*/
-
 .section-header h3 {
   font-size: 32px;
   color: #111;
@@ -592,6 +592,20 @@ body.mobile-nav-active #mobile-nav-toggle {
   bottom: 0;
   left: calc(50% - 20px);
 }
+
+.section-header h4 {
+  font-size: 24px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+
+
+
 
 .section-header p {
   text-align: center;

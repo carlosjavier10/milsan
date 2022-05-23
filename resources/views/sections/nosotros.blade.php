@@ -32,13 +32,15 @@
                 </div>
                 <h2 class="title"><a href="#">Nuestros Valores</a></h2>
                 <p>
-                  <b>PASIÓN:</b> Disfrutamos lo que hacemos, no hay límites para convertir los sueños realidad.</p>
-                <p>
-                  <b>COMPROMISO:</b>Buscamos la excelencia y la calidad con un hacer distinto en innovador.</p>
-                <p><b>INTEGRACIÓN:</b> Hacemos de nuestra organización una familia, unimos nuestras voluntades para crecer.</p>
-                <p><b>CONFIANZA:</b> Creemos en el criterio y palabra de nuestra gente.
-                RESPETO: Valoramos las diferencias, incentivamos la participación y cuidamos la organización y lo que hacemos.
-              </p>
+                  <b>PASIÓN:</b> Disfrutamos lo que hacemos, no hay límites para convertir los sueños realidad.<br>
+
+                  <b>COMPROMISO:</b> Buscamos la excelencia y la calidad con un hacer distinto en innovador.
+                  <br>
+                  <b>INTEGRACIÓN:</b> Hacemos de nuestra organización una familia, unimos nuestras voluntades para crecer.
+                  <br>
+                {{-- <b>CONFIANZA:</b> Creemos en el criterio y palabra de nuestra gente.
+                RESPETO: Valoramos las diferencias, incentivamos la participación y cuidamos la organización y lo que hacemos. --}}
+
             </div>
           </div>
 

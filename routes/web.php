@@ -40,7 +40,7 @@ Route::post('formtest', [testController::class, 'store'])->name('formtest.store'
 */
 
 /*Route::get('/iconos', function () {return view('test.icons');});*/
-/*Route::get('/general', function () {return view('test.general');})->name('general');*/
+Route::get('/general', function () {return view('test.general');})->name('general');
 
 
 

@@ -5,8 +5,8 @@
 <section class="py-5 text-center container section-header">
   <div class="row py-lg-5">
     <div class="col-lg-6 col-md-8 mx-auto">
-      <h3 class="fw-light">Album example</h3>
-      <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.  </p>
+      <h3 class="fw-light">Publiaciones</h3>
+      <p class="lead text-muted">Constantemente estamos informando sobre los proyectos en proceso, los antes y después, consejos de decoración, tips y muchísimo contenido que de seguro te será útil.</p>
 
     </div>
   </div>

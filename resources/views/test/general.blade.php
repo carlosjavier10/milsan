@@ -14,7 +14,7 @@
 <br>
 <br>
 
-@include('sections.milsanword')
+@include('sections.construccion')
 
 
 @endsection

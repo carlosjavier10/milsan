@@ -42,6 +42,8 @@
 
 <body>
 
+@stack('body')
+
 @include('layouts.nav-menu')
 
 @yield('content')

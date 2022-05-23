@@ -69,6 +69,12 @@ body {
 }
 
 
+.carousel-inner img {
+
+  background-color: rgba(0,0,0,0.8);
+  filter:brightness(0.7);
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
