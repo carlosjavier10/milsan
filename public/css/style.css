@@ -2,10 +2,18 @@
 # General
 --------------------------------------------------------------*/
 
+@font-face {
+   font-family: 'Qualy Bold';
+   src: url('/fonts/Qualy Bold.ttf') format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
+
+
 body {
   background: #fff;
   color: #666666;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding-bottom: 0px !important;
 }
 
@@ -34,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Qualy Bold", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -1701,7 +1709,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .card-body h5 a {
   text-decoration: none;
-  font-family:  "Montserrat", sans-serif !important;
+  font-family:  "Qualy Bold", sans-serif !important;
   font-size: 20px;
   color: #111;
   text-transform: uppercase;

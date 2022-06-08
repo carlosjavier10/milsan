@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
   <meta charset="utf-8">
-   <title>{{ config('app.name') }} @yield('title') </title>
+  <title>{{ config('app.name') }} @yield('title') </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -10,17 +10,24 @@
 
   <!-- Favicons -->
   <link rel="icon" href=" {{ asset('/images/MSarquitecta favicon.svg')}} " sizes="any" type="image/svg+xml">
-{{--   <link href=" {{ asset('/images/apple-touch-icon.png') }} " rel="apple-touch-icon"> --}}
+  {{--   <link href=" {{ asset('/images/apple-touch-icon.png') }} " rel="apple-touch-icon"> --}}
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  {{-- new font --}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Babylonica&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+  {{-- fuentes inyectadas --}}
   @stack('font')
 
   <!-- Bootstrap CSS File -->
- {{--  <link href=" {{ asset('lib/bootstrap/css/bootstrap.min.css') }} " rel="stylesheet"> --}}
+  {{--  <link href=" {{ asset('lib/bootstrap/css/bootstrap.min.css') }} " rel="stylesheet"> --}}
 
   <!-- CSS only CDN -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 
   {{--  --}}
@@ -42,21 +49,21 @@
 
 <body>
 
-@stack('body')
+  @stack('body')
 
-@include('layouts.nav-menu')
+  @include('layouts.nav-menu')
 
-@yield('content')
+  @yield('content')
 
 
-@include('sections.footer')
+  @include('sections.footer')
 
   <!-- JavaScript Libraries -->
   <script src=" {{ asset('lib/jquery/jquery.min.js') }} "></script>
   <script src=" {{ asset('lib/jquery/jquery-migrate.min.js') }} "></script>
   <script src=" {{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src=" {{ asset('lib/easing/easing.min.js') }} "></script>
   <script src=" {{ asset('lib/superfish/hoverIntent.js') }} "></script>
   <script src=" {{ asset('lib/superfish/superfish.min.js') }} "></script>
