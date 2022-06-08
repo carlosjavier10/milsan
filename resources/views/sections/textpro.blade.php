@@ -9,7 +9,7 @@
                     alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
             <div class="col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3">MSArquitecto</h1>
+                <h1 class="display-5 fw-bold lh-1 mb-3">MSArquitecta</h1>
                 <p class="lead">No paramos de aprender e innovar para crecer, continuamos estudiando la realidad y los avances tecnológicos que nos permitan brindarle una mejor experiencia y perfectos acabados para nuestros inversionistas</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                     <a href="{{ url('/contacto') }}">

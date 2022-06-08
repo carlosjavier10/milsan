@@ -1657,8 +1657,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
 
-
-
 }
 
 @media (max-width: 768px) { /*tablets*/
@@ -1888,4 +1886,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
+/* loading page */
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height:100%;
+    z-index: 9999;
+    background: url('/images/MSarquitecta.gif') 50% 50% no-repeat rgb(4,1,5);
+    opacity: 1.0;
+}
 

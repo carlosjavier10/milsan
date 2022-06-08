@@ -7,7 +7,7 @@
       <div id="logo" class="pull-left ">
        {{--  <h1><a href="#intro" class="scrollto">BizPage</a></h1> --}}
         <!-- Uncomment below if you prefer to use an image logo -->
-         <a href="/"><img class="logoms" src=" {{ asset('/images/MSarquitecta logo Horizontal logo dorado.png') }}  " alt="" title="" /></a>
+         <a href="/"><img class="logoms" src=" {{ asset('/images/MSarquitecta logo Horizontal white.png') }}  " alt="" title="" /></a>
       </div>
 
       <nav id="nav-menu-container">

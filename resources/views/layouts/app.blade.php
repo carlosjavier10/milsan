@@ -9,7 +9,7 @@
   @stack('meta')
 
   <!-- Favicons -->
-  <link rel="icon" href=" {{ asset('/images/MSarquitecta favicon.svg')}} " sizes="any" type="image/svg+xml">
+  <link rel="icon" href=" {{ asset('/images/MSarquitecta favicon black.svg')}} " sizes="any" type="image/svg+xml">
   {{--   <link href=" {{ asset('/images/apple-touch-icon.png') }} " rel="apple-touch-icon"> --}}
 
   <!-- Google Fonts -->
@@ -44,10 +44,19 @@
   {{-- stylesheet pushed --}}
   @stack('css')
   @stack('headscripts')
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  {{-- loading page --}}
+  <script type="text/javascript">
+    $(window).load(function() {
+      $(".loader").fadeOut("slow");
+    });
+  </script>
 
 </head>
 
 <body>
+  <div class="loader"></div>
 
   @stack('body')
 
@@ -62,6 +71,7 @@
   <script src=" {{ asset('lib/jquery/jquery.min.js') }} "></script>
   <script src=" {{ asset('lib/jquery/jquery-migrate.min.js') }} "></script>
   <script src=" {{ asset('lib/bootstrap/js/bootstrap.bundle.min.js') }} "></script>
+
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src=" {{ asset('lib/easing/easing.min.js') }} "></script>

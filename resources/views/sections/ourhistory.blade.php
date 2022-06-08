@@ -9,7 +9,7 @@
       </div>
       <div class="col-md-5">
 
-        <img src="{{ asset('images/MSarquitecta favicon.svg') }}">
+        <img src="{{ asset('images/MSarquitecta favicon black.svg') }}">
 
       </div>
     </div>
