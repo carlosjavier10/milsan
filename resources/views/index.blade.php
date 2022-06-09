@@ -9,7 +9,7 @@
 @include('sections.mainproyects')
 {{-- @include('sections.disenos')    ELIMINADO POR CLIENTE--}}
 @include('sections.textpro')
-@include('sections.instagramfeed')
+{{-- @include('sections.instagramfeed') --}}
 @include('sections.facts')
 {{--
 @include('sections.nosotros')
