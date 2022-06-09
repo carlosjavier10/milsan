@@ -910,6 +910,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-size: cover;
   padding: 60px 0 0 0;
   position: relative;
+ /* background: rgba(255, 255, 255, 0.88);*/
 }
 
 #facts::before {
@@ -919,7 +920,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.88);
   z-index: 9;
 }
 
@@ -947,6 +947,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .facts-img {
   text-align: center;
   padding-top: 30px;
+
 }
 
 /* Portfolio Section
