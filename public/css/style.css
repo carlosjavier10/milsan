@@ -305,7 +305,7 @@ h6 {
 }
 
 .btn-get-started {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Qualy Bold", sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -316,6 +316,7 @@ h6 {
   margin: 10px;
   color: #fff;
   background: #2c2c2c;
+  text-transform: capitalize;
 }
 
 .btn-get-started:hover {
@@ -644,7 +645,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #featured-services i {
-  color: #2c2c2c;
+  color: #fff;
   font-size: 48px;
   display: inline-block;
   line-height: 1;

@@ -4,9 +4,10 @@
 @section('content')
 {{-- @include('layouts.nav-menu') --}}
 @include('layouts.carrousel')
+@include('layouts.socialbar')
 @include('sections.feature')
 @include('sections.mainproyects')
-@include('sections.disenos')
+{{-- @include('sections.disenos')    ELIMINADO POR CLIENTE--}}
 @include('sections.textpro')
 @include('sections.instagramfeed')
 @include('sections.facts')

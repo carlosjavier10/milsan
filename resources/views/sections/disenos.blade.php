@@ -1,11 +1,12 @@
     <!--==========================
       disenos Section
     ============================-->
+    <div id="diseno"></div>
     <section id="services">
         <div class="container">
 
             <header class="section-header wow fadeInUp">
-                <h3>Dise&ntilde;os</h3>
+                <h3 >Dise&ntilde;os</h3>
                 <h4>Proyectos a la Medida</h4>
                 <p>La participación del arquitecto en una obra siempre significará el sello y la garantía de que se
                     aplique la idea original o la razón de ser de cada elemento creado.</p>
