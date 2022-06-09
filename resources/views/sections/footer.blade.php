@@ -7,7 +7,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <a href="#"> <img class="footer-logo" src=" {{ asset('/images/MSarquitecta logo Horizontal logo dorado.png') }}"> </a>
+            <a href="#"> <img class="footer-logo" src=" {{ asset('/images/MSarquitecta logo Horizontal trans.png') }}"> </a>
             <p>Somos un grupo de personas con valores y principios que unen sus fuerzas en común, para consolidarse como un equipo de trabajo productivo en todos los sentidos, que no deja de superarse cada día para llevar el éxito de nuestra empresa a otro nivel.</p>
           </div>
 
