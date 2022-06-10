@@ -5,7 +5,7 @@
         <div class="container">
 
           <header class="section-header">
-            <h3>Algunos Datos</h3>
+            <h3>Nuestros Numeros</h3>
             <p>Facil de decir, pero no tan facil de lograr</p>
           </header>
 

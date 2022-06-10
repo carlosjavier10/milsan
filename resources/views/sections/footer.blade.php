@@ -12,11 +12,11 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Menu</h4>
+            <h4>Servicios</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="/">Inicio</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="nosotros">Nosotros</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="servicios">Servicios</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href=" {{ url('servicios/#diseno') }} ">Dise&ntilde;o</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href=" {{ url('servicios/#construction') }} ">Construcci&oacute;n</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href=" {{ url('servicios') }} ">Remodelaci&oacute;n</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Terminos de uso</a></li>
               <li><i class="ion-ios-arrow-right"></i> <a href="#">Politicas de Privacidad</a></li>
             </ul>
@@ -60,7 +60,7 @@
       </div>
       <div class="credits">
 
-        Designed by <a href="https://tecnoweb.com/">tecnoweb</a>
+        Designed by <a href="https://veneprint.com/">Veneprint</a>
       </div>
     </div>
   </footer><!-- #footer -->

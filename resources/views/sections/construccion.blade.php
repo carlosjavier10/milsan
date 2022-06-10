@@ -23,7 +23,7 @@
   </style>
   @endpush
 
-  <div id="contruction"></div>
+  <div id="construction"></div>
   <section id="services">
     <div class="container">
 
