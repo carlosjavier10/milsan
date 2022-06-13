@@ -10,33 +10,49 @@ use Illuminate\Support\Facades\DB;
 class PostService extends Controller
 {
     public function lastposts (){
-         $lastpost = Post::published()->latest()->take(3)->get();
-         return $lastpost;
-    }
+       $lastpost = Post::published()->latest()->take(4)->get();
+       return $lastpost;
+   }
 
-    public function postgroupmonth(){
+   public function postgroupmonth(){
         // $months = DB::table('canvas_posts')->where('published_at','<>',null) ->get();
-        $months = Post::select(
-            DB::raw("DATE_FORMAT(published_at,'%M %Y') as months")
-        )
-        ->groupBy('months')
-        ->get();
-        return $months;
-    }
+    $months = Post::select(
+        DB::raw("DATE_FORMAT(published_at,'%M %Y') as months")
+    )
+    ->groupBy('months')
+    ->get();
+    return $months;
+}
 
 
-    public function proyectos(){
+public function proyectos(){
 
-        $tag = Topic::where('slug','proyectos')->first();
+    $tag = Topic::where('slug','proyectos')->first();
 
-        if (isset($tag)) {
+    if (isset($tag)) {
         $proyectos = $tag->posts()->orderByDesc('published_at')->take(18)->get();
-        }
-        else{
-            $proyectos = null;
-        }
-
-        return $proyectos;
     }
+    else{
+        $proyectos = null;
+    }
+
+    return $proyectos;
+}
+
+
+
+public function lastproyects(){
+    $tag = Topic::where('slug','proyectos')->first();
+
+    if (isset($tag)) {
+        $proyects = $tag->posts()->latest()->take(4)->get();
+    }
+    else{
+        $proyects = null;
+    }
+
+    return $proyects;
+}
+
 
 }

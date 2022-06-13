@@ -139,3 +139,22 @@ body {
   background-color: rgba(0,0,0,0.3);
   z-index: 0;
 }
+
+.lead{
+  font-size: 1rem;
+}
+
+.rounded-lg-3 {
+  width: 90%
+
+}
+
+
+
+/* TEAM SECTION   */
+
+.member img {
+
+  border-radius: 30px
+}
+
