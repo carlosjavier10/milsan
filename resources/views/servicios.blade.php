@@ -11,8 +11,7 @@
 @include('sections.disenos')
 @include('sections.construccion')
 @include('sections.milsanword')
-@include('sections.clients')
-@include('sections.testimonials')
+
 
 
 @endsection

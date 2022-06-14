@@ -7,6 +7,13 @@
 
       @push('headscripts')
       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+      <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+      @endpush
+
+      @push('css')
+      <link href=" {{ asset('css/sublimecontact.css') }}  " rel='stylesheet' type='text/css' media="all" />
+
+
       @endpush
 
 
@@ -47,54 +54,55 @@
           </div>
 
           <div class="form">
-            <div  class="wassend" id="sendmessage">Su mensaje ha sido enviado, Muchas gracias por escribirnos</div>
-            <div id="errormessage">
-              @foreach ($errors->all() as $error)
-              <li>{{ $error }}</li>
-              @endforeach
 
+
+
+
+
+            <h1 class="agileits w3 wthree w3-agile w3-agileits agileinfo agile">Sublime Contact Form</h1>
+            <div class="content-w3ls agileits w3 wthree w3-agile w3-agileits agileinfo agile">
+
+              <div  class="wassend" id="sendmessage">Su mensaje ha sido enviado, Muchas gracias por escribirnos</div>
+              <div id="errormessage">
+                @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+                @endforeach
+              </div>
+
+              <form action="" method="post" role="form" class="contactForm form-agileits" >
+                @csrf
+                <h2>Contact Us</h2>
+
+
+                <input type="text" name="name"  id="name" placeholder="Su nombre" data-rule="minlen:4" data-msg="por favor ingrese al menos 4 caracteres" title="Ingrese su nombre" required />
+                <div class="validation"></div>
+
+
+
+
+                <input type="email" name="correo" id="email" placeholder="Correo Electr&oacute;nico" data-rule="email" data-msg="Por favor ingrese un email v&aacute;lido" title="Por favor ingrese un correo electronico v&aacute;lido" required  />
+                <div class="validation"></div>
+
+                <input type="text" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor use al menos 8 caracteres" title="Sobre que quieres escribirnos" />
+                <div class="validation"></div>
+
+
+                <textarea name="mensaje" rows="5" data-rule="required" data-msg="Por favor cuentanos como podemos ayudarte" placeholder="Su Mensaje"></textarea>
+                <div class="validation"></div>
+
+                <div class="g-recaptcha" data-sitekey=" {{config('services.recaptcha.key')}}"></div>
+                <br/>
+                <p id="recaptch-fail" class="alert alert-danger" style="display:none;">
+                  Por favor verifique el recaptcha
+                </p>
+
+                <button id="submit" type="submit">Enviar</button>
+                <input id="submit" type="submit" class="sign-in" value="Enviar">
+              </form>
             </div>
-            <form action="" method="post" role="form" class="contactForm">
-              @csrf
 
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre" data-rule="minlen:4" data-msg="por favor ingrese al menos 4 caracteres" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group col-md-6">
-                  <input type="email" class="form-control" name="correo" id="email" placeholder="Correo Electr&oacute;nico" data-rule="email" data-msg="Por favor ingrese un email valido" />
-                  <div class="validation"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor use al menos 8 caracteres" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="mensaje" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Su Mensaje"></textarea>
-                <div class="validation"></div>
-              </div>
 
-              <div class="g-recaptcha" data-sitekey=" {{config('services.recaptcha.key')}}"></div>
-              <br/>
-
-              <p id="recaptch-fail" class="alert alert-danger" style="display:none;">
-                Por favor verifique el recaptcha
-              </p>
-              {{-- @if (Session::has('g-recaptcha-response'))
-
-              <p id="recaptch-fail" class="alert {{ Session::get('alert-class','alert-info')}} ">
-
-                Por favor verifique el recaptcha
-                {{ Session::get('g-recaptcha-response')}}
-              </p>
-              @endif --}}
-
-              <div class="text-center"><button id="submit" type="submit">Enviar</button></div>
-            </form>
           </div>
-
         </div>
       </section><!-- #contact -->
 

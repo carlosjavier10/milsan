@@ -24,6 +24,8 @@ footer
 
 
 @include('sections.portfolio')
+@include('sections.clients')
+@include('sections.testimonials')
 
 
 @endsection
