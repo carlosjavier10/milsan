@@ -59,7 +59,7 @@
 
 
 
-            <h1 class="agileits w3 wthree w3-agile w3-agileits agileinfo agile">Sublime Contact Form</h1>
+            <h1 class="agileits w3 wthree w3-agile w3-agileits agileinfo agile">Encantados de escucharte</h1>
             <div class="content-w3ls agileits w3 wthree w3-agile w3-agileits agileinfo agile">
 
               <div  class="wassend" id="sendmessage">Su mensaje ha sido enviado, Muchas gracias por escribirnos</div>
@@ -71,7 +71,7 @@
 
               <form action="" method="post" role="form" class="contactForm form-agileits" >
                 @csrf
-                <h2>Contact Us</h2>
+                <h2>Escribenos</h2>
 
 
                 <input type="text" name="name"  id="name" placeholder="Su nombre" data-rule="minlen:4" data-msg="por favor ingrese al menos 4 caracteres" title="Ingrese su nombre" required />

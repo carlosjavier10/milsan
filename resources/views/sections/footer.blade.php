@@ -49,7 +49,8 @@
               <div class="row row-cols-1 row-cols-md-2 g-4">
 
 
-               @if ($lastproyects->lastproyects()->count() > 0)
+               @if  ((!empty($lastproyects->lastproyects)) && ($lastproyects->lastproyects()->count() > 0))
+
 
                @foreach( $lastproyects->lastproyects() as $proyect )
 
@@ -66,21 +67,9 @@
                 </div>
               </a>
               @endforeach
-
-
               @else
-
-
-
               @endif
-
-
-
-
-
             </div>
-
-
           </div>
 
         </div>
