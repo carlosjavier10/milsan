@@ -52,7 +52,7 @@
                           </div>
                         </div>
                       @break
-
+                      {{-- case 2 para cuando el post sea un video NO IMPLEMENTADO --}}
                       @case(2)
                       Second case...
                       @break
@@ -60,7 +60,6 @@
                       @default
                       Default case...
                       @endswitch
-
 
                   @endforeach
               @else
