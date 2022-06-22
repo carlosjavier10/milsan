@@ -618,7 +618,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header p {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 0px;
   color: #333;
 }
 
@@ -1561,6 +1561,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ddd;
+}
+
+.footer-newsletter a img:hover {
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
 }
 
 /*--------------------------------------------------------------

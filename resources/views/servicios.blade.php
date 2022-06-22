@@ -8,8 +8,8 @@
 
 @section('content')
 @include('layouts.services-header')
-@include('sections.disenos')
-@include('sections.construccion')
+@include('sections.disenos2')
+@include('sections.construccion2')
 @include('sections.milsanword')
 
 

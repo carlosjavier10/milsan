@@ -14,7 +14,7 @@
 <br>
 <br>
 
-@include('sections.construccion')
+@include('sections.disenos2')
 
 
 @endsection

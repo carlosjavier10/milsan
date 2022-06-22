@@ -3,6 +3,11 @@
       ============================-->
       @inject('feeds','App\Http\Controllers\InstagramFeedService')
 
+      @push('css')
+      <link href=" {{ asset('css/InstagramFeedService.css') }}  " rel="stylesheet">
+      @endpush
+
+      @if (!empty($feeds->feeds()))
       <section id="instagramfeed">
         <div class="container">
           <header class="section-header">
@@ -11,62 +16,66 @@
           </header>
 
           <div class="row about-cols">
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
 
-              @if (!empty($feeds->feeds()))
-                  @foreach ($feeds->feeds() as $feed)
+              @foreach ($feeds->feeds() as $feed)
 
-                    @switch($feed['type'])
-                      @case('image')
+              @switch($feed['type'])
+              @case('image')
 
-                        <div class="col">
-                          <div class="card card-cover overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url(' {{ $feed['url'] }}  ');  background-size: 100% 100%;">
-                            <div  id="iffi" class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                              {{-- <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2> --}}
-                              <ul class="d-flex list-unstyled mt-auto">
-                                <li class="me-auto">
-                                  <a href="{{ $feed['permalink']}} ">
-                                    <img src=" {{ asset('/images/instagramfeed_Ico.png')}} " alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                                  </a>
+              <div class="col">
+                <div class="card card-cover overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url(' {{ $feed['url'] }}  ');  background-size: 100% 100%;">
+                  <div  id="iffi" class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    {{-- <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2> --}}
+                    <ul class="d-flex list-unstyled mt-auto">
+                      <li class="me-auto">
+                        <a href="{{ $feed['permalink']}} ">
+                          <img src=" {{ asset('/images/instagramfeed_Ico.png')}} " alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                        </a>
 
-                                </li>
-                                <li class="d-flex align-items-center me-3">
-                                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
-                                  {{-- <small>Earth</small> --}}
-                                </li>
-                                <li class="d-flex align-items-center">
-                                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
-                                  <small>
-                                    {{ \Carbon\Carbon::parse($feed['timestamp'])->toFormattedDateString() }}
-                                  </small>
-                                </li>
-                              </ul>
-                            </div>
-                          </div>
-                          <div style="text-align: center; font-weight: bold !important; font-size: 2 em !important;">
-                            <h5>
+                      </li>
+                      <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                        {{-- <small>Earth</small> --}}
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                        <small>
+                          {{ \Carbon\Carbon::parse($feed['timestamp'])->toFormattedDateString() }}
+                        </small>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div style="text-align: center; font-weight: bold !important; font-size: 2 em !important;">
+                  <h5>
 
-                              {{  substr($feed['caption'], 0, 25) }}...
+                    {{  substr($feed['caption'], 0, 25) }}...
 
-                            </h5>
-                          </div>
-                        </div>
-                      @break
-                      {{-- case 2 para cuando el post sea un video NO IMPLEMENTADO --}}
-                      @case(2)
-                      Second case...
-                      @break
+                  </h5>
+                </div>
+              </div>
+              @break
 
-                      @default
-                      Default case...
-                      @endswitch
+              @case('video')
 
-                  @endforeach
-              @else
+              @break
 
-                <h1>ESTRO AL ELSE</h1>
-              @endif
+              @default
+              @break
+
+              @endswitch
+
+
+              @endforeach
+
             </div>
           </div>
-      </div>
+        </div>
+
+        @else
+
+
+        @endif
+
     </section><!-- #Instragram feeds -->
