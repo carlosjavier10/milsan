@@ -31,7 +31,7 @@
 </style>
 
 @endpush
-@include('layouts.blog-background-header')
+@include('headers.blog-background-header')
 @include('sections.blog')
 
 

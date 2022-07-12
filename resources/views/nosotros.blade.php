@@ -7,7 +7,7 @@
 
 @section('content')
 {{-- @include('layouts.nav-menu') --}}
-@include('layouts.about-us-background-header')
+@include('headers.about-us-background-header')
 @include('sections.ourhistory')
 @include('sections.nosotros')
 @include('sections.liderazgo')

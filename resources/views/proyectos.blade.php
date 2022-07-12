@@ -7,7 +7,7 @@
 @endpush
 
 @section('content')
-@include('layouts.proyects-header-background')
+@include('headers.proyects-header-background')
 {{-- feature
 nosotros
 servicios

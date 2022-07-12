@@ -7,7 +7,7 @@
 
 
 @section('content')
-@include('layouts.services-header')
+@include('headers.services-header')
 @include('sections.disenos2')
 @include('sections.construccion2')
 @include('sections.milsanword')

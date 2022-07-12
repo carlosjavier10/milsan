@@ -40,7 +40,11 @@
   <link href=" {{ asset('lib/lightbox/css/lightbox.min.css') }} " rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href=" {{ asset('css/style.css') }}  " rel="stylesheet">
+
+
+{{--   <link href=" {{ asset('css/style.css') }}  " rel="stylesheet"> --}}
+
+
   {{-- stylesheet pushed --}}
   @stack('css')
   @stack('headscripts')
@@ -51,6 +55,7 @@
     $(window).load(function() {
       $(".loader").fadeOut("slow");
     });
+
   </script>
 
 </head>
@@ -58,14 +63,12 @@
 <body>
   <div class="loader"></div>
 
-  @stack('body')
 
-  @include('layouts.nav-menu')
+
+  @stack('body')
 
   @yield('content')
 
-
-  @include('sections.footer')
 
   <!-- JavaScript Libraries -->
   <script src=" {{ asset('lib/jquery/jquery.min.js') }} "></script>

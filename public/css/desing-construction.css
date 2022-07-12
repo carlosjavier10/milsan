@@ -1,12 +1,9 @@
 /*----------- custom style ------------*/
-
-
 .about-headers {
     background-image: url('/images/Msarquitecta services header background.jpg');
     height: 350px;
     background-position: center center;
 }
-
 #disenos2,  #construccion2 {
     overflow: hidden;
 
@@ -48,31 +45,22 @@
 .carousel {
     margin-bottom: 0;
 }
-
 .services-head h1 {
     text-align: center;
     font-size: 3.5em;
     color: white;
     padding: 10rem 0 0 0;
 }
-
 .about-headers {
   padding-bottom: 0;
 }
-
 .row > * {
-
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
 
-
 @media (min-width:768px) and (max-width:1024px)
 {
-
-
-
-
 
     .img-left {
         left: -50px;
@@ -87,11 +75,11 @@
 @media (max-width:980px)
 {
 
-   .img-left {
-       position: relative;
-       left: 0;
-       height: 100% !important;
-   }
+ .img-left {
+     position: relative;
+     left: 0;
+     height: 100% !important;
+ }
 }
 
 
@@ -112,7 +100,6 @@
 
     }
     #disenos2 p, #construccion2  p {
-       margin: 0px 30px 0px 10px;
-   }
+      margin: 0px 30px 0px 30px;
+  }
 }
-

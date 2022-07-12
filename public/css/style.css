@@ -1567,142 +1567,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
 }
 
-/*--------------------------------------------------------------
-# Responsive Media Queries
---------------------------------------------------------------*/
-
-@media (min-width: 768px) {
-  #contact .contact-address,
-  #contact .contact-phone,
-  #contact .contact-email {
-    padding: 20px 0;
-  }
-
-  #contact .contact-phone {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-  }
-  .logoms {
-    width: 12em;  /**/
-  }
-  .carousel-container {
-
-    padding-top: 0px
-  }
-
-  .nav-menu a{
-
-    font-size: 0.6em !important;
-  }
-
-/*add by bootstrap*/
-.bd-placeholder-img-lg {
-  font-size: 3.5rem;
-}
-
-
-}
-
-@media (min-width: 992px) {  /*tablets*/
-  #testimonials .testimonial-item p {
-    width: 80%;
-  }
-
-  .logoms {
-    width: 15em;  /**/
-  }
-  .carousel-container {
-
-    padding-top: 0px
-  }
-
-  .nav-menu a{
-
-    font-size: 0.8em !important;
-  }
-  .member-info-mobil {
-    display: none;
-  }
-}
-
-@media (max-width: 991px) {
-  .member-info {
-    display: none !important;
-  }
-}
-
-@media (min-width: 1024px) {   /*desktop*/
-  #header #logo {
-    padding-left: 60px;
-  }
-
-  #intro p {
-    width: 60%;
-  }
-
-  #intro .carousel-control-prev,
-  #intro .carousel-control-next {
-    width: 5%;
-  }
-
-  #nav-menu-container {
-    padding-right: 60px;
-  }
-
-  .logoms {
-    width: 15em;
-  }
-  .carousel-container {
-
-    padding-top: 150px
-  }
-
-  .nav-menu a{
-
-    font-size: 0.8em !important;
-  }
-
-
-}
-
-@media (max-width: 768px) { /*tablets*/
-  .back-to-top {
-    bottom: 15px;
-  }
-
-  #header #logo h1 {
-    font-size: 28px;
-  }
-
-  #header #logo img {
-
-  }
-
-  #intro h2 {
-    font-size: 28px;
-  }
-
-  #nav-menu-container {
-    display: none;
-  }
-
-  #mobile-nav-toggle {
-    display: inline;
-  }
-
-  .logoms {
-    width: 15em;  /**/
-  }
-  .carousel-container {
-
-    padding-top: 0px
-  }
-
-  .nav-menu a{
-    font-size: 0.8em !important;
-  }
-}
-
 
 /* add styles bootstap */
 
@@ -1727,7 +1591,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #2c2c2c !important;;
 
 }
-
 
 .member-info-mobil {
  margin-top: -15px !important;
@@ -1755,10 +1618,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
 }
 
-
-
-
-
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -1766,7 +1625,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   -moz-user-select: none;
   user-select: none;
 }
-
 
 .blog-image {
   opacity: 0.5;
@@ -1903,5 +1761,153 @@ body.mobile-nav-active #mobile-nav-toggle {
   z-index: 9999;
   background: url('/images/MSarquitecta.gif') 50% 50% no-repeat rgb(4,1,5);
   opacity: 1.0;
+}
+
+
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
+
+@media (max-width:575px){
+  #footer .card {
+    margin: 10px 30px;
+  }
+
+.footer-info,.footer-links,.footer-contact, #footer h4{
+    margin: 0 20px
+  }
+
+  .footer-logo {
+    max-width: 80%
+  }
+
+
+}
+
+@media (min-width: 768px) {
+  #contact .contact-address,
+  #contact .contact-phone,
+  #contact .contact-email {
+    padding: 20px 0;
+  }
+
+  #contact .contact-phone {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+  .logoms {
+    width: 12em;  /**/
+  }
+  .carousel-container {
+
+    padding-top: 0px
+  }
+
+  .nav-menu a{
+
+    font-size: 0.6em !important;
+  }
+
+/*add by bootstrap*/
+.bd-placeholder-img-lg {
+  font-size: 3.5rem;
+}
+
+
+}
+
+@media (min-width: 992px) {  /*tablets*/
+  #testimonials .testimonial-item p {
+    width: 80%;
+  }
+
+  .logoms {
+    width: 15em;  /**/
+  }
+  .carousel-container {
+
+    padding-top: 0px
+  }
+
+  .nav-menu a{
+
+    font-size: 0.8em !important;
+  }
+  .member-info-mobil {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .member-info {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1024px) {   /*desktop*/
+  #header #logo {
+    padding-left: 60px;
+  }
+
+  #intro p {
+    width: 60%;
+  }
+
+  #intro .carousel-control-prev,
+  #intro .carousel-control-next {
+    width: 5%;
+  }
+
+  #nav-menu-container {
+    padding-right: 60px;
+  }
+
+  .logoms {
+    width: 15em;
+  }
+  .carousel-container {
+
+    padding-top: 150px
+  }
+
+  .nav-menu a{
+
+    font-size: 0.8em !important;
+  }
+}
+
+@media (max-width: 768px) { /*tablets*/
+  .back-to-top {
+    bottom: 15px;
+  }
+
+  #header #logo h1 {
+    font-size: 28px;
+  }
+
+
+  #intro h2 {
+    font-size: 28px;
+  }
+
+  #nav-menu-container {
+    display: none;
+  }
+
+  #mobile-nav-toggle {
+    display: inline;
+  }
+
+  .logoms {
+    width: 15em;  /**/
+  }
+  .carousel-container {
+
+    padding-top: 0px
+  }
+
+  .nav-menu a{
+    font-size: 0.8em !important;
+  }
 }
 
