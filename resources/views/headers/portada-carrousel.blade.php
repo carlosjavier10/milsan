@@ -19,18 +19,21 @@
 
    </header><!-- #header -->
 
+   <div>
 
-   <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000">
-        <img src="{{ asset('/images/portada/MSarquitecta cover image 2.jpg') }}" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="{{ asset('/images/portada/MSarquitecta cover image 2.jpg') }}" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item"data-bs-interval="3000">
-        <img src="{{ asset('/images/portada/MSarquitecta cover image 2.jpg') }}" class="d-block w-100" alt="...">
+     <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="{{ asset('/images/portada/MSarquitecta cover image 1.jpg') }}" class="d-block wh-img" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img src="{{ asset('/images/portada/MSarquitecta cover image 2.jpg') }}" class="d-block wh-img" alt="...">
+        </div>
+        <div class="carousel-item"data-bs-interval="3000">
+          <img src="{{ asset('/images/portada/MSarquitecta cover image 3.jpg') }}" class="d-block wh-img" alt="...">
+        </div>
       </div>
     </div>
-    <a href="#"><img class="logobt" src=" {{ asset('/images/MSarquitecta favicon black.svg') }}  " alt="" title="" /></a>
+
+    <a href=" {{ url('proyectos') }}"><img class="logobt" src=" {{ asset('/images/MSarquitecta favicon white.svg') }}  " alt="" title="" /></a>
   </div>

@@ -2,30 +2,18 @@
 
 @section('title','Proyectos')
 
-@push('css')
-    <link href="{{ asset('css/about.css') }}" type="text/css" rel="stylesheet" />
-@endpush
 
-@section('content')
-@include('headers.proyects-header-background')
-{{-- feature
-nosotros
-servicios
-call action
-skiil
-facts
-portfoio
-clients
-team
-contact
-footer
- --}}
 
 
 
-@include('sections.portfolio')
-@include('sections.clients')
-@include('sections.testimonials')
+@section('content')
 
+@include('menus.nav-menu logo center')
+@include('sections.portafolios2')
 
 @endsection
+
+
+
+{{-- carga de recursos CSS y JS --}}
+

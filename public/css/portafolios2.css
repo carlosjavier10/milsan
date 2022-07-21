@@ -1,0 +1,135 @@
+.card {
+  background-color: transparent;
+  border: none;
+}
+.col {
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 0;
+  background-color: transparent;
+  border: none;
+  margin: 5px 5px;
+  width: 100%;
+}
+.row {
+ justify-content:center
+}
+.card-title {
+  color: white;
+  text-align: center;
+  margin: 45% 0;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+.card-title:hover{
+  opacity: 1;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+.container{
+  margin-top: 2rem;
+  max-width: 100%;
+}
+
+.fa-bars{
+  font-size: 3rem;
+  margin-top: 25%;
+
+}
+
+.toggle-logo img {
+  width: 10rem;
+
+}
+
+.toggle-logo {
+    display: none;
+}
+
+
+@media (min-width: 1200px) {
+  .col{
+
+    height: 17rem;
+  }
+}
+@media only screen and (min-width: 1080px) and (max-width: 1199px){
+  .col {
+    height: 16em;
+  }
+}
+
+@media (max-width:1080px){
+  .card-title{
+    opacity: 1
+  }
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1079px){
+  .col {
+    height: 15em;
+  }
+}
+
+@media only screen and (min-width: 870px) and (max-width: 999px){
+  .col {
+    height: 12em;
+  }
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 870px){
+  .col {
+    height: 10em;
+  }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 999px){
+
+  .row-cols-md-4 > *{
+    width: 22%;
+  }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 767px){
+  .col {
+    width: 95%;
+    height: 400px;
+    max-height:  700px;
+  }
+}
+
+@media (max-width: 768px){
+  .toggle-logo{
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 399px){
+  .col {
+    width: 95%;
+    height: 200px;
+
+  }
+}
+
+@media (min-width: 1000px){
+  .row-cols-md-4 > *{
+    width: 24%;
+  }
+}

@@ -3,7 +3,7 @@
 @section('content')
 
 @include('headers.portada-carrousel')
-{{-- @include('layouts.socialbar') --}}
+@include('layouts.socialbar')
 {{--@include('sections.feature')
 @include('sections.mainproyects')
 @include('sections.disenos')    ELIMINADO POR CLIENTE

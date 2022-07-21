@@ -18,10 +18,15 @@ body{
 }
 
 .logobt{
-  position: fixed;
+  position: absolute;
   top: 35%;
   left: 45%;
   z-index: 10000;
+}
+
+.logobt:hover{
+  filter: invert(100%);
+  transition: 0.5s;
 }
 
 
@@ -46,7 +51,7 @@ body{
 
 #header #logo {
  /* position: absolute;*/
-  z-index: 9 !important;
+ z-index: 9 !important;
 }
 
 #header #logo h1 {
@@ -57,6 +62,7 @@ body{
   font-family: "Rage italic", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
+  color: white;
 }
 
 #header #logo h1 a,
@@ -72,7 +78,7 @@ body{
 }
 
 #logo {
-    text-align: center !important;
+  text-align: center !important;
 }
 
 .logoms, .logobt  {
@@ -82,10 +88,25 @@ body{
 
 
 
-@media (min-width: 1024px) {   /*desktop*/
+@media (min-width: 1200px) {   /*desktop*/
+  .wh-img {
+    width: 100% !important;
+  }
+
+  .logobt{
+    top: 15em;
+  }
 
 
 }
+
+@media (max-width: 1199px) {   /*desktop*/
+  .logobt{
+    top: 45%;
+  }
+
+}
+
 
 
 @media (max-width: 768px) { /*tablets*/

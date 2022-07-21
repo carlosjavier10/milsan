@@ -4,12 +4,31 @@
 
       @inject('proyectos', 'App\Http\Controllers\PostService')
 
-      <section id="portfolio"  class="section-bg" >
-        <div class="container">
+      @push('css')
+        <link href=" {{ asset('css/proyectos.css') }}  " rel="stylesheet">
+      @endpush
 
+
+
+      {{-- *************************************************************** --}}
+
+
+
+
+      {{-- *************************************************************** --}}
+
+
+
+
+
+
+
+      <section id="portfolio"  class="section-bg" >
+        <div class="">
+{{--
           <header class="section-header">
             <h3 class="section-title">Nuestros Proyectos</h3>
-          </header>
+          </header> --}}
 
           <div class="row">
             <div class="col-lg-12">
@@ -43,7 +62,7 @@
               @endforelse
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-{{$tags}} wow fadeInUp">
+            <div class="col-lg-3 col-md-6 portfolio-item filter-{{$tags}} wow fadeInUp">
               <div class="portfolio-wrap">
                 <figure>
 
