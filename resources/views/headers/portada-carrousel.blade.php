@@ -12,12 +12,16 @@
         <h1><a href="#intro" class="scrollto">BizPage</a></h1>
       </div> --}}
 
-      <h1>Milagros Sanchez Arquitecta</h1>
+        <a href="#"><img class="logobt" src=" {{ asset('/images/MSarquitecta favicon white.svg') }}  " alt="" title="" /></a>
 
     </header><!-- #header -->
     <div>
           <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
-          <a href=" {{ url('proyectos') }}"><img class="logobt" src=" {{ asset('/images/MSarquitecta favicon white.svg') }}  " alt="" title="" /></a>
+
+
+            <a href="{{ url('proyectos') }}">
+                <h1>Proyectos+</h1>
+            </a>
 
           <div class="carousel-inner">
 
