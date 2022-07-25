@@ -19,9 +19,9 @@ body{
 
 .logobt{
   position: absolute;
-  top: 35%;
+  top: 15px;
   left: 45%;
-  z-index: 10000;
+  z-index: 100;
 }
 
 .logobt:hover{
@@ -54,7 +54,7 @@ body{
  z-index: 9 !important;
 }
 
-#header #logo h1 {
+#header h1 {
   font-size: 34px;
   margin: 0;
   padding: 0;
@@ -63,6 +63,7 @@ body{
   font-weight: 700;
   letter-spacing: 3px;
   color: white;
+  text-align: center;
 }
 
 #header #logo h1 a,
@@ -94,7 +95,7 @@ body{
   }
 
   .logobt{
-    top: 15em;
+    top: 30%;
   }
 
 
@@ -102,7 +103,7 @@ body{
 
 @media (max-width: 1199px) {   /*desktop*/
   .logobt{
-    top: 45%;
+    top: 22%;
   }
 
 }
