@@ -11,7 +11,11 @@
     <div class="row flex-nowrap justify-content-between align-items-center">
 
       <div class="col-4 pt-1">
-        <a class="link-secondary" href="#">Subscribe</a>
+        <a class="link-secondary" href=" {{ url('proyectos') }} ">Todos</a>
+        <a class="link-secondary" href="{{ url('proyectos/?filter=residencial') }}">Residencial</a>
+        <a class="link-secondary" href="{{ url('proyectos/?filter=comercial') }}">Comercial</a>
+        <a class="link-secondary" href="{{ url('proyectos/?filter=corporativo') }}">Corporativo</a>
+        <a class="link-secondary" href="{{ url('proyectos/?filter=industrial') }}">Industrial</a>
       </div>
 
       <div class="col-4 text-center">

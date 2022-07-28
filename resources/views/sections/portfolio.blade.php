@@ -8,20 +8,8 @@
         <link href=" {{ asset('css/proyectos.css') }}  " rel="stylesheet">
       @endpush
 
-
-
       {{-- *************************************************************** --}}
-
-
-
-
       {{-- *************************************************************** --}}
-
-
-
-
-
-
 
       <section id="portfolio"  class="section-bg" >
         <div class="">

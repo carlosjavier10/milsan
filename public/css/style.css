@@ -448,7 +448,7 @@ h6 {
 /* Mobile Nav Toggle */
 
 #mobile-nav-toggle {
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   z-index: 999;

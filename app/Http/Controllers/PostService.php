@@ -27,10 +27,10 @@ class PostService extends Controller
 
 public function proyectos(){
 
-    $tag = Topic::where('slug','proyectos')->first();
+    $topic = Topic::where('slug','proyectos')->first();
 
-    if (isset($tag)) {
-        $proyectos = $tag->posts()->orderByDesc('published_at')->take(18)->get();
+    if (isset($topic)) {
+        $proyectos = $topic->posts()->orderByDesc('published_at')->take(18)->get();
     }
     else{
         $proyectos = null;
@@ -42,10 +42,10 @@ public function proyectos(){
 
 
 public function lastproyects(){
-    $tag = Topic::where('slug','proyectos')->first();
+    $topic = Topic::where('slug','proyectos')->first();
 
-    if (isset($tag)) {
-        $proyects = $tag->posts()->latest()->take(4)->get();
+    if (isset($topic)) {
+        $proyects = $topic->posts()->latest()->take(4)->get();
     }
     else{
         $proyects = null;

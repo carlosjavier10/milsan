@@ -19,7 +19,8 @@ use App\Http\Controllers\testController;
 Route::get('/', function () {return view('index');})->name('index');
 Route::get('/nosotros', function () {return view('nosotros');})->name('nosotros');
 Route::get('/servicios', function () {return view('servicios');})->name('servicios');
-Route::get('/proyectos', function () {return view('proyectos');})->name('proyectos');
+Route::get('/proyectos/', [PostController::class, 'proyects_tags']);
+/*Route::get('/proyectos', function () {return view('proyectos');})->name('proyectos');*/
 Route::get('/contacto', function () {return view('contacto');})->name('contacto');
 
 

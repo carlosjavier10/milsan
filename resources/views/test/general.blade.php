@@ -14,7 +14,7 @@
 <br>
 <br>
 
-@include('sections.disenos2')
+@include('sections.portfolio')
 
 
 @endsection

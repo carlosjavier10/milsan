@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Canvas\Models\Post;
+use Canvas\Models\Tag;
 use Canvas\Events\PostViewed;
 use Canvas\Models\Topic;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\PostService;
 
 class PostController extends Controller
 {
@@ -25,7 +27,47 @@ class PostController extends Controller
         return view('post', ['post' => $post]);
     }
 
-        /*retorna todos los post de un tema sin importar el usuario*/
+
+    public function proyects_tags (Request $request){
+
+        if (isset($_GET['filter'])) {
+            switch ($_GET['filter']) {
+                case 'residencial':
+                $label='residencial';
+                break;
+                case 'comercial':
+                $label='comercial';
+                break;
+                case 'corporativo':
+                $label='corporativo';
+                break;
+                case 'industrial':
+                $label='industrial';
+                break;
+
+                default:
+                $label=null;
+                break;
+            }
+        }
+
+        if (isset($label)) {
+            $tag = Tag::with('posts')->firstWhere('slug', $label);
+            $proyectos = $tag->posts()->get();
+
+        }
+        else{
+            $topic = Topic::where('slug','proyectos')->first();
+            $proyectos = $topic->posts()->orderByDesc('published_at')->take(18)->get();
+
+        }
+
+
+
+        return view('proyectos',['proyectos'=> $proyectos ]);
+    }
+
+    /*retorna todos los post de un tema sin importar el usuario*/
     public function getPostByTopicAll ($slug){
         $topic = Topic::where('slug', $slug)->first();
         $posts = $topic->posts()->get();
@@ -67,44 +109,44 @@ class PostController extends Controller
 
         switch ($month) {
             case 'January':
-                return '01';
-                break;
+            return '01';
+            break;
             case 'February':
-                    return '02';
-                    break;
+            return '02';
+            break;
             case 'March':
-                        return '03';
-                        break;
+            return '03';
+            break;
             case 'April':
-                return '04';
-                break;
+            return '04';
+            break;
             case 'May':
-                return '05';
-                break;
+            return '05';
+            break;
             case 'June':
-                return '06';
-                break;
+            return '06';
+            break;
             case 'July':
-                return '07';
-                break;
+            return '07';
+            break;
             case 'August':
-                return '08';
-                break;
-                case 'September':
-                    return '09';
-                    break;
+            return '08';
+            break;
+            case 'September':
+            return '09';
+            break;
             case 'Octuber':
-                return '10';
-                break;
+            return '10';
+            break;
             case 'November':
-                return '11';
-                break;
+            return '11';
+            break;
             case 'December':
-                return '12';
-                break;
+            return '12';
+            break;
             default:
                 # code...
-                break;
+            break;
         }
     }
 
@@ -113,44 +155,44 @@ class PostController extends Controller
 
         switch ($month) {
             case 'January':
-                return 'Enero';
-                break;
+            return 'Enero';
+            break;
             case 'February':
-                    return 'Febrero';
-                    break;
+            return 'Febrero';
+            break;
             case 'March':
-                        return 'Marzo';
-                        break;
+            return 'Marzo';
+            break;
             case 'April':
-                return 'Abril';
-                break;
+            return 'Abril';
+            break;
             case 'May':
-                return 'Mayo';
-                break;
+            return 'Mayo';
+            break;
             case 'June':
-                return 'Junio';
-                break;
+            return 'Junio';
+            break;
             case 'July':
-                return 'Julio';
-                break;
+            return 'Julio';
+            break;
             case 'August':
-                return 'Agosto';
-                break;
-                case 'September':
-                    return 'Septiembre';
-                    break;
+            return 'Agosto';
+            break;
+            case 'September':
+            return 'Septiembre';
+            break;
             case 'Octuber':
-                return 'Octubre';
-                break;
+            return 'Octubre';
+            break;
             case 'November':
-                return 'Noviembre';
-                break;
+            return 'Noviembre';
+            break;
             case 'Diciembre':
-                return '12';
-                break;
+            return '12';
+            break;
             default:
                 # code...
-                break;
+            break;
         }
     }
 }
