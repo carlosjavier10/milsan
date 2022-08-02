@@ -28,7 +28,10 @@
         "vue-infinite-loading": "^2.4.5",
         "vue-loader": "^15.9.5",
         "vue-meta": "^2.4.0",
-        "vue-router": "^3.4.9",
+        "vue-router": "^3.5.4",
         "vue-template-compiler": "^2.6.12"
+    },
+    "dependencies": {
+        "vue-axios": "^3.4.1"
     }
 }
