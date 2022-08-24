@@ -1,16 +1,17 @@
-.card {
+#portafolio .card {
   background-color: transparent;
   border: none;
+  margin: auto;
 }
-.col {
+ #portafolio .row .col {
 /**/
   display: flex;
-  justify-content: center;
+  justify-content: center center;
   align-items: center;
 /**/
-  background-image: no-repeat;
-  background-image: fixed;
-  background-image: center;
+  background-repeat: no-repeat;
+  background-size: fixed;
+  background-position: center ;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -18,10 +19,11 @@
   border-radius: 0;
   background-color: transparent;
   border: none;
-  margin: 5px 5px;
+  margin: -3px 5px;
   width: 100%;
 }
-.row {
+
+#portafolio .row {
  justify-content:center
 }
 
@@ -78,9 +80,13 @@
   filter: invert(50%);
 }
 
+.g-4, .gx-4 {
+  --bs-gutter-x: 0.5rem;
+}
+
 
 @media (min-width: 1200px) {
-  .col{
+ #portafolio .row .col{
     width: 321px;
     height: 321px;
   }
@@ -88,7 +94,7 @@
 
 }
 @media only screen and (min-width: 1080px) and (max-width: 1199px){
-  .col {
+ #portafolio .row .col{
     width: 16em;
     height: 16em;
   }
@@ -102,14 +108,14 @@
 
 
 @media only screen and (min-width: 1000px) and (max-width: 1079px){
-  .col {
+ #portafolio .row .col{
     width: 15em;
     height: 15em;
   }
 }
 
 @media only screen and (min-width: 870px) and (max-width: 999px){
-  .col {
+ #portafolio .row .col{
     width: 16em;
     height: 16em;
   }
@@ -117,7 +123,7 @@
 
 }
 @media only screen and (min-width: 768px) and (max-width: 869px){
-  .col {
+ #portafolio .row .col{
     width: 16em;
     height: 16em;
   }
@@ -127,7 +133,7 @@
 
 
 @media only screen and (min-width: 400px) and (max-width: 767px){
-  .col {
+ #portafolio .row .col{
     width: 95%;
     height: 400px;
     max-height:  700px;
@@ -143,7 +149,7 @@
 
 
 @media only screen and (min-width: 321px) and (max-width: 400px){
-.col{
+ #portafolio .row .col{
 
     width: 95%;
     height: 321px;
@@ -151,7 +157,7 @@
 
 }
 @media only screen and (max-width: 321px){
-  .col {
+ #portafolio .row .col{
     width: 95%;
     height: 200px;
 

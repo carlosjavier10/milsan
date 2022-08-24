@@ -9,10 +9,11 @@
   {{-- expr --}}
 @endpush
 
-<div class="container">
+<div  id="portafolio" class="container">
 
   <div class="row row-cols-1 row-cols-md-4 g-4">
   @foreach ($proyectos as $proyecto)
+  <a href="#">
 
         <div class="col" style="background-image: url(' {{ asset($proyecto->featured_image) }} ');" >
           <div class="card text-bg-dark"  >
@@ -22,6 +23,7 @@
           </div>
 
       </div>
+  </a>
 
     @endforeach
   </div>

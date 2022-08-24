@@ -6,12 +6,14 @@
 @endpush
 
 @section('content')
-{{-- @include('layouts.nav-menu') --}}
-@include('headers.about-us-background-header')
+@include('menus.nav-menu')
+@include('sections.headers.about-us')
 @include('sections.ourhistory')
 @include('sections.nosotros')
 @include('sections.liderazgo')
 @include('sections.team')
+@include('sections.footer')
+
 
 
 

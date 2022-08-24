@@ -2,6 +2,7 @@
     About us header Section
   ============================-->
 
+
   <section class="about-headers">
     <div class="intro-container">
       <div id="" class="slide fadein" data-ride="carousel">
@@ -12,4 +13,4 @@
     </div>
   </section><!-- #intro -->
 
-  <main id="main">
+{{--   <main id="main"> --}}

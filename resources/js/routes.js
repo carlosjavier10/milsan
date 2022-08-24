@@ -1,19 +1,22 @@
-const portfolio = ()=> import('./components/portfolio.vue');
-const nosotros = ()=> import('./components/nosotros.vue');
+const portfolio 		= ()=> import('./components/sections/Portfolio.vue');
+const nosotros 			= ()=> import('./components/pages/Nosotros.vue');
+
 
 
 export const routes = [
 
 	{
 		name:'portfolio',
-		path:'/portfolio',
+		path:'/portfolio/',
 		component:portfolio
 	},
 	{
 		name:'nosotros',
-		path:'/nosotros',
+		path:'/nosotros/',
 		component:nosotros
 	},
+
+
 
 
 

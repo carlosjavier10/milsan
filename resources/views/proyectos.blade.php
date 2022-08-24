@@ -3,9 +3,6 @@
 @section('title','Proyectos')
 
 
-
-
-
 @section('content')
 
 @include('menus.nav-menu logo center')
@@ -15,5 +12,4 @@
 
 
 
-{{-- carga de recursos CSS y JS --}}
 

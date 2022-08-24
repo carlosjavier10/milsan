@@ -27,57 +27,76 @@ class PostController extends Controller
         return view('post', ['post' => $post]);
     }
 
+    public function get_proyects_by_tag(Request $request){
 
-    public function proyects_tags (Request $request){
+     if (isset($_GET['filter'])) {
+        switch ($_GET['filter']) {
+            case 'residencial':
+            $label='residencial';
+            break;
+            case 'comercial':
+            $label='comercial';
+            break;
+            case 'corporativo':
+            $label='corporativo';
+            break;
+            case 'industrial':
+            $label='industrial';
+            break;
 
-        if (isset($_GET['filter'])) {
-            switch ($_GET['filter']) {
-                case 'residencial':
-                $label='residencial';
-                break;
-                case 'comercial':
-                $label='comercial';
-                break;
-                case 'corporativo':
-                $label='corporativo';
-                break;
-                case 'industrial':
-                $label='industrial';
-                break;
-
-                default:
-                $label=null;
-                break;
-            }
+            default:
+            $label=null;
+            break;
         }
-
-        if (isset($label)) {
-            $tag = Tag::with('posts')->firstWhere('slug', $label);
-            $proyectos = $tag->posts()->get();
-
-        }
-        else{
-            $topic = Topic::where('slug','proyectos')->first();
-            $proyectos = $topic->posts()->orderByDesc('published_at')->take(18)->get();
-
-        }
-
-
-
-        return view('proyectos',['proyectos'=> $proyectos ]);
     }
 
-    /*retorna todos los post de un tema sin importar el usuario*/
-    public function getPostByTopicAll ($slug){
-        $topic = Topic::where('slug', $slug)->first();
-        $posts = $topic->posts()->get();
+    if (isset($label)) {
+        $tag = Tag::with('posts')->firstWhere('slug', $label);
+        $proyectos = $tag->posts()->get();
 
-        $envista = 'Publicaciones del tema <b> '. $topic->name.'</b>';
+    }
+    else{
+        $topic = Topic::where('slug','proyectos')->first();
+        $proyectos = $topic->posts()->orderByDesc('published_at')->take(18)->get();
 
-        return view('blog', ['posts' => $posts, 'envista' => $envista]);
     }
 
-    public function showbymonth ($slug){
+    if ($request->ajax()){
+        $response  = [
+            'success'   => true,
+            'proyects' => $proyectos,
+            'filtro' => $_GET['filter']
+
+        ];
+
+        return response()->json($response, 200);
+    }
+    else{
+        return $proyectos;
+    }
+
+}
+
+/*proyects are a post type // this controller is for laravel version proyects view*/
+public function  get_proyects (Request $request){
+
+    $proyectos = $this->get_proyects_by_tag($request);
+
+    return view('proyectos',['proyectos'=> $proyectos ]);
+
+}
+
+/*retorna todos los post de un tema sin importar el usuario*/
+public function getPostByTopicAll ($slug){
+    $topic = Topic::where('slug', $slug)->first();
+    $posts = $topic->posts()->get();
+
+    $envista = 'Publicaciones del tema <b> '. $topic->name.'</b>';
+
+    return view('blog', ['posts' => $posts, 'envista' => $envista]);
+}
+
+public function showbymonth ($slug){
 
         $fecha =  $this->getMonthYear($slug);  // Convierte el $slug en un arreglo con mes y año separado
         $monthNum = $this->numberMonth($fecha['month']); // convierte el mes a numero de mes

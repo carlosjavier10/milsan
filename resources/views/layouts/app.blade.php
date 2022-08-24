@@ -43,6 +43,7 @@
 
 
   <link href=" {{ asset('css/style.css') }}  " rel="stylesheet">
+  <link href=" {{ asset('css/milsanword.css') }}  " rel="stylesheet">
 
 
   {{-- stylesheet pushed --}}

@@ -19,7 +19,7 @@
           <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
 
 
-            <a href="{{ url('proyectos') }}">
+            <a href="{{ url('portfolio/') }}">
                 <h1>Proyectos+</h1>
             </a>
 

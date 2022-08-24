@@ -6,7 +6,12 @@ require('./bootstrap');
 // Require Vue
 window.Vue = require('vue').default;
 
-Vue.component('test', require('./components/test.vue').default);
+
+Vue.component('aboutusheader',    	require('./components/headers/AboutusHeader.vue').default);
+Vue.component('ourhistory',    		require('./components/sections/ourhistory.vue').default);
+Vue.component('nosotros',    		require('./components/sections/nosotros.vue').default);
+Vue.component('liderazgo',    		require('./components/sections/liderazgo.vue').default);
+Vue.component('team',    			require('./components/sections/team.vue').default);
 
 
 import App from './App.vue';
