@@ -41,10 +41,12 @@
   <!-- Main Stylesheet File -->
 
 
-  <link href=" {{ asset('css/style.css') }}  " rel="stylesheet">
   <link href=" {{ asset('css/nav-menu.css') }}  " rel="stylesheet">
   <link href=" {{ asset('css/portafolios2.css') }}  " rel="stylesheet">
   <link href=" {{ asset('css/about.css') }}  " rel="stylesheet">
+  <link href=" {{ asset('css/servicios.css') }}  " rel="stylesheet">
+  <link href=" {{ asset('css/style.css') }}  " rel="stylesheet">
+  <link href=" {{ asset('css/milsanword.css') }}  " rel="stylesheet">
 
 
 

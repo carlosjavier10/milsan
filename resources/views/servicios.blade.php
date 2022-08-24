@@ -1,12 +1,13 @@
 @extends('layouts.app')
 @section('title','Servicios')
 
-@push('css')
+{{-- @push('css')
     <link href="{{ asset('css/about.css') }}" type="text/css" rel="stylesheet" />
-@endpush
+@endpush --}}
 
 
 @section('content')
+@include('menus.nav-menu')
 @include('headers.services-header')
 @include('sections.disenos2')
 @include('sections.construccion2')

@@ -50,15 +50,15 @@
 							<router-link  exact-activeclass="active" :to='{name:"nosotros"}' class="nav-link" aria-current="page" >Nosotros</router-link>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
+							<router-link  exact-activeclass="active" :to='{name:"servicios"}' class="nav-link" aria-current="page" >Servicios</router-link>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
+							<router-link  exact-activeclass="active" :to='{name:"blog"}' class="nav-link" aria-current="page" >Blog</router-link>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link" href="#">Link</a>
+							<router-link  exact-activeclass="active" :to='{name:"contacto"}' class="nav-link" aria-current="page" >Contacto</router-link>
 						</li>
 
 					</ul>

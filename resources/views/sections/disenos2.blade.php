@@ -1,7 +1,7 @@
-   @push('css')
-   <link href=" {{ asset('css/desing-construction.css') }}  " rel="stylesheet">
+{{--    @push('css')
+   <link href=" {{ asset('css/servicios.css') }}  " rel="stylesheet">
 
-   @endpush
+   @endpush --}}
 
    <section id="disenos2" class="">
      <!-- =============== container =============== -->

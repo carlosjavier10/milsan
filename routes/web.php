@@ -19,7 +19,7 @@ use App\Http\Controllers\testController;
 
 
 Route::get('/proyectos/', [PostController::class, 'get_proyects']);
-Route::get('/perra', function () {return view('nosotros');})->name('nosotros');
+Route::get('/perra', function () {return view('contacto');})->name('contacto');
 
 Route::get('{any}', function () {return view('App');});
 
@@ -27,9 +27,9 @@ Route::get('/', function () {return view('index');})->name('index');
 
 
 
-Route::get('/servicios', function () {return view('servicios');})->name('servicios');
+/*Route::get('/nosotros', function () {return view('nosotros');})->name('nosotros');*/
 /*Route::get('/proyectos', function () {return view('proyectos');})->name('proyectos');*/
-Route::get('/contacto', function () {return view('contacto');})->name('contacto');
+/*Route::get('/servicios', function () {return view('servicios');})->name('servicios');*/
 
 
 

@@ -6,13 +6,20 @@ require('./bootstrap');
 // Require Vue
 window.Vue = require('vue').default;
 
-
+/*Componentes de pagina "Nosotros*/
 Vue.component('aboutusheader',    	require('./components/headers/AboutusHeader.vue').default);
 Vue.component('ourhistory',    		require('./components/sections/ourhistory.vue').default);
 Vue.component('nosotros',    		require('./components/sections/nosotros.vue').default);
 Vue.component('liderazgo',    		require('./components/sections/liderazgo.vue').default);
 Vue.component('team',    			require('./components/sections/team.vue').default);
 
+/*Componentes de pagina "Sercvicios" */
+Vue.component('servicesHeader',    	require('./components/headers/servicesHeader.vue').default);
+Vue.component('disenos',    			require('./components/sections/disenos.vue').default);
+Vue.component('construccion',    			require('./components/sections/construccion.vue').default);
+Vue.component('milsanword',    			require('./components/sections/milsanword.vue').default);
+
+/*Componentes de pagina "Sercvicios" */
 
 import App from './App.vue';
 

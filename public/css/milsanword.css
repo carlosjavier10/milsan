@@ -21,6 +21,13 @@
   padding-bottom: 0px !important;
 }
 
+#milsanword .container{
+padding-left: 20px !important;
+  padding-right: 50px !important;
+}
+
+
+
 @media (max-width:575px) {
   .lead {
       margin: 10px 40px;

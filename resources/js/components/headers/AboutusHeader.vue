@@ -59,7 +59,4 @@
 		padding-top: 4rem !important;
 }
 }
-
-
-
 	</style>

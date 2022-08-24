@@ -1,7 +1,7 @@
 <template>
 
 
-	<div class="container marketing">
+	<div id="ourhistory" class="container marketing">
 
 		<div class="row featurette">
 			<div class="col-md-7">
@@ -19,7 +19,7 @@
 
 		<div class="row featurette">
 			<div class="col-md-7 order-md-2">
-				<h2 class="featurette-heading">Milagros Sanchez. <span class="text-muted">Arquitecta</span></h2>
+				<h2 class="text-end featurette-heading">Milagros Sanchez.<br> <span class="text-muted">Arquitecta</span></h2>
 				<p class="lead">Breve Biografia de la Arquitecta Milagros Sanchez... Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
