@@ -7,68 +7,64 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 /*--- reset code ---*/
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
-	margin:0;
-	padding:0;
-	border:0;
-	font-size:100%;
-	font:inherit;
-	vertical-align:baseline;
+
+
+
+#contacto article,#contacto  aside,#contacto  details,#contacto  figcaption,#contacto  figure,#contacto  footer,#contacto  header,#contacto  hgroup,#contacto  menu,#contacto  nav,#contacto  section {
+    display: block;
 }
-article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-ol,ul {
+
+#contacto  ol,#contacto  ul {
 	list-style:none;
 	margin:0px;
 	padding:0px;
 }
-blockquote,q {
+#contacto blockquote,#contacto  q {
 	quotes:none;
 }
-blockquote:before,blockquote:after,q:before,q:after {
+#contacto blockquote:before,#contacto blockquote:after,#contacto q:before,#contacto q:after {
 	content:'';
 	content:none;
 }
-table {
+#contacto table {
 	border-collapse:collapse;
 	border-spacing:0;
 }
 
 /* start editing from here */
-a {
-	text-decoration:none;
+#contacto a {
+    text-decoration:none;
 }
-.txt-rt {
-	text-align:right;
+#contacto .txt-rt {
+    text-align:right;
 }/* text align right */
-.txt-lt {
-	text-align:left;
+#contacto .txt-lt {
+    text-align:left;
 }/* text align left */
-.txt-center {
-	text-align:center;
-/*-- W3Layouts --*/	
+#contacto .txt-center {
+    text-align:center;
+/*-- W3Layouts --*/
 }/* text align center */
-.float-rt {
-	float:right;
+#contacto .float-rt {
+    float:right;
 }/* float right */
-.float-lt {
-	float:left;
+#contacto .float-lt {
+    float:left;
 }/* float left */
-.clear {
-	clear:both;
+#contacto .clear {
+    clear:both;
 }/* clear float */
-.pos-relative {
-	position:relative;
+#contacto .pos-relative {
+    position:relative;
 }/* Position Relative */
-.pos-absolute {
-	position:absolute;
+#contacto .pos-absolute {
+    position:absolute;
 }/* Position Absolute */
-.vertical-base {	
-	vertical-align:baseline;
+#contacto .vertical-base {
+    vertical-align:baseline;
 }/* vertical align baseline */
-.vertical-top {	
-	vertical-align:top;
+#contacto .vertical-top {
+    vertical-align:top;
 }/* vertical align top */
 nav.vertical ul li {	
 	display:block;
@@ -81,18 +77,19 @@ img {
 }
 
 /*--- end reset code ---*/
-body {
-	background:url(../images/contact-background.jpg) no-repeat;
-	background-position:center;
-	background-attachment:fixed;
-	background-size:cover;
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	-o-background-size:cover;
-	-ms-background-size:cover;
-	font-family: 'Muli', sans-serif;
+#contacto {
+    background:url('/images/contact-background.jpg') no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -ms-background-size:cover;
+    font-family: 'Muli', sans-serif;
 }
-h1 {
+
+#contacto h1 {
 	font-size: 40px;
     font-weight: normal;
     padding: 50px 0;
@@ -101,18 +98,18 @@ h1 {
     text-transform: uppercase;
     font-family: 'Nunito', sans-serif;
 }
-.content-w3ls {
+#contacto .content-w3ls {
     width: 35%;
     margin: 0 auto;
     background:rgba(0,0,0,0.5);
     text-align: center;
     padding: 60px 0 0;
 }
-.form-w3ls {
+#contacto .form-w3ls {
     width: 89%;
     margin: 0 auto 15px;
 }
-h2 {
+#contacto h2 {
     text-transform: uppercase;
     font-size: 33px;
     font-weight: 300;
@@ -121,7 +118,7 @@ h2 {
     padding-bottom:30px;
     font-family: 'Nunito', sans-serif;
 }
-input[type="text"],input[type="email"],textarea {
+#contacto input[type="text"],#contacto input[type="email"],#contacto textarea {
     width: 70%;
     padding: 10px;
     font-size: 16px;
@@ -137,40 +134,40 @@ input[type="text"],input[type="email"],textarea {
     outline: none;
     letter-spacing:1px;
 }
-textarea {
+#contacto textarea {
     height: 100px;
 }
-input::-webkit-input-placeholder {
+#contacto input::-webkit-input-placeholder {
     color:#fff!important;
 }
 
-input:-moz-placeholder { /* Firefox 18- */
+#contacto input:-moz-placeholder { /* Firefox 18- */
     color:#fff!important;
 }
 
-input::-moz-placeholder {  /* Firefox 19+ */
+#contacto input::-moz-placeholder {  /* Firefox 19+ */
     color:#fff!important;
 }
 
-input:-ms-input-placeholder {  
+#contacto input:-ms-input-placeholder {
     color:#fff!important;
 }
-textarea::-webkit-input-placeholder {
-    color:#fff!important;
-}
-
-textarea::-moz-placeholder { /* Firefox 18- */
+#contacto textarea::-webkit-input-placeholder {
     color:#fff!important;
 }
 
-textarea::-moz-placeholder {  /* Firefox 19+ */
+#contacto textarea::-moz-placeholder { /* Firefox 18- */
     color:#fff!important;
 }
 
-textarea::-ms-input-placeholder {  
+#contacto textarea::-moz-placeholder {  /* Firefox 19+ */
     color:#fff!important;
 }
-input.sign-in {
+
+#contacto textarea::-ms-input-placeholder {
+    color:#fff!important;
+}
+#contacto input.sign-in {
     width: 100%;
     height: 100px;
     font-size: 20px;
@@ -188,26 +185,15 @@ input.sign-in {
     outline: none;
     cursor: pointer;
 }
-input.sign-in:hover {
-	background-color:#000;
+#contacto input.sign-in:hover {
+    background-color:#000;
 }
-p.copyright {
-	text-align:center;
-	padding:50px 0;
-	color: #fff;
-	font-size:16px;
-	font-weight:normal;
-}
-p.copyright a {
-	color:#ab8071;
-}
-p.copyright a:hover {
-	color:red;
-}
+
+
 
 /*-- responsive design --*/
 @media (max-width:1600px) {
-    h1 {
+    #contacto h1 {
         font-size: 40px;
         font-weight: normal;
         padding: 50px 0 30px;
@@ -216,7 +202,7 @@ p.copyright a:hover {
         text-transform: uppercase;
         font-family: 'Nunito', sans-serif;
     }
-    input.sign-in {
+    #contacto input.sign-in {
         width: 100%;
         height: 80px;
         font-size: 20px;
@@ -234,116 +220,105 @@ p.copyright a:hover {
         outline: none;
         cursor: pointer;
     }
-    p.copyright {
-        text-align: center;
-        padding: 45px 0;
-        color: #fff;
-        font-size: 16px;
-        font-weight: normal;
-    }
+
     .g-recaptcha{
         margin: 0 0 0 4rem
     }
 }
 
 @media (max-width:1440px) {
-   .content-w3ls {
+   #contacto .content-w3ls {
     width: 40%;
 }
 }
 
 @media (max-width:1366px) {
-	h1 {
+	#contacto h1 {
        padding:35px 0;
    }
-   p.copyright {
-       padding:50px 10px 0;
-       line-height:30px;
-   }
+
 }
 
 @media (max-width:1080px) {
-	.content-w3ls {
+	#contacto .content-w3ls {
         width: 50%;
     }
-    h2 {
+    #contacto h2 {
        font-size:27px;
        padding-bottom:20px;
    }
-   input.sign-in {
+   #contacto input.sign-in {
        height:70px;
    }
-   p.copyright {
-       font-size:14px;
-   }
+
 }
 
 @media (max-width: 991px) {
-    h1 {
+    #contacto h1 {
         padding: 30px 0;
         font-size:35px;
     }
-    .content-w3ls {
+    #contacto .content-w3ls {
        padding:40px 0 0;
    }
 
-   .g-recaptcha{
+   #contacto .g-recaptcha{
     margin: 0 0 0 3rem
 }
 }
 
 @media (max-width: 800px) {
-    .content-w3ls {
+    #contacto .content-w3ls {
         width: 60%;
     }
 }
 
 @media (max-width: 667px) {
-    h1 {
+   #contacto  h1 {
         padding: 25px 0;
         font-size: 30px;
     }
-    h2 {
+    #contacto h2 {
         font-size: 23px;
         padding-bottom: 20px;
     }
 }
 
 @media (max-width: 640px) {
-    .content-w3ls {
+    #contacto .content-w3ls {
         width: 67%;
     }
 }
 
 @media (max-width: 568px) {
-    .content-w3ls {
+    #contacto .content-w3ls {
         width: 70%;
     }
 }
 
 @media (max-width: 480px) {
-    .content-w3ls {
+    #contacto .content-w3ls {
         width: 82%;
     }
 }
 
 @media (max-width: 414px) {
-    h1 {
+    #contacto h1 {
         padding: 25px 0;
         font-size: 26px;
     }
-    h2 {
+    #contacto h2 {
         font-size: 20px;
         padding-bottom: 10px;
     }
-    .content-w3ls {
+    #contacto .content-w3ls {
         padding: 30px 0 0;
     }
     input[type="text"], input[type="email"], textarea {
        font-size:14px;
        border-bottom: 2px solid #ffffff;
    }
-   input.sign-in {
+   #contacto input.sign-in {
     height: 60px;
     font-size:17px;
 }
@@ -353,10 +328,7 @@ p.copyright a:hover {
 }
 
 @media (max-width: 375px) {
-    p.copyright {
-        padding: 25px 10px 0;
-        line-height: 30px;
-    }
+
 
     .g-recaptcha{
         margin: 0 0 0 0rem
@@ -365,11 +337,11 @@ p.copyright a:hover {
 }
 
 @media (max-width: 320px) {
-    h1 {
+   #contacto  h1 {
         padding: 20px 0;
         font-size: 20px;
     }
-    .content-w3ls {
+    #contacto .content-w3ls {
         width: 88%;
     }
     input[type="text"], input[type="email"], textarea {
@@ -377,19 +349,15 @@ p.copyright a:hover {
         border-bottom: 2px solid #ffffff;
         margin-bottom:10px;
     }
-    h2 {
+   #contacto  h2 {
         font-size: 16px;
         padding-bottom: 10px;
     }
-    textarea {
+    #contacto textarea {
         height: 80px;
     }
-    p.copyright {
-        padding: 20px 10px 0;
-        line-height: 30px;
-        font-size:13px;
-    }
-    input.sign-in {
+
+   #contacto  input.sign-in {
         height: 50px;
         font-size: 15px;
     }
@@ -398,16 +366,16 @@ p.copyright a:hover {
 
 /*customize*/
 
-* {
+#contacto * {
     color: white !important;
 
 }
 
-.section-bg {
+#contacto .section-bg {
   background: transparent !important;
 }
 
-.section-header h3{
+#contacto .section-header h3{
     padding-top: 100px
 
 }

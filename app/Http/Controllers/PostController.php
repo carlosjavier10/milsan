@@ -76,6 +76,33 @@ class PostController extends Controller
     }
 
 }
+/*////////////////////////////////*/
+public function get_post_by_topic(Request $request){
+
+    if ($request->ajax()){
+
+        $topic = Topic::where('slug',$_GET['filter'])->first();
+
+        if (isset($topic)){
+
+            $posts = $topic->posts()->orderByDesc('published_at')->take(18)->get();
+
+        }
+        else{
+            $posts = Post::All();
+        }
+
+        $response  = [
+            'success'   => true,
+            'posts' => $posts,
+            'filtro' => $_GET['filter']
+
+        ];
+
+        return response()->json($response, 200);
+
+    }
+}
 
 /*proyects are a post type // this controller is for laravel version proyects view*/
 public function  get_proyects (Request $request){

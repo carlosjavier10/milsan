@@ -16,7 +16,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_vm._v("\n\t\tBLog AQUI\n")]);
+  return _c("div", [_c("topicmenu"), _vm._v(" "), _c("posts")], 1);
 };
 
 var staticRenderFns = [];

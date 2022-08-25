@@ -16,6 +16,7 @@
 
       @endpush
 
+      <div id="contacto">
 
       <section id="contact" class="section-bg wow fadeInUp">
         <div class="container">
@@ -56,9 +57,6 @@
           <div class="form">
 
 
-
-
-
             <h1 class="agileits w3 wthree w3-agile w3-agileits agileinfo agile">Encantados de escucharte</h1>
             <div class="content-w3ls agileits w3 wthree w3-agile w3-agileits agileinfo agile">
 
@@ -76,9 +74,6 @@
 
                 <input type="text" name="name"  id="name" placeholder="Su nombre" data-rule="minlen:4" data-msg="por favor ingrese al menos 4 caracteres" title="Ingrese su nombre" required />
                 <div class="validation"></div>
-
-
-
 
                 <input type="email" name="correo" id="email" placeholder="Correo Electr&oacute;nico" data-rule="email" data-msg="Por favor ingrese un email v&aacute;lido" title="Por favor ingrese un correo electronico v&aacute;lido" required  />
                 <div class="validation"></div>
@@ -99,11 +94,12 @@
                 <button id="submit" type="submit">Enviar</button>
                 <input id="submit" type="submit" class="sign-in" value="Enviar">
               </form>
+
+
             </div>
-
-
           </div>
         </div>
       </section><!-- #contact -->
+      </div>
 
     </main>

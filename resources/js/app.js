@@ -13,13 +13,21 @@ Vue.component('nosotros',    		require('./components/sections/nosotros.vue').def
 Vue.component('liderazgo',    		require('./components/sections/liderazgo.vue').default);
 Vue.component('team',    			require('./components/sections/team.vue').default);
 
-/*Componentes de pagina "Sercvicios" */
+/*Componentes de pagina "Servicios" */
 Vue.component('servicesHeader',    	require('./components/headers/servicesHeader.vue').default);
 Vue.component('disenos',    			require('./components/sections/disenos.vue').default);
 Vue.component('construccion',    			require('./components/sections/construccion.vue').default);
 Vue.component('milsanword',    			require('./components/sections/milsanword.vue').default);
 
-/*Componentes de pagina "Sercvicios" */
+/*Componentes de pagina "Blog" */
+Vue.component('topicmenu',    			require('./components/sections/topicmenu.vue').default); /*Submenu de topicos en la pagina de blog*/
+
+
+
+/*Componentes de pagina "Contacto" */
+Vue.component('formulario',    			require('./components/sections/formulario.vue').default);
+Vue.component('posts',    				require('./components/sections/posts.vue').default);
+
 
 import App from './App.vue';
 

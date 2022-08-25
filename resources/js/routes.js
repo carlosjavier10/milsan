@@ -2,7 +2,7 @@ const portfolio 		= ()=> import('./components/sections/Portfolio.vue');
 const nosotros 			= ()=> import('./components/pages/Nosotros.vue');
 const servicios 		= ()=> import('./components/pages/Servicios.vue');
 const blog 				= ()=> import('./components/pages/Blog.vue');
-const contacto 				= ()=> import('./components/pages/Contacto.vue');
+const contacto 			= ()=> import('./components/pages/Contacto.vue');
 
 
 

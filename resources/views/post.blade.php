@@ -16,9 +16,9 @@ team
 contact
 footer --}}
 
-    @include('layouts.blog-background-header')
+    @include('headers.blog-background-header')
 
-    @include('layouts.topic-menu')
+    @include('menus.topic-menu')
     <main class="container blog-body">
 
         @include('blog-sections.post-image-header')

@@ -1,5 +1,6 @@
 <template>
 	<div>
-			BLog AQUI
+			<topicmenu></topicmenu>
+			<posts></posts>
 	</div>
 </template>

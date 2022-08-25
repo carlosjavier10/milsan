@@ -19,7 +19,13 @@ use App\Http\Controllers\testController;
 
 
 Route::get('/proyectos/', [PostController::class, 'get_proyects']);
-Route::get('/perra', function () {return view('contacto');})->name('contacto');
+
+/*POST ROUTES*/
+
+Route::get('/post', [PostController::class , 'index']);
+Route::get('/post/{slug}', [PostController::class, 'view']);
+Route::get('/post/topic/{slug}', [PostController::class, 'getPostByTopicAll']);
+Route::get('/post/month/{slug}', [PostController::class, 'showbymonth']);
 
 Route::get('{any}', function () {return view('App');});
 
@@ -30,6 +36,7 @@ Route::get('/', function () {return view('index');})->name('index');
 /*Route::get('/nosotros', function () {return view('nosotros');})->name('nosotros');*/
 /*Route::get('/proyectos', function () {return view('proyectos');})->name('proyectos');*/
 /*Route::get('/servicios', function () {return view('servicios');})->name('servicios');*/
+/*Route::get('/contacto', function () {return view('contacto');});*/
 
 
 
@@ -52,13 +59,6 @@ Route::get('/iconos', function () {return view('test.icons');});
 Route::get('/general', function () {return view('test.general');})->name('general');
 
 
-
-/*POST ROUTES*/
-
-Route::get('/blog', [PostController::class , 'index']);
-Route::get('/post/{slug}', [PostController::class, 'view']);
-Route::get('/post/topic/{slug}', [PostController::class, 'getPostByTopicAll']);
-Route::get('/post/month/{slug}', [PostController::class, 'showbymonth']);
 
 
 /*Instagram feeds routes add*/

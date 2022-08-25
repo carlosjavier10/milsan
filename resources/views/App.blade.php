@@ -23,7 +23,7 @@
   @stack('font')
   <!-- Bootstrap CSS File -->
 
-   <link href=" {{ asset('lib/bootstrap/css/bootstrap.min.css') }} " rel="stylesheet">
+  <link href=" {{ asset('lib/bootstrap/css/bootstrap.min.css') }} " rel="stylesheet">
 
   <!-- CSS only CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -47,11 +47,15 @@
   <link href=" {{ asset('css/servicios.css') }}  " rel="stylesheet">
   <link href=" {{ asset('css/style.css') }}  " rel="stylesheet">
   <link href=" {{ asset('css/milsanword.css') }}  " rel="stylesheet">
+  <link href=" {{ asset('css/sublimecontact.css') }}  " rel="stylesheet">
+  <link href=" {{ asset('css/blog.css') }}  " rel="stylesheet">
 
 
 
   {{-- stylesheet pushed --}}
 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
@@ -99,11 +103,11 @@
   <script src=" {{ asset('lib/lightbox/js/lightbox.min.js') }} "></script>
   <script src=" {{ asset('lib/touchSwipe/jquery.touchSwipe.min.js') }} "></script>
   <!-- Contact Form JavaScript File -->
-  <script src=" {{ asset('contactform/contactform.js') }} "></script>
+ {{--  <script src=" {{ asset('contactform/contactform.js') }} "></script> --}}
 
   <!-- Template Main Javascript File -->
-<script src="{{ asset('/js/main.js') }}"></script>
-<script src="{{ asset('/js/app.js') }}"></script>
+  <script src="{{ asset('/js/main.js') }}"></script>
+  <script src="{{ asset('/js/app.js') }}"></script>
   {{-- js scripts pushed --}}
 
 </body>

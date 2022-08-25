@@ -1,0 +1,11 @@
+#topicmenu {
+	padding: 0 10%;
+	margin-top: 0.5rem;
+}
+#topicmenu a {
+	font-weight: bold;
+}
+
+#topicmenu a:hover {
+	color: white;
+}
