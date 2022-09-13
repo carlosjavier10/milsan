@@ -1,30 +1,35 @@
+#portafolio {
+  padding-bottom: 20px !important;
+}
+
 #portafolio .card {
   background-color: transparent;
   border: none;
   margin: auto;
 }
- #portafolio .row .col {
+
+#portafolio .row .col {
 /**/
-  display: flex;
-  justify-content: center center;
-  align-items: center;
+display: flex;
+justify-content: center center;
+align-items: center;
 /**/
-  background-repeat: no-repeat;
-  background-size: fixed;
-  background-position: center ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  border-radius: 0;
-  background-color: transparent;
-  border: none;
-  margin: -3px 5px;
-  width: 100%;
+background-repeat: no-repeat;
+background-size: fixed;
+background-position: center ;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+border-radius: 0;
+background-color: transparent;
+border: none;
+margin: -3px 5px;
+width: 100%;
 }
 
 #portafolio .row {
- justify-content:center
+  margin: auto;
 }
 
 .card-img-overlay {
@@ -43,6 +48,7 @@
   -ms-transition: opacity 500ms;
   transition: opacity 500ms;
 }
+
 .card-title:hover{
   opacity: 1;
   -webkit-transition: opacity 500ms;
@@ -51,6 +57,7 @@
   -ms-transition: opacity 500ms;
   transition: opacity 500ms;
 }
+
 .container{
   margin-top: 2rem;
   max-width: 100%;
@@ -68,7 +75,7 @@
 }
 
 .toggle-logo {
-    display: none;
+  display: none;
 }
 
 .link-secondary {
@@ -81,23 +88,23 @@
 }
 
 .g-4, .gx-4 {
-  --bs-gutter-x: 0.5rem;
+  --bs-gutter-x: 1rem;
 }
 
 
 @media (min-width: 1200px) {
  #portafolio .row .col{
-    width: 321px;
-    height: 321px;
-  }
+  width: 18em;
+  height: 18em;
+}
 
 
 }
 @media only screen and (min-width: 1080px) and (max-width: 1199px){
  #portafolio .row .col{
-    width: 16em;
-    height: 16em;
-  }
+  width: 17rem;
+  height: 17rem;
+}
 }
 
 @media (max-width:1080px){
@@ -106,61 +113,76 @@
   }
 }
 
-
 @media only screen and (min-width: 1000px) and (max-width: 1079px){
  #portafolio .row .col{
-    width: 15em;
-    height: 15em;
-  }
+  width: 15rem;
+  height: 15em;
+}
 }
 
-@media only screen and (min-width: 870px) and (max-width: 999px){
+@media only screen and (min-width: 920px) and (max-width: 999px){
  #portafolio .row .col{
-    width: 16em;
-    height: 16em;
-  }
-
-
+  width: 15rem;
+  height: 15rem;
 }
+}
+
+@media only screen and (min-width: 870px) and (max-width: 919px){
+ #portafolio .row .col{
+  width: 13rem;
+  height: 13rem;
+}
+}
+
 @media only screen and (min-width: 768px) and (max-width: 869px){
  #portafolio .row .col{
-    width: 16em;
-    height: 16em;
-  }
+  width: 12rem;
+  height: 12rem;
+}
 
 
 }
-
 
 @media only screen and (min-width: 400px) and (max-width: 767px){
  #portafolio .row .col{
-    width: 95%;
-    height: 400px;
-    max-height:  700px;
-  }
-
+  width: 95%;
+  height: 400px;
+  max-height:  700px;
+}
 }
 
 @media (max-width: 768px){
   .toggle-logo{
     display: block;
   }
-}
 
+  #portfolio-button{
+    box-sizing: unset;
+    width: 100%
+  }
+}
 
 @media only screen and (min-width: 321px) and (max-width: 400px){
  #portafolio .row .col{
 
-    width: 95%;
-    height: 321px;
+  width: 95%;
+  height: 321px;
 }
 
+#portafolio{
+  padding-left: 0px;
 }
+}
+
+
 @media only screen and (max-width: 321px){
  #portafolio .row .col{
-    width: 95%;
-    height: 200px;
+  width: 95%;
+  height: 200px;
 
-  }
+}
+#portafolio{
+  padding-left: 0px;
+}
 }
 

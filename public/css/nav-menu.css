@@ -1,30 +1,52 @@
-.menu-logo{
+#nav-menu .menu-logo{
 	width: 4em;
 }
 
-.bg-dark{
+#nav-menu .bg-dark{
 	background-color: black !important;
 }
 
-.menu-logo-center{
+#nav-menu .menu-logo-center{
 	position: absolute;
 	left: 45%;
 
 }
-.navbar{
+#nav-menu .navbar{
 		height: 7rem
 }
 
 
+#nav-menu #right-menu a {
+	padding-right: 0px
+}
+
+#nav-menu #right-menu a:hover {
+	font-weight: bold;
+}
+
+#nav-menu #left-menu{
+	font-family: 'Qualy Bold', sans-serif;
+	text-transform: capitalize;
+}
+
+#nav-menu #left-menu a:hover {
+	color: white;
+}
+
+/*active */
+#nav-menu .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+	color: white;
+}
+
 
 @media (min-width:992px){
-	.menu-logo-up {
+	#nav-menu .menu-logo-up {
 		display: none !important;
 	}
 }
 
 @media (max-width: 991px){
-	.menu-logo-center{
+	#nav-menu .menu-logo-center{
 		display: none
 	}
 

@@ -38,9 +38,9 @@
   <link href=" {{ asset('lib/owlcarousel/assets/owl.carousel.min.css') }} " rel="stylesheet">
   <link href=" {{ asset('lib/lightbox/css/lightbox.min.css') }} " rel="stylesheet">
 
-  <!-- Main Stylesheet File -->
+  <!-- Main Stylesheet Files -->
 
-
+  <link href=" {{ asset('css/socialbar.css') }}  " rel="stylesheet">
   <link href=" {{ asset('css/nav-menu.css') }}  " rel="stylesheet">
   <link href=" {{ asset('css/portafolios2.css') }}  " rel="stylesheet">
   <link href=" {{ asset('css/about.css') }}  " rel="stylesheet">
@@ -52,8 +52,7 @@
 
 
 
-  {{-- stylesheet pushed --}}
-
+  {{-- Headers Scripts --}}
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
@@ -103,7 +102,7 @@
   <script src=" {{ asset('lib/lightbox/js/lightbox.min.js') }} "></script>
   <script src=" {{ asset('lib/touchSwipe/jquery.touchSwipe.min.js') }} "></script>
   <!-- Contact Form JavaScript File -->
- {{--  <script src=" {{ asset('contactform/contactform.js') }} "></script> --}}
+  {{--  <script src=" {{ asset('contactform/contactform.js') }} "></script> --}}
 
   <!-- Template Main Javascript File -->
   <script src="{{ asset('/js/main.js') }}"></script>

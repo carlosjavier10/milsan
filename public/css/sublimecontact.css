@@ -78,7 +78,8 @@ img {
 
 /*--- end reset code ---*/
 #contacto {
-    background:url('/images/contact-background.jpg') no-repeat;
+    /*background:url('/images/contact-background.jpg') no-repeat;*/
+    background-image: linear-gradient(to right, #000000, #2d2d2d, #000000);
     background-position:center;
     background-attachment:fixed;
     background-size:cover;
@@ -227,15 +228,15 @@ img {
 }
 
 @media (max-width:1440px) {
-   #contacto .content-w3ls {
+ #contacto .content-w3ls {
     width: 40%;
 }
 }
 
 @media (max-width:1366px) {
 	#contacto h1 {
-       padding:35px 0;
-   }
+     padding:35px 0;
+ }
 
 }
 
@@ -244,12 +245,12 @@ img {
         width: 50%;
     }
     #contacto h2 {
-       font-size:27px;
-       padding-bottom:20px;
-   }
-   #contacto input.sign-in {
-       height:70px;
-   }
+     font-size:27px;
+     padding-bottom:20px;
+ }
+ #contacto input.sign-in {
+     height:70px;
+ }
 
 }
 
@@ -259,10 +260,10 @@ img {
         font-size:35px;
     }
     #contacto .content-w3ls {
-       padding:40px 0 0;
-   }
+     padding:40px 0 0;
+ }
 
-   #contacto .g-recaptcha{
+ #contacto .g-recaptcha{
     margin: 0 0 0 3rem
 }
 }
@@ -274,14 +275,14 @@ img {
 }
 
 @media (max-width: 667px) {
-   #contacto  h1 {
-        padding: 25px 0;
-        font-size: 30px;
-    }
-    #contacto h2 {
-        font-size: 23px;
-        padding-bottom: 20px;
-    }
+ #contacto  h1 {
+    padding: 25px 0;
+    font-size: 30px;
+}
+#contacto h2 {
+    font-size: 23px;
+    padding-bottom: 20px;
+}
 }
 
 @media (max-width: 640px) {
@@ -315,10 +316,10 @@ img {
         padding: 30px 0 0;
     }
     input[type="text"], input[type="email"], textarea {
-       font-size:14px;
-       border-bottom: 2px solid #ffffff;
-   }
-   #contacto input.sign-in {
+     font-size:14px;
+     border-bottom: 2px solid #ffffff;
+ }
+ #contacto input.sign-in {
     height: 60px;
     font-size:17px;
 }
@@ -337,30 +338,30 @@ img {
 }
 
 @media (max-width: 320px) {
-   #contacto  h1 {
-        padding: 20px 0;
-        font-size: 20px;
-    }
-    #contacto .content-w3ls {
-        width: 88%;
-    }
-    input[type="text"], input[type="email"], textarea {
-        font-size: 13px;
-        border-bottom: 2px solid #ffffff;
-        margin-bottom:10px;
-    }
-   #contacto  h2 {
-        font-size: 16px;
-        padding-bottom: 10px;
-    }
-    #contacto textarea {
-        height: 80px;
-    }
+ #contacto  h1 {
+    padding: 20px 0;
+    font-size: 20px;
+}
+#contacto .content-w3ls {
+    width: 88%;
+}
+input[type="text"], input[type="email"], textarea {
+    font-size: 13px;
+    border-bottom: 2px solid #ffffff;
+    margin-bottom:10px;
+}
+#contacto  h2 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+#contacto textarea {
+    height: 80px;
+}
 
-   #contacto  input.sign-in {
-        height: 50px;
-        font-size: 15px;
-    }
+#contacto  input.sign-in {
+    height: 50px;
+    font-size: 15px;
+}
 }
 /*-- /responsive design --*/
 

@@ -126,15 +126,72 @@ body {
 
 /* TEAM SECTION   */
 
-.member img {
+#team .member img {
 
   border-radius: 30px
 }
 
-.my-5 {
+#team .my-5 {
   margin-top: 0;
   ,margin-bottom: 0;
 
+}
+
+
+
+#team .member .member-info-content {
+  margin-top: -50px;
+  transition: margin 0.2s;
+}
+
+#team .member:hover .member-info {
+/*  background: rgba(0, 0, 0, 0.7);*/
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#team .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+
+#team .member .social a:hover {
+  color: #2c2c2c;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+
+
+/*Our history block*/
+#ourhistory .lead {
+    padding: 0 50px
 }
 
 

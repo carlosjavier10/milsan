@@ -4,7 +4,7 @@
 
 			<div class="row row-cols-1 row-cols-md-4 g-4">
 
-				<router-link :to="proyect.id" v-for="proyect in proyects" :key="proyect.id" >
+				<router-link :to="proyect.id" v-for="proyect in proyects" :key="proyect.id" id="portfolio-button" >
 					<div  class="col" :style="{backgroundImage:`url(${proyect.featured_image})`}" >
 						<div class="card text-bg-dark"  >
 							<div class="card-img-overlay">
@@ -31,13 +31,14 @@ export default {
 	},
 	mounted(){
 		this.mostrarProyectos()
+
 	},
 	methods:{
 		async mostrarProyectos(){
-			console.log( this.$route.query.filter);
+
 			await this.axios.get('/api/proyectos/?filter='+ this.$route.query.filter).then(response=>{
 				this.proyects = response.data.proyects
-				console.log(response.data)
+
 			}).catch(error=>{
 				console.log(error)
 				this.proyects = []

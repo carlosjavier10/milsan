@@ -38,17 +38,15 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                console.log(_this.$route.query.filter);
-                _context.next = 3;
+                _context.next = 2;
                 return _this.axios.get('/api/proyectos/?filter=' + _this.$route.query.filter).then(function (response) {
                   _this.proyects = response.data.proyects;
-                  console.log(response.data);
                 })["catch"](function (error) {
                   console.log(error);
                   _this.proyects = [];
                 });
 
-              case 3:
+              case 2:
               case "end":
                 return _context.stop();
             }
@@ -96,7 +94,8 @@ var render = function render() {
     return _c("router-link", {
       key: proyect.id,
       attrs: {
-        to: proyect.id
+        to: proyect.id,
+        id: "portfolio-button"
       }
     }, [_c("div", {
       staticClass: "col",

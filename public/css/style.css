@@ -15,7 +15,7 @@ body {
   background: black;
   color: #666666;
   font-family: "Roboto", sans-serif;
-  padding-bottom: 0px !important;
+  padding-bottom: 0px ;
 }
 
 a {
@@ -27,7 +27,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #414141;
+  color: #fefefd;
   outline: none;
   text-decoration: none;
 }
@@ -1102,59 +1102,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.2s;
 }
 
-#team .member .member-info-content {
-  margin-top: -50px;
-  transition: margin 0.2s;
-}
 
-#team .member:hover .member-info {
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 1;
-  transition: 0.4s;
-}
-
-#team .member:hover .member-info-content {
-  margin-top: 0;
-  transition: margin 0.4s;
-}
-
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-  color: #fff;
-}
-
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-  color: #fff;
-}
-
-#team .member .social {
-  margin-top: 15px;
-}
-
-#team .member .social a {
-  transition: none;
-  color: #fff;
-}
-
-#team .member .social a:hover {
-  color: #2c2c2c;
-}
-
-#team .member .social i {
-  font-size: 18px;
-  margin: 0 2px;
-}
 
 /* Contact Section
 --------------------------------*/
 
 #contact {
-  padding: 60px 0;
+  padding: 160px 0;
 }
 
 #contact .contact-info {
@@ -1258,9 +1212,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer {
   background: #000;
-  padding: 0 0 30px 0;
+  padding: 0px 10px 30px 10px;
   color: #eee;
   font-size: 14px;
+
 }
 
 #footer .footer-top {
@@ -1420,6 +1375,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
+/*Footer logo image*/
+.footer-logo {
+  width: 100%;
+  margin-bottom: 15px;
+  display: block;
+  margin: auto;
+  margin-top: -50px
+}
+
+
+#footer .container{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
 /* add styles bootstap */
 
 .sombra {
@@ -1464,11 +1435,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 10px;
 }
 
-/*Footer logo image*/
-.footer-logo {
-  width: 100%;
-  margin-bottom: 15px;
-}
+
 
 .bd-placeholder-img {
   font-size: 1.125rem;
