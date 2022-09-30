@@ -4,7 +4,7 @@
 
 			<div class="row row-cols-1 row-cols-md-4 g-4">
 
-				<router-link :to="proyect.id" v-for="proyect in proyects" :key="proyect.id" id="portfolio-button" >
+				<router-link :to="{name:'proyecto', params:{proyect: proyect }}" v-for="proyect in proyects" :key="proyect.id" id="portfolio-button" >
 					<div  class="col" :style="{backgroundImage:`url(${proyect.featured_image})`}" >
 						<div class="card text-bg-dark"  >
 							<div class="card-img-overlay">

@@ -6,8 +6,11 @@ require('./bootstrap');
 // Require Vue
 window.Vue = require('vue').default;
 
+/*Menu Principal*/
+Vue.component('mainmenu',    	require('./components/headers/mainmenu.vue').default);
+
 /*Componentes de pagina "Nosotros*/
-Vue.component('aboutusheader',    	require('./components/headers/AboutusHeader.vue').default);
+Vue.component('aboutusheader',    	require('./components/headers/aboutusHeader.vue').default);
 Vue.component('ourhistory',    		require('./components/sections/ourhistory.vue').default);
 Vue.component('nosotros',    		require('./components/sections/nosotros.vue').default);
 Vue.component('liderazgo',    		require('./components/sections/liderazgo.vue').default);
@@ -27,6 +30,9 @@ Vue.component('topicmenu',    			require('./components/sections/topicmenu.vue').
 /*Componentes de pagina "Contacto" */
 Vue.component('formulario',    			require('./components/sections/formulario.vue').default);
 Vue.component('posts',    				require('./components/sections/posts.vue').default);
+
+/*componentes de la pagina Portafolio*/
+Vue.component('portfolio',    				require('./components/sections/portfolio.vue').default);
 
 
 import App from './App.vue';

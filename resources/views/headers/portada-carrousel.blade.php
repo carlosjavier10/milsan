@@ -38,7 +38,7 @@
           </div>
 
           <div class="carousel-item"data-bs-interval="3000">
-            <img src="{{ asset('/images/portada/MSarquitecta cover image 3.jpg') }}" class="d-block wh-img" alt="...">
+            <img src="{{ asset('/images/portada/MSarquitecta cover image 3.jpg') }}" class="d-block wh-img" alt="CCCCCCCCcc">
           </div>
 
         </div>

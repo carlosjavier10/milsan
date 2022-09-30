@@ -16,7 +16,7 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_c("servicesHeader"), _vm._v(" "), _c("disenos"), _vm._v(" "), _c("construccion"), _vm._v(" "), _c("milsanword")], 1);
+  return _c("div", [_c("mainmenu"), _vm._v(" "), _c("servicesHeader"), _vm._v(" "), _c("disenos"), _vm._v(" "), _c("construccion"), _vm._v(" "), _c("milsanword")], 1);
 };
 
 var staticRenderFns = [];

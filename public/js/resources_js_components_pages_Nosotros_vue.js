@@ -27,7 +27,7 @@ var render = function render() {
       _c = _vm._self._c,
       _setup = _vm._self._setupProxy;
 
-  return _c("div", [_c("aboutusheader"), _vm._v(" "), _c("ourhistory"), _vm._v(" "), _c("nosotros"), _vm._v(" "), _c("liderazgo"), _vm._v(" "), _c("team")], 1);
+  return _c("div", [_c("mainmenu"), _vm._v(" "), _c("aboutusheader"), _vm._v(" "), _c("ourhistory"), _vm._v(" "), _c("nosotros"), _vm._v(" "), _c("liderazgo"), _vm._v(" "), _c("team")], 1);
 };
 
 var staticRenderFns = [];
