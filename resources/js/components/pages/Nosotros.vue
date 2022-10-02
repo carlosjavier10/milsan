@@ -7,7 +7,7 @@
 		<nosotros></nosotros>
 		<liderazgo></liderazgo>
 		<team></team>
-
+		<pie></pie>
 	</div>
 
 

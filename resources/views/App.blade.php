@@ -49,6 +49,7 @@
   <link href=" {{ asset('css/milsanword.css') }}  " rel="stylesheet">
   <link href=" {{ asset('css/sublimecontact.css') }}  " rel="stylesheet">
   <link href=" {{ asset('css/blog.css') }}  " rel="stylesheet">
+  <link href=" {{ asset('css/proyecto.css') }}  " rel="stylesheet">
 
 
 
@@ -74,11 +75,6 @@
   <div id="app">
 
   </div>
-  @include('sections.footer')
-
-
-
-
 
   @yield('content')
 

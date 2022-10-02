@@ -18,14 +18,22 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   mounted: function mounted() {
-    this.proyecto = this.$route.params.proyect;
+    if (this.$route.params.proyect) {
+      this.proyecto = this.$route.params.proyect;
+    } else {
+      this.$router.push('/portfolio');
+    }
+
     console.log(this.proyecto.body);
+    /*DE AQUI HAY Q SACAR EL CONTENIDO DEL PROYECTO*/
+
     this.bodyset();
   },
   methods: {
     bodyset: function bodyset() {
       var body = document.querySelector('body');
       body.style.overflow = "hidden";
+      body.style.margin = "0 -15px";
     }
   },
   watch: {}
@@ -69,27 +77,60 @@ var render = function render() {
     }
   }, [_c("div", {
     staticClass: "leftarrow"
-  }, [_vm._v(" ⇽")])])], 1)])]), _vm._v(" "), _vm._m(0)]);
+  }, [_vm._v(" ⇽")])])], 1)])]), _vm._v(" "), _c("div", [_c("div", {
+    staticClass: "carousel slide carousel-fade",
+    attrs: {
+      id: "carousel",
+      "data-bs-ride": "false",
+      "data-bs-pause": "false",
+      "data-bs-interval": "false"
+    }
+  }, [_c("div", {
+    staticClass: "carousel slide",
+    attrs: {
+      id: "carouselExampleIndicators",
+      "data-bs-ride": "false",
+      "data-bs-interval": "false"
+    }
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
+    staticClass: "carousel-inner"
+  }, [_c("div", {
+    staticClass: "carousel-item active"
+  }, [_c("div", {
+    staticClass: "row hoja",
+    style: {
+      backgroundImage: "url(/images/about-header-image.jpg)"
+    }
+  }, [_c("div", {
+    staticClass: "col-md-5"
+  }), _vm._v(" "), _vm._m(1)])]), _vm._v(" "), _c("div", {
+    staticClass: "carousel-item"
+  }, [_c("div", {
+    staticClass: "row hoja",
+    style: {
+      backgroundImage: "url(/images/portada/MSarquitecta-cover-image-2.jpg)"
+    }
+  }, [_c("div", {
+    staticClass: "col-md-5"
+  }), _vm._v(" "), _vm._m(2)])]), _vm._v(" "), _c("div", {
+    staticClass: "carousel-item"
+  }, [_c("div", {
+    staticClass: "row hoja",
+    style: {
+      backgroundImage: "url(/images/portada/MSarquitecta-cover-image.jpg)"
+    }
+  }, [_c("div", {
+    staticClass: "col-md-5"
+  }), _vm._v(" "), _c("div", {
+    staticClass: "col-md-7"
+  }, [_vm._v("\n\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n\t\t\t\t\t\t\t\ttempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\n\t\t\t\t\t\t\t\tquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\n\t\t\t\t\t\t\t\tconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\n\t\t\t\t\t\t\t\tcillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non\n\t\t\t\t\t\t\t\tproident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\t\t\t\t\t\t\t")])])])]), _vm._v(" "), _vm._m(3), _vm._v(" "), _vm._m(4)])])])]);
 };
 
 var staticRenderFns = [function () {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _c("div", [_c("div", {
-    staticClass: "carousel slide carousel-fade",
-    attrs: {
-      id: "carousel",
-      "data-bs-ride": "carousel",
-      "data-bs-pause": "false"
-    }
-  }, [_c("div", {
-    staticClass: "carousel slide",
-    attrs: {
-      id: "carouselExampleIndicators",
-      "data-bs-ride": "true"
-    }
-  }, [_c("div", {
+  return _c("div", {
     staticClass: "carousel-indicators"
   }, [_c("button", {
     staticClass: "active",
@@ -114,32 +155,26 @@ var staticRenderFns = [function () {
       "data-bs-slide-to": "2",
       "aria-label": "Slide 3"
     }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "carousel-inner"
-  }, [_c("div", {
-    staticClass: "carousel-item active"
-  }, [_c("div", {
-    staticClass: "hoja",
-    staticStyle: {
-      "background-image": "url('/images/portada/MSarquitecta cover image 1.jpg')"
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "carousel-item"
-  }, [_c("img", {
-    staticClass: "d-block w-100",
-    attrs: {
-      src: "/images/portada/MSarquitecta cover image 2.jpg",
-      alt: "..."
-    }
-  })]), _vm._v(" "), _c("div", {
-    staticClass: "carousel-item"
-  }, [_c("img", {
-    staticClass: "d-block w-100",
-    attrs: {
-      src: "/images/portada/MSarquitecta cover image 3.jpg",
-      alt: "..."
-    }
-  })])]), _vm._v(" "), _c("button", {
+  })]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "col-md-7"
+  }, [_c("p", [_c("strong", [_vm._v("Disciplina: ")]), _vm._v(" Arquitectura e Interiorismo")]), _vm._v(" "), _c("p", [_c("strong", [_vm._v("Nombre del Proyecto: ")]), _vm._v(" Banco de Venezuela, Sede La Castellana")]), _vm._v(" "), _c("p", [_c("strong", [_vm._v("Tipología: ")]), _vm._v(" oficinas")]), _vm._v(" "), _c("p", [_c("strong", [_vm._v("Superficie: ")]), _vm._v("  200 m2 ")]), _vm._v(" "), _c("p", [_c("strong", [_vm._v("Estado: ")]), _vm._v(" Construido ")]), _vm._v(" "), _c("p", [_c("strong", [_vm._v("Diseño de proyecto: ")]), _vm._v(" 2022 ")]), _vm._v(" "), _c("p", [_c("strong", [_vm._v("Cliente: ")]), _vm._v(" Banco de Venezuela ")])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("div", {
+    staticClass: "col-md-7"
+  }, [_vm._v("\n\t\t\t\t\t\t\t\tPrograma\n\t\t\t\t\t\t\t\t"), _c("p", [_vm._v("\n\t\t\t\t\t\t\t\t\tProyecto de remodelación de sede bancaria incluye proyecto de interiorismo, hall de acceso, área de cafetín para todo público, nuevos espacios de encuentro, pantallas digitales, nuevas oficinas para Gerente de Negocios y Servicios, Gerente General y oficinas de Atención al Público.\n\t\t\t\t\t\t\t\t\tLa sede de La Castellana corresponde al proyecto piloto del Banco de Venezuela para la implementación de BDV Digital, tomando como referencia la renovación previa de la marca, imagen y colores corporativos que esta nueva propuesta debía considerar.\n\t\t\t\t\t\t\t\t\tEl desafío mas relevante fue el tiempo acotado de ejecución, se debió elaborar una estrategia de la adaptación de lo existente y el diseño de elementos prefabricados en madera para ser instalados en sitio.\n\t\t\t\t\t\t\t\t\tLa idea consistió en una mimetización entre los elementos originales y contemporáneos, recuperando un gran espacio central con una doble altura, que conecta dos niveles en el cual se elaboró un diseño geométrico a modo de trama en madera con variantes en sus disposiciones logrando una imagen dinámica y versátil que simboliza la velocidad de los cambios en la era digital.\n\t\t\t\t\t\t\t\t\tEl Hall de acceso tiene un diseño de iluminación que mejora la escala del espacio. Para afianzar la condición de amplitud se eliminó un tabique largo que ocultaba toda la planta alta y en su lugar se diseñó una fachada de vidrio zigzagueante que logró una amplitud espacial considerable.\n\t\t\t\t\t\t\t\t\tPara el hall de acceso que vincula la planta baja y primer piso se incorporaron los nuevos modelos de sucursal bancaria work/café/banco que ofrece espacios abiertos y contemporáneos para clientes y visitantes, integrándolos con lugares de encuentro, trabajo colaborativo y gestión bancaria accesible para todo público.\n\t\t\t\t\t\t\t\t\tEspacios renovados para las taquillas, atención al público, oficinas de gerencia negocios y servicios, áreas para personal operativo buscando que la atención a los clientes sea más cercana y mejor atendida.\n\t\t\t\t\t\t\t\t\tEl uso de revestimientos grises y maderas claras crean la combinación perfecta entre lo original y lo contemporáneo con un edificio atemporal que no pasará de moda, con la entrega de nuevos servicios, espacios versátiles para trabajadores y clientes, mobiliario flexible y alta tecnología.\n\t\t\t\t\t\t\t\t")])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("button", {
     staticClass: "carousel-control-prev",
     attrs: {
       type: "button",
@@ -153,7 +188,12 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("span", {
     staticClass: "visually-hidden"
-  }, [_vm._v("Previous")])]), _vm._v(" "), _c("button", {
+  }, [_vm._v("Previous")])]);
+}, function () {
+  var _vm = this,
+      _c = _vm._self._c;
+
+  return _c("button", {
     staticClass: "carousel-control-next",
     attrs: {
       type: "button",
@@ -167,62 +207,10 @@ var staticRenderFns = [function () {
     }
   }), _vm._v(" "), _c("span", {
     staticClass: "visually-hidden"
-  }, [_vm._v("Next")])])])])]);
+  }, [_vm._v("Next")])]);
 }];
 render._withStripped = true;
 
-
-/***/ }),
-
-/***/ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-10.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css&":
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-10.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css& ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js */ "./node_modules/laravel-mix/node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_laravel_mix_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n/*WAWAAAWAWAWWAWA*/\nbody{\n\tmargin: 0;\n\n\ttop: 0;\n}\n.logobt{\n\tdisplay: block;\n\tmargin: auto;\n\tz-index: 10100;\n\twidth: 4em;\n}\n.logobt:hover{\n\tfilter: invert(100%);\n\ttransition: 0.5s;\n}\n#proyecto #header {\n\tpadding: 30px 0;\n\theight: 92px;\n\tposition: fixed;\n\tleft: 0;\n\ttop: 0;\n\tright: 0;\n\ttransition: all 0.5s;\n\tz-index: 997;\n}\n#proyecto #header .header-scrolled {\n\tbackground: rgba(0, 0, 0, 0.9);\n\tpadding: 20px 0;\n\theight: 77px;\n\ttransition: all 0.5s;\n}\n#proyecto #header #logo {\n\t/* position: absolute;*/\n\tz-index: 9 !important;\n}\n#proyecto #header #logo h1 a,\n#proyecto #header #logo h1 a:hover {\n\tcolor: #fff;\n\tpadding-left: 10px;\n\tborder-left: 4px solid #2c2c2c;\n}\n#proyecto #header #logo img {\n\tpadding: 0;\n\tmargin: 0;\n}\n#proyecto #logo {\n\ttext-align: center !important;\n}\n#proyecto .leftarrow{\n\tdisplay: inline-block;\n\tfont-size: 3rem ;\n}\n@media only screen and (min-height: 800px) and (max-width: 1080px){\n}\n@media only screen and (min-height: 600px) and (max-width: 799px){\n}\n@media (max-height: 599px){\n}\n@media (min-width: 1200px) {   /*desktop*/\n.wh-img {\n\t\twidth: 100% !important;\n}\n.logobt{\n\t\ttop: 30%;\n}\n}\n@media (max-width: 1199px) {   /*desktop*/\n.logobt{\n\t\ttop: 22%;\n}\n}\n@media (max-width: 768px) { /*tablets*/\n#header #logo h1 {\n\t\tfont-size: 28px;\n}\n}\n\n\n\n", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-10.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css&":
-/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-10.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css& ***!
-  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Proyecto_vue_vue_type_style_index_0_id_9cc11bca_lang_css___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-10.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css& */ "./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-10.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css&");
-
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Proyecto_vue_vue_type_style_index_0_id_9cc11bca_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"], options);
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Proyecto_vue_vue_type_style_index_0_id_9cc11bca_lang_css___WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
 
 /***/ }),
 
@@ -238,17 +226,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _Proyecto_vue_vue_type_template_id_9cc11bca___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Proyecto.vue?vue&type=template&id=9cc11bca& */ "./resources/js/components/pages/Proyecto.vue?vue&type=template&id=9cc11bca&");
 /* harmony import */ var _Proyecto_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Proyecto.vue?vue&type=script&lang=js& */ "./resources/js/components/pages/Proyecto.vue?vue&type=script&lang=js&");
-/* harmony import */ var _Proyecto_vue_vue_type_style_index_0_id_9cc11bca_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css& */ "./resources/js/components/pages/Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
-;
 
 
 /* normalize component */
-
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Proyecto_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Proyecto_vue_vue_type_template_id_9cc11bca___WEBPACK_IMPORTED_MODULE_0__.render,
   _Proyecto_vue_vue_type_template_id_9cc11bca___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
@@ -293,18 +279,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Proyecto_vue_vue_type_template_id_9cc11bca___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_lib_loaders_templateLoader_js_ruleSet_1_rules_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Proyecto_vue_vue_type_template_id_9cc11bca___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Proyecto.vue?vue&type=template&id=9cc11bca& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/lib/loaders/templateLoader.js??ruleSet[1].rules[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Proyecto.vue?vue&type=template&id=9cc11bca&");
-
-
-/***/ }),
-
-/***/ "./resources/js/components/pages/Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css&":
-/*!*************************************************************************************************!*\
-  !*** ./resources/js/components/pages/Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css& ***!
-  \*************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_dist_cjs_js_node_modules_laravel_mix_node_modules_css_loader_dist_cjs_js_clonedRuleSet_10_use_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_clonedRuleSet_10_use_2_node_modules_vue_loader_lib_index_js_vue_loader_options_Proyecto_vue_vue_type_style_index_0_id_9cc11bca_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader/dist/cjs.js!../../../../node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-10.use[1]!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10.use[2]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css& */ "./node_modules/style-loader/dist/cjs.js!./node_modules/laravel-mix/node_modules/css-loader/dist/cjs.js??clonedRuleSet-10.use[1]!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-10.use[2]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/pages/Proyecto.vue?vue&type=style&index=0&id=9cc11bca&lang=css&");
 
 
 /***/ })

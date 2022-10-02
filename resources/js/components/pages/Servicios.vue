@@ -7,6 +7,7 @@
 	<disenos></disenos>
 	<construccion></construccion>
 	<milsanword></milsanword>
+	<pie></pie>
 
 </div>
 

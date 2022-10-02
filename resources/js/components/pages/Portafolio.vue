@@ -3,6 +3,7 @@
 	<div>
 			<mainmenu></mainmenu>
 			<portfolio></portfolio>
+
 	</div>
 
 </template>
@@ -20,6 +21,7 @@ export default{
 		bodyset(){
 			let body = document.querySelector('body');
 			body.style.overflow = "visible"
+			body.style.margin = "0px"
 		}
 	},
 	watch:{

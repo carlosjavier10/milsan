@@ -43,6 +43,9 @@ class PostController extends Controller
             case 'industrial':
             $label='industrial';
             break;
+            case 'forfooter':
+            $label='forfooter';
+            break;
 
             default:
             $label=null;
@@ -50,14 +53,24 @@ class PostController extends Controller
         }
     }
 
-    if (isset($label)) {
-        $tag = Tag::with('posts')->firstWhere('slug', $label);
-        $proyectos = $tag->posts()->get();
 
+
+
+    if (isset($label)) {
+
+        if ($label=="forfooter") {
+            $topic = Topic::where('slug','proyectos')->first();
+            $proyectos = $topic->posts()->orderBy('published_at','desc')->take(4)->get();
+        }
+        else{
+
+            $tag = Tag::with('posts')->firstWhere('slug', $label);
+            $proyectos = $tag->posts()->get();
+        }
     }
     else{
         $topic = Topic::where('slug','proyectos')->first();
-        $proyectos = $topic->posts()->orderByDesc('published_at')->take(18)->get();
+        $proyectos = $topic->posts()->orderBy('published_at','desc')->take(16)->get();
 
     }
 

@@ -22,6 +22,7 @@ __webpack_require__.r(__webpack_exports__);
     bodyset: function bodyset() {
       var body = document.querySelector('body');
       body.style.overflow = "visible";
+      body.style.margin = "0px";
     }
   },
   watch: {}

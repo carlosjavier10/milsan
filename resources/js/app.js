@@ -34,6 +34,8 @@ Vue.component('posts',    				require('./components/sections/posts.vue').default
 /*componentes de la pagina Portafolio*/
 Vue.component('portfolio',    				require('./components/sections/portfolio.vue').default);
 
+/*componentes de la pagina Portafolio*/
+Vue.component('pie',    				require('./components/sections/pie.vue').default);
 
 import App from './App.vue';
 
