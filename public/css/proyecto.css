@@ -6,8 +6,8 @@ body{
 }
 
 #proyecto .hoja{
-  width: 110%
-  background-size: cover;
+	width: 110%
+	background-size: cover;
 	background-repeat: no-repeat;
 	height : 100vh;
 
@@ -21,15 +21,14 @@ body{
 }
 
 #proyecto .col-md-7 {
-	text-align: left;
-	padding: 10% 17% 15% 2%
+
 
 }
 
 #proyecto .col-md-7 p {
-	font-size: 1.5rem;
 
-	line-height: 0.9
+
+
 }
 
 #proyecto .col-md-7  h2 {
@@ -37,9 +36,19 @@ body{
 
 }
 
+#proyecto .cover{
+	font-size: 1.2rem;
+	text-align: left;
+	padding: 12% 17% 15% 2%;
+	line-height: 0.9
+}
 
-
-
+#proyecto .programa {
+	font-size: 1.2rem;
+	text-align: justify;
+	padding: 8% 17% 15% 2%;
+	line-height: 0.9;
+}
 
 
 .logobt{

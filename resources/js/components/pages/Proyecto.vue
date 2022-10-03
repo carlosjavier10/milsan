@@ -48,15 +48,17 @@
 								<div class="col-md-5">
 								</div>
 								<div class="col-md-7">
+									<div class="cover">
 
-									<p> <strong>Disciplina: </strong> Arquitectura e Interiorismo</p>
-									<p> <strong>Nombre del Proyecto: </strong> Banco de Venezuela, Sede La Castellana</p>
-									<p> <strong>Tipología: </strong> oficinas</p>
-									<p> <strong>Superficie: </strong>  200 m2 </p>
-									<p> <strong>Estado: </strong> Construido </p>
-									<p> <strong>Diseño de proyecto: </strong> 2022 </p>
-									<p> <strong>Cliente: </strong> Banco de Venezuela </p>
+										<p> <strong>Disciplina: </strong> Arquitectura e Interiorismo</p>
+										<p> <strong>Nombre del Proyecto: </strong> Banco de Venezuela, Sede La Castellana</p>
+										<p> <strong>Tipología: </strong> oficinas</p>
+										<p> <strong>Superficie: </strong>  200 m2 </p>
+										<p> <strong>Estado: </strong> Construido </p>
+										<p> <strong>Diseño de proyecto: </strong> 2022 </p>
+										<p> <strong>Cliente: </strong> Banco de Venezuela </p>
 
+									</div>
 								</strong>
 
 							</div>
@@ -72,20 +74,21 @@
 
 						<div class="row hoja" :style="{backgroundImage:`url(/images/portada/MSarquitecta-cover-image-2.jpg)`}">
 
-							<div class="col-md-5">
-							</div>
+							<div class="col-md-5"></div>
 							<div class="col-md-7">
-								Programa
-								<p>
-									Proyecto de remodelación de sede bancaria incluye proyecto de interiorismo, hall de acceso, área de cafetín para todo público, nuevos espacios de encuentro, pantallas digitales, nuevas oficinas para Gerente de Negocios y Servicios, Gerente General y oficinas de Atención al Público.
-									La sede de La Castellana corresponde al proyecto piloto del Banco de Venezuela para la implementación de BDV Digital, tomando como referencia la renovación previa de la marca, imagen y colores corporativos que esta nueva propuesta debía considerar.
-									El desafío mas relevante fue el tiempo acotado de ejecución, se debió elaborar una estrategia de la adaptación de lo existente y el diseño de elementos prefabricados en madera para ser instalados en sitio.
-									La idea consistió en una mimetización entre los elementos originales y contemporáneos, recuperando un gran espacio central con una doble altura, que conecta dos niveles en el cual se elaboró un diseño geométrico a modo de trama en madera con variantes en sus disposiciones logrando una imagen dinámica y versátil que simboliza la velocidad de los cambios en la era digital.
-									El Hall de acceso tiene un diseño de iluminación que mejora la escala del espacio. Para afianzar la condición de amplitud se eliminó un tabique largo que ocultaba toda la planta alta y en su lugar se diseñó una fachada de vidrio zigzagueante que logró una amplitud espacial considerable.
-									Para el hall de acceso que vincula la planta baja y primer piso se incorporaron los nuevos modelos de sucursal bancaria work/café/banco que ofrece espacios abiertos y contemporáneos para clientes y visitantes, integrándolos con lugares de encuentro, trabajo colaborativo y gestión bancaria accesible para todo público.
-									Espacios renovados para las taquillas, atención al público, oficinas de gerencia negocios y servicios, áreas para personal operativo buscando que la atención a los clientes sea más cercana y mejor atendida.
-									El uso de revestimientos grises y maderas claras crean la combinación perfecta entre lo original y lo contemporáneo con un edificio atemporal que no pasará de moda, con la entrega de nuevos servicios, espacios versátiles para trabajadores y clientes, mobiliario flexible y alta tecnología.
-								</p>
+
+								<div class="programa">
+
+									<h2>Programa</h2>
+									<p>
+										<p>Proyecto de remodelación de sede bancaria incluye proyecto de interiorismo, hall de acceso, área de cafetín para todo público, nuevos espacios de encuentro, pantallas digitales, nuevas oficinas para Gerente de Negocios y Servicios, Gerente General y oficinas de Atención al Público.</p>
+										<p>La sede de La Castellana corresponde al proyecto piloto del Banco de Venezuela para la implementación de BDV Digital, tomando como referencia la renovación previa de la marca, imagen y colores corporativos que esta nueva propuesta debía considerar.</p>
+										<p>El desafío mas relevante fue el tiempo acotado de ejecución, se debió elaborar una estrategia de la adaptación de lo existente y el diseño de elementos prefabricados en madera para ser instalados en sitio.</p>
+										<p>La idea consistió en una mimetización entre los elementos originales y contemporáneos, recuperando un gran espacio central con una doble altura, que conecta dos niveles en el cual se elaboró un diseño geométrico a modo de trama en madera con variantes en sus disposiciones logrando una imagen dinámica y versátil que simboliza la velocidad de los cambios en la era digital.</p>
+
+									</p>
+								</div>
+
 							</div>
 
 						</div>
@@ -94,18 +97,18 @@
 
 					<div class="carousel-item">
 						<div class="row hoja" :style="{backgroundImage:`url(/images/portada/MSarquitecta-cover-image.jpg)`}">
+							<div class="col-md-5"></div>
 
-							<div class="col-md-5">
-							</div>
 							<div class="col-md-7">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							</div>
 
+								<div class="programa">
+									<p>El Hall de acceso tiene un diseño de iluminación que mejora la escala del espacio. Para afianzar la condición de amplitud se eliminó un tabique largo que ocultaba toda la planta alta y en su lugar se diseñó una fachada de vidrio zigzagueante que logró una amplitud espacial considerable.</p><p></p>
+									<p>Para el hall de acceso que vincula la planta baja y primer piso se incorporaron los nuevos modelos de sucursal bancaria work/café/banco que ofrece espacios abiertos y contemporáneos para clientes y visitantes, integrándolos con lugares de encuentro, trabajo colaborativo y gestión bancaria accesible para todo público.</p>
+									<p>Espacios renovados para las taquillas, atención al público, oficinas de gerencia negocios y servicios, áreas para personal operativo buscando que la atención a los clientes sea más cercana y mejor atendida.</p>
+									<p>El uso de revestimientos grises y maderas claras crean la combinación perfecta entre lo original y lo contemporáneo con un edificio atemporal que no pasará de moda, con la entrega de nuevos servicios, espacios versátiles para trabajadores y clientes, mobiliario flexible y alta tecnología.</p>
+								</div>
+
+							</div>
 						</div>
 					</div>
 
