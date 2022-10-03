@@ -5,17 +5,19 @@ body{
 	top: 0;
 }
 
-#proyecto .hoja{
-	width: 110%
-	background-size: cover;
-	background-repeat: no-repeat;
-	height : 100vh;
 
+
+#proyecto .hoja{
+background-size: contain;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center top;
 }
+
 
 #proyecto .col-md-5, #proyecto .col-md-7 {
 	box-shadow: initial;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.3);
 	color: white;
 	z-index: 100000;
 }

@@ -43,7 +43,7 @@
 
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<div class="row hoja" :style="{backgroundImage:`url(/images/about-header-image.jpg)`}">
+							<div class="row hoja" :style="{backgroundImage:`url(/images/proyect-test-image.jpg)`}">
 
 								<div class="col-md-5">
 								</div>
@@ -58,8 +58,13 @@
 										<p> <strong>Diseño de proyecto: </strong> 2022 </p>
 										<p> <strong>Cliente: </strong> Banco de Venezuela </p>
 
+										<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+											Launch demo modal
+										</button> -->
+
+
 									</div>
-								</strong>
+
 
 							</div>
 
@@ -68,6 +73,7 @@
 
 
 					</div>
+
 
 
 					<div class="carousel-item">
@@ -86,7 +92,14 @@
 										<p>El desafío mas relevante fue el tiempo acotado de ejecución, se debió elaborar una estrategia de la adaptación de lo existente y el diseño de elementos prefabricados en madera para ser instalados en sitio.</p>
 										<p>La idea consistió en una mimetización entre los elementos originales y contemporáneos, recuperando un gran espacio central con una doble altura, que conecta dos niveles en el cual se elaboró un diseño geométrico a modo de trama en madera con variantes en sus disposiciones logrando una imagen dinámica y versátil que simboliza la velocidad de los cambios en la era digital.</p>
 
+
+
 									</p>
+
+
+
+
+
 								</div>
 
 							</div>
@@ -134,7 +147,13 @@
 	</div>
 
 
-
+<!-- Modal -->
+<!-- <div class="modal fade modal-fullscreen" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="modal-dialog">
+  	<img src="/images/about-header-image.jpg">
+  </div>
+</div> -->
 
 
 </div>
@@ -152,6 +171,7 @@ export default{
 	data() {
 		return{
 			proyecto:[],
+			texto:"",
 
 		}
 
@@ -163,11 +183,12 @@ export default{
 			this.proyecto = this.$route.params.proyect
 		}
 		else{
-			this.$router.push('/portfolio');
+			this.texto = '"<div class="embedded_image" data-layout="wide" contenteditable="false"><img alt="imagen 2 en imagen amplia" src="/storage/canvas/images/orDO51VCREf3Srd0QDq5UoSMve9rf5dIyiZrkvnB.jpg"><p>imagen 2 en imagen amplia</p></div><p><br></p><p><br></p><div class="embedded_image" data-layout="default" contenteditable="false"><img alt="Imagen 1  en diseño predeterminado" src="/storage/canvas/images/SmEL4W0WybEYQRfjNzMK253tTFG6ORGJXeN2423B.jpg"><p>Imagen 1  en diseño predeterminado</p></div><p class="ql-align-justify"><br></p><div class="embedded_image" data-layout="default" contenteditable="false"><img alt="imagen 3 en diseño predeterminado" src="/storage/canvas/images/TsdQzYZgWWJwGAVb75MRvvHr1bPJaVaHvWWqMzXc.jpg"><p>imagen 3 en diseño predeterminado</p></div><div class="embedded_image" data-layout="default" contenteditable="false"><img alt="Imagen 4 en diseño amplio" src="/storage/canvas/images/P7spTs77N39vJMLWv6d7fYjUUUeWzoa3JJ2GGtUR.jpg"><p>Imagen 4 en diseño amplio</p></div><p class="ql-align-justify"><br></p><p class="ql-align-justify"><strong>Disciplina: </strong>Arquitectura e Interiorismo</p><p class="ql-align-justify"><strong>Nombre del Proyecto: </strong>Banco de Venezuela, Sede La Castellana</p><p class="ql-align-justify"><strong>Tipología: </strong>oficinas</p><p class="ql-align-justify"><strong>Superficie:&nbsp;</strong>200 m2</p><p class="ql-align-justify"><strong>Estado: </strong>Construido</p><p class="ql-align-justify"><strong>Diseño de proyecto: </strong>2022</p><p class="ql-align-justify"><strong>Cliente: </strong>Banco de Venezuela</p><p class="ql-align-justify"><strong>&nbsp;</strong></p><p class="ql-align-justify"><strong>Programa</strong></p><p class="ql-align-justify">Proyecto de remodelación de sede bancaria incluye proyecto de interiorismo, hall de acceso, área de cafetín para todo público, nuevos espacios de encuentro, pantallas digitales, nuevas oficinas para Gerente de Negocios y Servicios, Gerente General y oficinas de Atención al Público.</p><p class="ql-align-justify">La sede de La Castellana corresponde al proyecto piloto del Banco de Venezuela para la implementación de BDV Digital, tomando como referencia la renovación previa de la marca, imagen y colores corporativos que esta nueva propuesta debía considerar.</p><p class="ql-align-justify">El desafío mas relevante fue el tiempo acotado de ejecución, se debió elaborar una estrategia de la adaptación de lo existente y el diseño de elementos prefabricados en madera para ser instalados en sitio.</p><p class="ql-align-justify">La idea consistió en una mimetización entre los elementos originales y contemporáneos, recuperando un gran espacio central con una doble altura, que conecta dos niveles en el cual se elaboró un diseño geométrico a modo de trama en madera con variantes en sus disposiciones logrando una imagen dinámica y versátil que simboliza la velocidad de los cambios en la era digital.</p><p class="ql-align-justify">El Hall de acceso tiene un diseño de iluminación que mejora la escala del espacio. Para afianzar la condición de amplitud se eliminó un tabique largo que ocultaba toda la planta alta y en su lugar se diseñó una fachada de vidrio zigzagueante que logró una amplitud espacial considerable.</p><p class="ql-align-justify">Para el hall de acceso que vincula la planta baja y primer piso se incorporaron los nuevos modelos de sucursal bancaria work/café/banco que ofrece espacios abiertos y contemporáneos para clientes y visitantes, integrándolos con lugares de encuentro, trabajo colaborativo y gestión bancaria accesible para todo público. </p><p class="ql-align-justify">Espacios renovados para las taquillas, atención al público, oficinas de gerencia negocios y servicios, áreas para personal operativo buscando que la atención a los clientes sea más cercana y mejor atendida.</p><p class="ql-align-justify">El uso de revestimientos grises y maderas claras crean la combinación perfecta entre lo original y lo contemporáneo con un edificio atemporal que no pasará de moda, con la entrega de nuevos servicios, espacios versátiles para trabajadores y clientes, mobiliario flexible y alta tecnología. </p><p><br></p>" '
+			/*this.$router.push('/portfolio');*/
 		}
 
 
-		console.log(this.proyecto.body)/*DE AQUI HAY Q SACAR EL CONTENIDO DEL PROYECTO*/
+		/*console.log(this.proyecto.body)DE AQUI HAY Q SACAR EL CONTENIDO DEL PROYECTO*/
 
 		this.bodyset()
 	},
@@ -176,6 +197,15 @@ export default{
 			let body = document.querySelector('body');
 			body.style.overflow = "hidden"
 			body.style.margin = "0 -15px"
+
+		},
+		getDesc(){
+			let res = "AAAAAA"
+
+
+
+
+			console.log (res)
 
 		}
 	},
