@@ -46,6 +46,7 @@ import Axios from 'axios';
 /*vue routers import*/
 import VueRouter from 'vue-router';
 import { routes } from './routes';
+import { proyectbodytext } from './devutil'
 
 import vue from 'vue';
 
