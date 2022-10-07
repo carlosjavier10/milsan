@@ -29,37 +29,11 @@ __webpack_require__.r(__webpack_exports__);
 
       /*arreglo de parrafos*/
       activeClass: 'active',
-      carouselindicators: 'carousel-indicators',
+      carouselitem: 'carousel-item',
       slider: []
     };
   },
-  computed: {
-    mecagoendios: function mecagoendios() {
-      if (this.proyecto.featured_image) {
-        this.imgs.unshift(this.proyecto.featured_image);
-      }
-
-      if (this.imgs.length > 0) {
-        for (var i = 0; i < this.imgs.length; i++) {
-          var slide = {
-            index: 0,
-            img: "",
-            content: "",
-            classActive: ""
-          };
-          slide.index = i;
-          slide.img = this.imgs[i];
-          slide.content = "AAAAAAAAAAAAAAAAAAAA";
-          slide.classActive = "BBBBBBBBBBB";
-          this.slider.push(slide);
-        }
-      } else
-        /*NO HAY SLIDERS*/
-        {
-          this.slider = null;
-        }
-    }
-  },
+  computed: {},
   mounted: function mounted() {
     if (this.$route.params.proyect) {
       this.proyecto = this.$route.params.proyect;
@@ -81,32 +55,99 @@ __webpack_require__.r(__webpack_exports__);
       body.style.margin = "0 -15px";
     },
     getDesc: function getDesc() {
-      console.log(this.slider);
-      console.log("TAMAÑO DEL ARERGLO IMGS ANTES = " + this.imgs.length);
+      /*console.log(this.slider)*/
+
+      /*console.log("TAMAÑO DEL ARERGLO IMGS ANTES = "+this.imgs.length)*/
       this.getImg();
       this.getTitles();
       this.getPrograma();
-      this.mecagoendios;
       /*/////////////////////////////////////////////////////////*/
 
       /*/////////////////////////////////////////////////////////*/
 
-      /*/////////////////////////////////////////////////////////*/
-
-      /*/////////////////////////////////////////////////////////*/
-
-      console.log("CAntidad de parrafos : " + this.programa.length);
-      /*			console.log("parrafos de programa: "+ this.programa)*/
-
-      console.log(this.slider.length);
-
-      for (var i = 0; i < this.slider.length; i++) {
-        console.log("LA PUTA i:" + i);
-        console.log("SUCIA MIERDA" + this.slider[i].index);
+      if (this.proyecto.featured_image) {
+        this.imgs.unshift(this.proyecto.featured_image);
       }
 
+      if (this.imgs.length > 0) {
+        for (var i = 0; i < this.imgs.length; i++) {
+          var slide = {
+            index: 0,
+            img: "",
+            content: "",
+            classActive: "",
+            classcontent: ""
+          };
+          slide.index = i;
+          slide.img = this.imgs[i];
+
+          if (i == 0) {
+            slide.content = '<p> <strong>Disciplina: </strong> ' + this.disciplina + ' </p><p> <strong>Nombre del Proyecto: </strong>' + this.nombreProyecto + ' </p><p> <strong>Tipología: </strong> ' + this.tipología + '</p><p> <strong>Superficie: </strong>' + this.superficie + ' </p><p> <strong>Estado: </strong>' + this.estado + ' </p><p> <strong>Diseño de proyecto: </strong>' + this.disenoProyecto + ' </p><p> <strong>Cliente: </strong>' + this.cliente + '  </p>';
+            slide.classActive = "active";
+            slide.classcontent = "cover";
+          } else {
+            var aux = "";
+            var j = 0;
+            var contador = 0;
+            var max = 1000;
+
+            if (this.programa.length > 0) {
+              aux = "<p>" + this.programa[j] + "</p>";
+              contador = aux.length;
+              this.programa.shift();
+
+              if (this.programa[j]) {
+                /*console.log("ENTRO A LA MIERDAA")*/
+                var continuar = true;
+
+                while (continuar) {
+                  /*console.log("TAM DE AUX ANTES DE VER LA SUMA = "+aux.length)*/
+                  if (aux.length + this.programa[j].length < max) {
+                    /*console.log("aux antes= "+aux)*/
+                    aux = aux + "<p>" + this.programa[j] + "</p>";
+                    /*console.log("aux despues= "+aux)*/
+
+                    this.programa.shift();
+
+                    if (this.programa[j]) {
+                      continuar = true;
+                    } else {
+                      continuar = false;
+                    }
+                  } else {
+                    /*console.log("ENTRO A TIENE MAS DE MAX")*/
+                    continuar = false;
+                  }
+                }
+
+                slide.content = aux;
+              } else {
+                slide.content = aux;
+              }
+            } else {}
+
+            slide.classActive = false;
+            slide.classcontent = "programa";
+          }
+
+          this.slider.push(slide);
+        }
+      } else
+        /*NO HAY SLIDERS*/
+        {
+          this.slider = null;
+        }
+      /*/////////////////////////////////////////////////////////*/
+
+      /*/////////////////////////////////////////////////////////*/
+
+      /*			console.log("CAntidad de parrafos : "+ this.programa.length)*/
+
+      /*			console.log("parrafos de programa: "+ this.programa)*/
+
+
+      console.log(this.slider.length);
       console.log(this.slider);
-      console.log("TAMAÑO DEL ARERGLO IMGS despues = " + this.imgs.length);
       console.log("////////////////////");
       /*			console.log("////////////////////")
       
@@ -301,7 +342,7 @@ var render = function render() {
     }
   }, [_c("div", {
     staticClass: "carousel-indicators"
-  }, _vm._l(_vm.imgs, function (img, index) {
+  }, _vm._l(_vm.slider, function (slide, index) {
     return _c("button", {
       "class": [index == 0 ? _vm.activeClass : ""],
       attrs: {
@@ -314,58 +355,29 @@ var render = function render() {
     });
   }), 0), _vm._v(" "), _c("div", {
     staticClass: "carousel-inner"
-  }, _vm._l(_vm.imgs, function (_ref) {
-    var img = _ref.img,
-        index = _ref.index;
+  }, _vm._l(_vm.slider, function (hoja) {
     return _c("div", {
-      staticClass: "carousel-item",
-      "class": [index == 0 ? _vm.activeClass : ""]
-    }, [_vm._v(_vm._s(index) + " " + _vm._s(_vm.disciplina) + "\n\n\t\t\t\t\t"), _c("div", {
+      "class": "carousel-item " + hoja.classActive
+    }, [_c("div", {
       staticClass: "row hoja",
       style: {
-        backgroundImage: "url(/images/proyect-test-image.jpg)"
+        backgroundImage: "url(".concat(hoja.img, ")")
       }
     }, [_c("div", {
       staticClass: "col-md-5"
     }), _vm._v(" "), _c("div", {
       staticClass: "col-md-7"
     }, [_c("div", {
-      staticClass: "cover"
-    }, [_c("p", [_c("strong", [_vm._v("Disciplina: ")]), _vm._v(" " + _vm._s(index) + " ")]), _vm._v(" "), _vm._m(0, true), _vm._v(" "), _vm._m(1, true), _vm._v(" "), _vm._m(2, true), _vm._v(" "), _vm._m(3, true), _vm._v(" "), _vm._m(4, true), _vm._v(" "), _vm._m(5, true)])])])]);
-  }), 0), _vm._v(" "), _vm._m(6), _vm._v(" "), _vm._m(7)])])])]);
+      "class": hoja.classcontent
+    }, [hoja.index == 1 ? _c("div", [_c("h2", [_vm._v("Programa")])]) : _vm._e(), _vm._v(" "), _c("div", {
+      domProps: {
+        innerHTML: _vm._s(hoja.content)
+      }
+    })])])])]);
+  }), 0), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1)])])])]);
 };
 
 var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("p", [_c("strong", [_vm._v("Nombre del Proyecto: ")]), _vm._v(" nombreProyecto} ")]);
-}, function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("p", [_c("strong", [_vm._v("Tipología: ")]), _vm._v(" tipología")]);
-}, function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("p", [_c("strong", [_vm._v("Superficie: ")]), _vm._v("  superficie ")]);
-}, function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("p", [_c("strong", [_vm._v("Estado: ")]), _vm._v(" estado ")]);
-}, function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("p", [_c("strong", [_vm._v("Diseño de proyecto: ")]), _vm._v(" disenoProyecto ")]);
-}, function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("p", [_c("strong", [_vm._v("Cliente: ")]), _vm._v(" cliente ")]);
-}, function () {
   var _vm = this,
       _c = _vm._self._c;
 

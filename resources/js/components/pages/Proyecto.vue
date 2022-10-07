@@ -33,7 +33,7 @@
 
 					<div class="carousel-indicators">
 
-						<button v-for="(img, index) in imgs" type="button" data-bs-target="#carouselExampleIndicators" :data-bs-slide-to="index" class=""
+						<button v-for="(slide, index) in slider" type="button" data-bs-target="#carouselExampleIndicators" :data-bs-slide-to="index" class=""
 
 						v-bind:class="[index==0 ? activeClass : '',  ]"
 
@@ -46,71 +46,63 @@
 
 				<div class="carousel-inner">
 
-					<div class="carousel-item"
-					v-for="{img, index} in imgs"
+					<div
+					v-for="hoja in slider"
+					:class="'carousel-item '+ hoja.classActive"
 
-					v-bind:class="[index==0 ? activeClass : '',  ]"
-
-					>{{index}} {{disciplina}}
+					>
 
 					<div class="row hoja"
-					:style="{backgroundImage:`url(/images/proyect-test-image.jpg)`}">
+					:style="{backgroundImage:`url(${hoja.img})`}">
 
 					<div class="col-md-5">
 					</div>
 					<div class="col-md-7">
-						<div class="cover">
+						<div :class="hoja.classcontent">
 
-							<p> <strong>Disciplina: </strong> {{index}} </p>
-							<p> <strong>Nombre del Proyecto: </strong> nombreProyecto} </p>
-							<p> <strong>Tipología: </strong> tipología</p>
-							<p> <strong>Superficie: </strong>  superficie </p>
-							<p> <strong>Estado: </strong> estado </p>
-							<p> <strong>Diseño de proyecto: </strong> disenoProyecto </p>
-							<p> <strong>Cliente: </strong> cliente </p>
-
-										<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-											Launch demo modal
-										</button> -->
-
-
-									</div>
-
-
-								</div>
-
+							<div v-if="hoja.index==1">
+								<h2>Programa</h2>
 							</div>
 
-
+							<div v-html="hoja.content"></div>
 
 						</div>
 
 
-
-
-
 					</div>
 
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
 				</div>
-				<!-- ///////////// -->
-
-
 
 
 
 			</div>
+
+
+
+
+
 		</div>
 
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+	<!-- ///////////// -->
 
-		<!-- Modal -->
+
+
+
+
+</div>
+</div>
+
+
+<!-- Modal -->
 <!-- <div class="modal fade modal-fullscreen" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
   <div class="modal-dialog">
@@ -146,7 +138,7 @@ export default{
 			programa:[],   /*arreglo de parrafos*/
 
 			activeClass: 'active',
-			carouselindicators: 'carousel-indicators',
+			carouselitem: 'carousel-item',
 
 
 			slider:[]
@@ -155,53 +147,6 @@ export default{
 
 	},
 	computed: {
-
-		mecagoendios: function() {
-
-
-
-			if(this.proyecto.featured_image){
-				this.imgs.unshift(this.proyecto.featured_image)
-			}
-
-
-			if (this.imgs.length > 0) {
-
-
-
-				for (var i = 0; i < this.imgs.length; i++) {
-
-					var slide ={	index: 0,
-						img:"",
-						content:"",
-						classActive:""
-					}
-
-					slide.index= i
-					slide.img = this.imgs[i]
-					slide.content = "AAAAAAAAAAAAAAAAAAAA"
-					slide.classActive = "BBBBBBBBBBB"
-					this.slider.push(slide)
-
-
-				}
-
-
-
-
-
-
-			}
-			else /*NO HAY SLIDERS*/
-			{
-				this.slider = null
-			}
-
-
-
-
-		}
-
 
 	},
 	mounted(){
@@ -233,36 +178,127 @@ export default{
 
 		},
 		getDesc(){
-			console.log(this.slider)
-			console.log("TAMAÑO DEL ARERGLO IMGS ANTES = "+this.imgs.length)
+			/*console.log(this.slider)*/
+			/*console.log("TAMAÑO DEL ARERGLO IMGS ANTES = "+this.imgs.length)*/
 			this.getImg()
 			this.getTitles()
 			this.getPrograma()
-			this.mecagoendios
-
-
-			/*/////////////////////////////////////////////////////////*/
-			/*/////////////////////////////////////////////////////////*/
-
-
-
 
 
 
 			/*/////////////////////////////////////////////////////////*/
 			/*/////////////////////////////////////////////////////////*/
-			console.log("CAntidad de parrafos : "+ this.programa.length)
+
+
+			if(this.proyecto.featured_image){
+				this.imgs.unshift(this.proyecto.featured_image)
+			}
+
+
+			if (this.imgs.length > 0) {
+
+
+
+				for (var i = 0; i < this.imgs.length; i++) {
+
+					var slide ={	index: 0,
+						img:"",
+						content:"",
+						classActive:"",
+						classcontent:""
+					}
+
+					slide.index= i
+					slide.img = this.imgs[i]
+
+					if (i==0) {
+						slide.content ='<p> <strong>Disciplina: </strong> '+ this.disciplina +' </p><p> <strong>Nombre del Proyecto: </strong>'+ this.nombreProyecto +' </p><p> <strong>Tipología: </strong> '+this.tipología+'</p><p> <strong>Superficie: </strong>'+ this.superficie +' </p><p> <strong>Estado: </strong>'+ this.estado+' </p><p> <strong>Diseño de proyecto: </strong>'+ this.disenoProyecto+' </p><p> <strong>Cliente: </strong>'+ this.cliente +'  </p>'
+						slide.classActive = "active"
+						slide.classcontent = "cover"
+					}else{
+
+
+						let aux=""
+						let j = 0
+						let contador = 0
+						let max = 1000
+						if (this.programa.length > 0) {
+							aux="<p>"+this.programa[j]+"</p>"
+							contador = aux.length
+							this.programa.shift()
+
+
+							if (this.programa[j]) {
+								/*console.log("ENTRO A LA MIERDAA")*/
+								let continuar = true
+								while(continuar){
+									/*console.log("TAM DE AUX ANTES DE VER LA SUMA = "+aux.length)*/
+									if (aux.length+this.programa[j].length < max) {
+										/*console.log("aux antes= "+aux)*/
+										aux = aux + "<p>"+this.programa[j]+"</p>"
+										/*console.log("aux despues= "+aux)*/
+										this.programa.shift()
+
+										if (this.programa[j])
+											{continuar=true}
+										else
+											{continuar=false}
+									}else{
+										/*console.log("ENTRO A TIENE MAS DE MAX")*/
+										continuar = false
+									}
+								}
+								slide.content = aux;
+							}
+							else{
+								slide.content = aux
+							}
+
+
+
+						}
+						else{}
+
+
+
+
+
+							slide.classActive = false
+							slide.classcontent ="programa"
+
+					}
+
+					this.slider.push(slide)
+
+
+				}
+
+
+
+
+
+
+			}
+			else /*NO HAY SLIDERS*/
+			{
+				this.slider = null
+			}
+
+
+
+
+
+			/*/////////////////////////////////////////////////////////*/
+			/*/////////////////////////////////////////////////////////*/
+			/*			console.log("CAntidad de parrafos : "+ this.programa.length)*/
 			/*			console.log("parrafos de programa: "+ this.programa)*/
 			console.log(this.slider.length)
 
-			for (var i = 0; i < this.slider.length; i++) {
-				console.log("LA PUTA i:"+ i)
-				console.log ("SUCIA MIERDA"+this.slider[i].index)
-			}
+
 
 			console.log(this.slider)
 
-			console.log("TAMAÑO DEL ARERGLO IMGS despues = "+this.imgs.length)
+
 
 			console.log("////////////////////")
 /*			console.log("////////////////////")
