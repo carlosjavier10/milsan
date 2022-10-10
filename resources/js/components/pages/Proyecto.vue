@@ -7,11 +7,26 @@
 
 			<div id="logo" class="">
 				<h1>
-					<router-link :to="{name:'portfolio'}" class="scrollto">
-						<div class="leftarrow"> &#8701;</div>
+
+					<router-link :to="{name:'portfolio'}" class="scrollto" alt="Volver">
+						<div class="leftarrow" alt="Volver"> &#8701;</div>
 					</router-link>
 
+
 				</h1>
+
+				<div class="botones">
+
+					<a @click="setSlisder('Before')" v-if="imgsBefore.length > 0"><h6>Antes</h6></a>
+					<a @click="setSlisder('After')" v-if="imgsAfter.length>0"><h6>Despues</h6></a>
+					<a @click="setSlisder('Process')" v-if="imgsProcess.length>0"><h6>Proceso</h6></a>
+					<a @click="setSlisder('Render')" v-if="imgsRender.length>0"><h6>Render</h6></a>
+				</div>
+
+
+
+
+
 			</div>
 
 
@@ -53,7 +68,7 @@
 					>
 
 					<div class="row hoja"
-					:style="{backgroundImage:`url(${hoja.img})`}">
+					:style="{backgroundImage:`url(${hoja.img.url})`}">
 
 					<div class="col-md-5">
 					</div>
@@ -127,7 +142,6 @@ export default{
 		return{
 			proyecto:[],
 			texto:"",
-			imgs:[],
 			disciplina: "",
 			nombreProyecto: "",
 			tipología:"",
@@ -136,12 +150,15 @@ export default{
 			disenoProyecto:"",
 			cliente:"",
 			programa:[],   /*arreglo de parrafos*/
-
 			activeClass: 'active',
 			carouselitem: 'carousel-item',
+			slider:[],
 
-
-			slider:[]
+			imgs:[],
+			imgsAfter:[],
+			imgsBefore:[],
+			imgsProcess:[],
+			imgsRender:[],
 
 		}
 
@@ -155,17 +172,51 @@ export default{
 
 			this.proyecto = this.$route.params.proyect
 			this.texto = this.proyecto.body
-
-
-
 		}
 		else{
-			this.texto = '<div class=\"embedded_image\" data-layout=\"wide\" contenteditable=\"false\"><img alt=\"imagen 2 en imagen amplia\" src=\"/storage/canvas/images/orDO51VCREf3Srd0QDq5UoSMve9rf5dIyiZrkvnB.jpg\"><p>imagen 2 en imagen amplia</p></div><p><br></p><p><br></p><div class=\"embedded_image\" data-layout=\"default\" contenteditable=\"false\"><img alt=\"Imagen 1  en diseño predeterminado\" src=\"/storage/canvas/images/SmEL4W0WybEYQRfjNzMK253tTFG6ORGJXeN2423B.jpg\"><p>Imagen 1  en diseño predeterminado</p></div><p class=\"ql-align-justify\"><br></p><div class=\"embedded_image\" data-layout=\"default\" contenteditable=\"false\"><img alt=\"imagen 3 en diseño predeterminado\" src=\"/storage/canvas/images/TsdQzYZgWWJwGAVb75MRvvHr1bPJaVaHvWWqMzXc.jpg\"><p>imagen 3 en diseño predeterminado</p></div><div class=\"embedded_image\" data-layout=\"default\" contenteditable=\"false\"><img alt=\"Imagen 4 en diseño amplio\" src=\"/storage/canvas/images/P7spTs77N39vJMLWv6d7fYjUUUeWzoa3JJ2GGtUR.jpg\"><p>Imagen 4 en diseño amplio</p></div><p class=\"ql-align-justify\"><br></p><p class=\"ql-align-justify\"><strong>Disciplina: </strong>Arquitectura e Interiorismo</p><p class=\"ql-align-justify\"><strong>Nombre del Proyecto: </strong>Banco de Venezuela, Sede La Castellana</p><p class=\"ql-align-justify\"><strong>Tipología: </strong>oficinas</p><p class=\"ql-align-justify\"><strong>Superficie:&nbsp;</strong>200 m2</p><p class=\"ql-align-justify\"><strong>Estado: </strong>Construido</p><p class=\"ql-align-justify\"><strong>Diseño de proyecto: </strong>2022</p><p class=\"ql-align-justify\"><strong>Cliente: </strong>Banco de Venezuela</p><p class=\"ql-align-justify\"><strong>&nbsp;</strong></p><p class=\"ql-align-justify\"><strong>Programa</strong></p><p class=\"ql-align-justify\">Proyecto de remodelación de sede bancaria incluye proyecto de interiorismo, hall de acceso, área de cafetín para todo público, nuevos espacios de encuentro, pantallas digitales, nuevas oficinas para Gerente de Negocios y Servicios, Gerente General y oficinas de Atención al Público.</p><p class=\"ql-align-justify\">La sede de La Castellana corresponde al proyecto piloto del Banco de Venezuela para la implementación de BDV Digital, tomando como referencia la renovación previa de la marca, imagen y colores corporativos que esta nueva propuesta debía considerar.</p><p class=\"ql-align-justify\">El desafío mas relevante fue el tiempo acotado de ejecución, se debió elaborar una estrategia de la adaptación de lo existente y el diseño de elementos prefabricados en madera para ser instalados en sitio.</p><p class=\"ql-align-justify\">La idea consistió en una mimetización entre los elementos originales y contemporáneos, recuperando un gran espacio central con una doble altura, que conecta dos niveles en el cual se elaboró un diseño geométrico a modo de trama en madera con variantes en sus disposiciones logrando una imagen dinámica y versátil que simboliza la velocidad de los cambios en la era digital.</p><p class=\"ql-align-justify\">El Hall de acceso tiene un diseño de iluminación que mejora la escala del espacio. Para afianzar la condición de amplitud se eliminó un tabique largo que ocultaba toda la planta alta y en su lugar se diseñó una fachada de vidrio zigzagueante que logró una amplitud espacial considerable.</p><p class=\"ql-align-justify\">Para el hall de acceso que vincula la planta baja y primer piso se incorporaron los nuevos modelos de sucursal bancaria work/café/banco que ofrece espacios abiertos y contemporáneos para clientes y visitantes, integrándolos con lugares de encuentro, trabajo colaborativo y gestión bancaria accesible para todo público. </p><p class=\"ql-align-justify\">Espacios renovados para las taquillas, atención al público, oficinas de gerencia negocios y servicios, áreas para personal operativo buscando que la atención a los clientes sea más cercana y mejor atendida.</p><p class=\"ql-align-justify\">El uso de revestimientos grises y maderas claras crean la combinación perfecta entre lo original y lo contemporáneo con un edificio atemporal que no pasará de moda, con la entrega de nuevos servicios, espacios versátiles para trabajadores y clientes, mobiliario flexible y alta tecnología. </p><p><br></p>'
-			/*this.$router.push('/portfolio');*/
+			if (localStorage.slug) {
+
+				let proy={
+					slug:"",
+					body:"",
+					created_at:"",
+					featured_image:"",
+					id:"",
+					published_at:"",
+					summary:"",
+					title:"",
+					updated_at:""
+				}
+
+				proy.slug=localStorage.slug
+				proy.body=localStorage.body
+				proy.created_at=localStorage.created_at
+				proy.featured_image=localStorage.featured_image
+				proy.id=localStorage.id
+				proy.published_at=localStorage.published_at
+				proy.summary=localStorage.summary
+				proy.title=localStorage.title
+				proy.updated_at=localStorage.updated_at
+
+				this.proyecto = proy
+
+				this.texto = this.proyecto.body
+
+			}
+			else{
+
+				this.$router.push('/portfolio');
+			}
+
+
+
+
+
+
 		}
 
 
-		/*console.log(this.proyecto.body)DE AQUI HAY Q SACAR EL CONTENIDO DEL PROYECTO*/
+
 
 		this.bodyset()
 		this.getDesc()
@@ -178,23 +229,26 @@ export default{
 
 		},
 		getDesc(){
-			/*console.log(this.slider)*/
-			/*console.log("TAMAÑO DEL ARERGLO IMGS ANTES = "+this.imgs.length)*/
+
 			this.getImg()
 			this.getTitles()
 			this.getPrograma()
+			this.renderSlider()
 
 
 
-			/*/////////////////////////////////////////////////////////*/
-			/*/////////////////////////////////////////////////////////*/
+			console.log("imgBefore ="+ this.imgsBefore)
+			console.log("imgAfter= "+ this.imgsAfter)
+			console.log("imgsProcess= "+ this.imgsProcess)
+			console.log("IMgsRender= "+ this.imgsRender)
+			console.log("IMG ="+this.imgs)
 
 
-			if(this.proyecto.featured_image){
-				this.imgs.unshift(this.proyecto.featured_image)
-			}
+		},
+		renderSlider(){
 
-
+			console.log("IMGS al entrar en setslider= "+ this.imgs.length)
+			this.slider=[]
 			if (this.imgs.length > 0) {
 
 
@@ -229,14 +283,13 @@ export default{
 
 
 							if (this.programa[j]) {
-								/*console.log("ENTRO A LA MIERDAA")*/
+
 								let continuar = true
 								while(continuar){
-									/*console.log("TAM DE AUX ANTES DE VER LA SUMA = "+aux.length)*/
+
 									if (aux.length+this.programa[j].length < max) {
-										/*console.log("aux antes= "+aux)*/
+
 										aux = aux + "<p>"+this.programa[j]+"</p>"
-										/*console.log("aux despues= "+aux)*/
 										this.programa.shift()
 
 										if (this.programa[j])
@@ -244,7 +297,7 @@ export default{
 										else
 											{continuar=false}
 									}else{
-										/*console.log("ENTRO A TIENE MAS DE MAX")*/
+
 										continuar = false
 									}
 								}
@@ -259,24 +312,13 @@ export default{
 						}
 						else{}
 
-
-
-
-
 							slide.classActive = false
-							slide.classcontent ="programa"
+						slide.classcontent ="programa"
 
 					}
 
 					this.slider.push(slide)
-
-
 				}
-
-
-
-
-
 
 			}
 			else /*NO HAY SLIDERS*/
@@ -284,56 +326,73 @@ export default{
 				this.slider = null
 			}
 
-
-
-
-
-			/*/////////////////////////////////////////////////////////*/
-			/*/////////////////////////////////////////////////////////*/
-			/*			console.log("CAntidad de parrafos : "+ this.programa.length)*/
-			/*			console.log("parrafos de programa: "+ this.programa)*/
-			console.log(this.slider.length)
-
-
-
-			console.log(this.slider)
-
-
-
-			console.log("////////////////////")
-/*			console.log("////////////////////")
-
-			console.log ("****disciplina= " + this.disciplina)
-			console.log ("****Nombre= " + this.nombreProyecto)
-			console.log ("****tipo= " + this.tipología)
-			console.log ("****super = " + this.superficie)
-			console.log ("****estado = " + this.estado)
-			console.log ("****diseño = " + this.disenoProyecto)
-			console.log ("****cliente = " + this.cliente)
-			console.log (this.programa)*/
-
-
 		},
 		getImg(){
-
+			console.log("ENTRO A getImg")
 			let res = ""
 			let ini = 0
 			let fin = 0
 			let url =""
+			let tag =""
+
 			this.texto.trim()
+
+			if(this.proyecto.featured_image){
+				let img ={
+					url:"",
+					tag:""
+				}
+
+				img.url=this.proyecto.featured_image
+				img.tag="Despues"
+
+				this.imgsAfter.unshift(img)
+
+			}
 
 
 			while ( this.texto.indexOf('<img ')!= -1 ){
+
+				let img ={
+					url:"",
+					tag:""
+				}
+
+
 				ini = this.texto.indexOf('<img ')
 				fin = this.texto.indexOf('>', ini)
 				res = this.texto.substring(ini,fin+1)
 				this.texto = this.texto.replace(res,'')
 
+				ini=res.indexOf('alt=')
+				fin=res.indexOf('src=',ini+5)
+				tag =res.substring(ini+5,fin-2)
+
 				ini=res.indexOf('src=')
 				fin=res.indexOf('">',ini+5)
 				url =res.substring(ini+5,fin)
-				this.imgs.push(url)
+
+				img.url = url
+				img.tag=tag
+
+				if (img.tag.indexOf('Before')!= -1 ) {
+
+					this.imgsBefore.push(img)
+
+				}
+				else if(img.tag.indexOf('Render')!= -1 ){
+					this.imgsRender.push(img)
+				}
+				else if(img.tag.indexOf('Process')!= -1 ){
+					this.imgsProcess.push(img)
+				}
+				else{
+					this.imgsAfter.push(img)
+				}
+
 			}
+			this.imgs= this.imgsAfter
+
 
 		},
 		removeTags() {
@@ -356,6 +415,7 @@ export default{
 
 		},
 		getTitles(){
+			console.log("ENTRO A getTitles")
 			let begin =""
 			let borra = ""
 			let auxtext =  this.texto
@@ -413,6 +473,7 @@ export default{
 
 		},
 		getPrograma(){
+			console.log("Entro a getPtograma")
 			let ini = 0
 			let fin = 0
 			let del = ""
@@ -473,12 +534,47 @@ export default{
 			}
 
 
+		},
+
+		setSlisder: function(tag) {
+
+			if(tag=='Before'){
+				this.imgs = this.imgsBefore
+				console.log("imgs por before"+this.imgs)
+			}
+			else if (tag=='After'){
+				this.imgs= this.imgsAfter
+				console.log("imgs por after"+this.imgs)
+			}
+
 		}
 
-
 	},
+
+
 	watch:{
 
+
+		"proyecto.slug":function function_name() {
+			localStorage.slug = this.proyecto.slug
+			localStorage.body = this.proyecto.body
+			localStorage.created_at = this.proyecto.created_at
+			localStorage.featured_image = this.proyecto.featured_image
+			localStorage.id = this.proyecto.id
+			localStorage.published_at = this.proyecto.published_at
+			localStorage.summary = this.proyecto.summary
+			localStorage.title = this.proyecto.title
+			localStorage.updated_at = this.proyecto.updated_at
+		},
+
+		"imgs":function () {
+			console.log("Cambio imgs")
+			this.renderSlider()
+			console.log("IMGS : "+this.imgs)
+			console.log("slider : "+this.slider)
+
+
+		}
 
 
 	},

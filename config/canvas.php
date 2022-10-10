@@ -58,7 +58,7 @@ return [
 
     'storage_path' => env('CANVAS_STORAGE_PATH', 'public/canvas'),
 
-    'upload_filesize' => env('CANVAS_UPLOAD_FILESIZE', 3145728),
+    'upload_filesize' => env('CANVAS_UPLOAD_FILESIZE', 25165824),
 
     /*
     |--------------------------------------------------------------------------

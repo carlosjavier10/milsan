@@ -110,6 +110,7 @@ background-size: cover !important;
 
 #proyecto #logo {
 	text-align: center !important;
+	display: flex;
 }
 
 #proyecto .leftarrow{
@@ -118,7 +119,19 @@ background-size: cover !important;
 
 }
 
+#proyecto .botones {
+	display: inline-flex;
+	margin: 1rem 1rem 1rem 2rem;
+}
 
+#proyecto .botones h6 {
+	padding: 0 5px;
+	font-size: 0.9rem;
+}
+
+#proyecto .botones h6:hover {
+	cursor: pointer;
+}
 
 
 @media only screen and (min-height: 800px) and (max-width: 1080px){
