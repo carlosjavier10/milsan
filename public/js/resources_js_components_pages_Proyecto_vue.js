@@ -484,7 +484,7 @@ var staticRenderFns = [function () {
       _c = _vm._self._c;
 
   return _c("button", {
-    staticClass: "carousel-control-prev",
+    staticClass: "carousel-control-prev btn-lg",
     attrs: {
       type: "button",
       "data-bs-target": "#carouselExampleIndicators",

@@ -11,13 +11,13 @@ body{
 background-size: cover !important;
 	height: 100vh;
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center center;
 }
 
 
 #proyecto .col-md-5, #proyecto .col-md-7 {
 	box-shadow: initial;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.4);
 	color: white;
 	z-index: 100000;
 }
