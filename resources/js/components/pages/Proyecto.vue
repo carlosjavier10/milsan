@@ -160,6 +160,10 @@ export default{
 			imgsProcess:[],
 			imgsRender:[],
 
+			auxTexto:"",
+
+			activeTag:""
+
 		}
 
 	},
@@ -208,18 +212,11 @@ export default{
 				this.$router.push('/portfolio');
 			}
 
-
-
-
-
-
 		}
 
 
-
-
 		this.bodyset()
-		this.getDesc()
+		this.getImg()
 	},
 	methods:{
 		bodyset(){
@@ -228,26 +225,14 @@ export default{
 			body.style.margin = "0 -15px"
 
 		},
-		getDesc(){
 
-			this.getImg()
+		renderSlider(){
+			this.texto = this.auxtext
 			this.getTitles()
 			this.getPrograma()
-			this.renderSlider()
 
 
 
-			console.log("imgBefore ="+ this.imgsBefore)
-			console.log("imgAfter= "+ this.imgsAfter)
-			console.log("imgsProcess= "+ this.imgsProcess)
-			console.log("IMgsRender= "+ this.imgsRender)
-			console.log("IMG ="+this.imgs)
-
-
-		},
-		renderSlider(){
-
-			console.log("IMGS al entrar en setslider= "+ this.imgs.length)
 			this.slider=[]
 			if (this.imgs.length > 0) {
 
@@ -328,7 +313,7 @@ export default{
 
 		},
 		getImg(){
-			console.log("ENTRO A getImg")
+
 			let res = ""
 			let ini = 0
 			let fin = 0
@@ -392,7 +377,10 @@ export default{
 
 			}
 			this.imgs= this.imgsAfter
-
+			this.auxtext = this.texto  /*para retomar el body despues de quitarle las imagenes*/
+			this.activeTag="After"
+			this.renderSlider()
+			console.log("ENTRO A getImgs")
 
 		},
 		removeTags() {
@@ -415,7 +403,7 @@ export default{
 
 		},
 		getTitles(){
-			console.log("ENTRO A getTitles")
+
 			let begin =""
 			let borra = ""
 			let auxtext =  this.texto
@@ -473,7 +461,7 @@ export default{
 
 		},
 		getPrograma(){
-			console.log("Entro a getPtograma")
+
 			let ini = 0
 			let fin = 0
 			let del = ""
@@ -539,12 +527,44 @@ export default{
 		setSlisder: function(tag) {
 
 			if(tag=='Before'){
-				this.imgs = this.imgsBefore
-				console.log("imgs por before"+this.imgs)
+				if (this.activeTag!="Before") {
+
+					this.imgs = this.imgsBefore
+					this.renderSlider()
+					this.activeTag="Before"
+
+				}
+
 			}
-			else if (tag=='After'){
-				this.imgs= this.imgsAfter
-				console.log("imgs por after"+this.imgs)
+			else if (tag=='Process'){
+				if (this.activeTag!="Process") {
+
+					this.imgs= this.imgsProcess
+					this.renderSlider()
+					this.activeTag="Process"
+
+				}
+			}
+			else if (tag=='Render'){
+				if (this.activeTag!="Render") {
+
+					this.imgs= this.imgsRender
+					this.renderSlider()
+					this.activeTag="Render"
+
+				}
+			}
+
+			else {
+
+				if (this.activeTag!="After") {
+
+					this.imgs= this.imgsAfter
+					this.renderSlider()
+					this.activeTag="After"
+
+				}
+
 			}
 
 		}
@@ -568,10 +588,10 @@ export default{
 		},
 
 		"imgs":function () {
-			console.log("Cambio imgs")
-			this.renderSlider()
-			console.log("IMGS : "+this.imgs)
-			console.log("slider : "+this.slider)
+
+
+			console.log("CAMBIO")
+
 
 
 		}

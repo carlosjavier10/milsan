@@ -34,7 +34,9 @@ __webpack_require__.r(__webpack_exports__);
       imgsAfter: [],
       imgsBefore: [],
       imgsProcess: [],
-      imgsRender: []
+      imgsRender: [],
+      auxTexto: "",
+      activeTag: ""
     };
   },
   computed: {},
@@ -72,7 +74,7 @@ __webpack_require__.r(__webpack_exports__);
     }
 
     this.bodyset();
-    this.getDesc();
+    this.getImg();
   },
   methods: {
     bodyset: function bodyset() {
@@ -80,19 +82,10 @@ __webpack_require__.r(__webpack_exports__);
       body.style.overflow = "hidden";
       body.style.margin = "0 -15px";
     },
-    getDesc: function getDesc() {
-      this.getImg();
+    renderSlider: function renderSlider() {
+      this.texto = this.auxtext;
       this.getTitles();
       this.getPrograma();
-      this.renderSlider();
-      console.log("imgBefore =" + this.imgsBefore);
-      console.log("imgAfter= " + this.imgsAfter);
-      console.log("imgsProcess= " + this.imgsProcess);
-      console.log("IMgsRender= " + this.imgsRender);
-      console.log("IMG =" + this.imgs);
-    },
-    renderSlider: function renderSlider() {
-      console.log("IMGS al entrar en setslider= " + this.imgs.length);
       this.slider = [];
 
       if (this.imgs.length > 0) {
@@ -159,7 +152,6 @@ __webpack_require__.r(__webpack_exports__);
         }
     },
     getImg: function getImg() {
-      console.log("ENTRO A getImg");
       var res = "";
       var ini = 0;
       var fin = 0;
@@ -207,6 +199,12 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       this.imgs = this.imgsAfter;
+      this.auxtext = this.texto;
+      /*para retomar el body despues de quitarle las imagenes*/
+
+      this.activeTag = "After";
+      this.renderSlider();
+      console.log("ENTRO A getImgs");
     },
     removeTags: function removeTags() {
       var str;
@@ -220,7 +218,6 @@ __webpack_require__.r(__webpack_exports__);
       return str.replace(/(<([^>]+)>)/ig, '');
     },
     getTitles: function getTitles() {
-      console.log("ENTRO A getTitles");
       var begin = "";
       var borra = "";
       var auxtext = this.texto;
@@ -265,7 +262,6 @@ __webpack_require__.r(__webpack_exports__);
       auxtext = auxtext.replace(del, '');
     },
     getPrograma: function getPrograma() {
-      console.log("Entro a getPtograma");
       var ini = 0;
       var fin = 0;
       var del = "";
@@ -317,11 +313,29 @@ __webpack_require__.r(__webpack_exports__);
     },
     setSlisder: function setSlisder(tag) {
       if (tag == 'Before') {
-        this.imgs = this.imgsBefore;
-        console.log("imgs por before" + this.imgs);
-      } else if (tag == 'After') {
-        this.imgs = this.imgsAfter;
-        console.log("imgs por after" + this.imgs);
+        if (this.activeTag != "Before") {
+          this.imgs = this.imgsBefore;
+          this.renderSlider();
+          this.activeTag = "Before";
+        }
+      } else if (tag == 'Process') {
+        if (this.activeTag != "Process") {
+          this.imgs = this.imgsProcess;
+          this.renderSlider();
+          this.activeTag = "Process";
+        }
+      } else if (tag == 'Render') {
+        if (this.activeTag != "Render") {
+          this.imgs = this.imgsRender;
+          this.renderSlider();
+          this.activeTag = "Render";
+        }
+      } else {
+        if (this.activeTag != "After") {
+          this.imgs = this.imgsAfter;
+          this.renderSlider();
+          this.activeTag = "After";
+        }
       }
     }
   },
@@ -338,10 +352,7 @@ __webpack_require__.r(__webpack_exports__);
       localStorage.updated_at = this.proyecto.updated_at;
     },
     "imgs": function imgs() {
-      console.log("Cambio imgs");
-      this.renderSlider();
-      console.log("IMGS : " + this.imgs);
-      console.log("slider : " + this.slider);
+      console.log("CAMBIO");
     }
   }
 });
