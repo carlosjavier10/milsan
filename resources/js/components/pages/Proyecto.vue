@@ -594,19 +594,9 @@ export default{
 
 		"imgs":function () {
 
-
-
-			console.log("CAMBIO")
-
 			var myCarousel = document.querySelector('#carousel')
 			var carousel = new bootstrap.Carousel(myCarousel)
-
-			console.log(myCarousel)
-			console.log(carousel)
-
 			carousel.to("0")
-
-
 
 		}
 
