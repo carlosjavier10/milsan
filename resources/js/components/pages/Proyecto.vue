@@ -162,7 +162,8 @@ export default{
 
 			auxTexto:"",
 
-			activeTag:""
+			activeTag:"",
+
 
 		}
 
@@ -227,7 +228,11 @@ export default{
 		},
 
 		renderSlider(){
+
+
+
 			this.texto = this.auxtext
+			this.programa=[]
 			this.getTitles()
 			this.getPrograma()
 
@@ -380,7 +385,7 @@ export default{
 			this.auxtext = this.texto  /*para retomar el body despues de quitarle las imagenes*/
 			this.activeTag="After"
 			this.renderSlider()
-			console.log("ENTRO A getImgs")
+
 
 		},
 		removeTags() {
@@ -590,7 +595,16 @@ export default{
 		"imgs":function () {
 
 
+
 			console.log("CAMBIO")
+
+			var myCarousel = document.querySelector('#carousel')
+			var carousel = new bootstrap.Carousel(myCarousel)
+
+			console.log(myCarousel)
+			console.log(carousel)
+
+			carousel.to("0")
 
 
 

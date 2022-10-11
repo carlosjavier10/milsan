@@ -84,6 +84,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     renderSlider: function renderSlider() {
       this.texto = this.auxtext;
+      this.programa = [];
       this.getTitles();
       this.getPrograma();
       this.slider = [];
@@ -204,7 +205,6 @@ __webpack_require__.r(__webpack_exports__);
 
       this.activeTag = "After";
       this.renderSlider();
-      console.log("ENTRO A getImgs");
     },
     removeTags: function removeTags() {
       var str;
@@ -353,6 +353,11 @@ __webpack_require__.r(__webpack_exports__);
     },
     "imgs": function imgs() {
       console.log("CAMBIO");
+      var myCarousel = document.querySelector('#carousel');
+      var carousel = new bootstrap.Carousel(myCarousel);
+      console.log(myCarousel);
+      console.log(carousel);
+      carousel.to("0");
     }
   }
 });
