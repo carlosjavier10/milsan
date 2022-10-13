@@ -18,7 +18,7 @@ class TagSeeder extends Seeder
         Tag::create([
             'id' => $faker->uuid,
             'slug' => 'residencial',
-            'name' => 'Residencia',
+            'name' => 'Residencial',
             'user_id' => '7a913285-aac8-45dc-b68e-be47ec21a41c'
         ]);
         //
@@ -43,13 +43,7 @@ class TagSeeder extends Seeder
             'user_id' => '7a913285-aac8-45dc-b68e-be47ec21a41c'
         ]);
         //
-        Tag::create([
-            'id' => $faker->uuid,
-            'slug' => 'enproceso',
-            'name' => 'En Proceso',
-            'user_id' => '7a913285-aac8-45dc-b68e-be47ec21a41c'
-        ]);
-        //
+
 
 
     }

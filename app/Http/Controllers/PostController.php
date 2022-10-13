@@ -65,12 +65,12 @@ class PostController extends Controller
         else{
 
             $tag = Tag::with('posts')->firstWhere('slug', $label);
-            $proyectos = $tag->posts()->get();
+            $proyectos = $tag->posts()->where('published_at','!=',null)->get();
         }
     }
     else{
         $topic = Topic::where('slug','proyectos')->first();
-        $proyectos = $topic->posts()->orderBy('published_at','desc')->take(16)->get();
+        $proyectos = $topic->posts()->where('published_at','!=',null)->orderBy('published_at','desc')->take(16)->get();
 
     }
 

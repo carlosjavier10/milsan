@@ -26,6 +26,11 @@ background-color: transparent;
 border: none;
 margin: -3px 5px;
 width: 100%;
+transition: all 0.8s;
+}
+#portafolio .row .col:hover {
+  filter:brightness(0.6);
+  transition: all 0.8s;
 }
 
 #portafolio .row {
@@ -47,6 +52,7 @@ width: 100%;
   -o-transition: opacity 500ms;
   -ms-transition: opacity 500ms;
   transition: opacity 500ms;
+  filter: brightness(1.0);
 }
 
 .card-title:hover{

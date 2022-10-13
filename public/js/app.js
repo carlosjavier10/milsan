@@ -2242,6 +2242,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _context.next = 2;
                 return _this.axios.get('/api/proyectos/?filter=' + _this.$route.query.filter).then(function (response) {
                   _this.proyects = response.data.proyects;
+                  console.log(_this.proyects);
                 })["catch"](function (error) {
                   console.log(error);
                   _this.proyects = [];
@@ -3689,10 +3690,21 @@ var render = function render() {
         },
         id: "portfolio-button"
       }
-    }, [_c("div", {
+    }, [proyect.featured_image != null ? _c("div", {
       staticClass: "col",
       style: {
         backgroundImage: "url(".concat(proyect.featured_image, ")")
+      }
+    }, [_c("div", {
+      staticClass: "card text-bg-dark"
+    }, [_c("div", {
+      staticClass: "card-img-overlay"
+    }, [_c("h5", {
+      staticClass: "card-title"
+    }, [_vm._v(" " + _vm._s(proyect.title) + " ")])])])]) : _c("div", {
+      staticClass: "col",
+      style: {
+        backgroundImage: "url(/images/MSarquitecta_Portfolio.svg)"
       }
     }, [_c("div", {
       staticClass: "card text-bg-dark"

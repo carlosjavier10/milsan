@@ -1,0 +1,41 @@
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/0A570964-B7ED-4104-A5F8-56AFA02A3A01.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/1E0F9AD8-DB4F-407A-B539-07E382B71336.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/406CEB9F-414F-4D6C-8316-F154E6CB42E8.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/40E68BAE-C045-4F8B-A3CD-F77502F0EDB8.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/88808A77-5929-42FB-A373-4007DB378687.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/8EFF679B-8CF3-4D4B-A49C-441CFB860692.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/95425216-80F0-4D6F-8794-C57FBB00D1EB.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/D5DC9DB4-D9FE-431C-A922-DD754F1E7C51.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/Foto 2022-10-06.jpg"> <p>After</p> </div>
+
+
+
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_6567.JPG"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_6568.JPG"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_6579.JPG"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_6581.JPG"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_6586.JPG"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_6596.JPG"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_6601.JPG"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_6606.JPG"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_6607.JPG"> <p>Before</p> </div>
+
+
+
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV01.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV02.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV03.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV04.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV05.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV06.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV07.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV08.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV09.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV10.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV11.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV12.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV13.png"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/BDV14.png"> <p>Render</p> </div>
+
+
+<p class=\"ql-align-justify\"><strong>Disciplina:&nbsp;&nbsp;</strong>interiorismo</p><p class=\"ql-align-justify\"><strong>Nombre del Proyecto: </strong>&nbsp;OFICINA PISO 10 BDV</p><p class=\"ql-align-justify\"><strong>Tipología: </strong>OFICINA</p><p class=\"ql-align-justify\"><strong>Superficie: 250 </strong>m2<strong>&nbsp;</strong></p><p class=\"ql-align-justify\"><strong>Estado:&nbsp;</strong>En construcción </p><p class=\"ql-align-justify\"><strong>Diseño de proyecto:&nbsp;</strong>2022</p><p class=\"ql-align-justify\"><strong>Cliente: </strong>Banco de Venezuela.</p><p class=\"ql-align-justify\">&nbsp;</p><p class=\"ql-align-justify\">Programa: oficinas, con capacidad operativa total de 50 personas, 6 gerentes de negocios, gerente de área, coordinador de personal y 40 asesores.</p><p class=\"ql-align-justify\">&nbsp;</p><p class=\"ql-align-justify\">Las oficinas de piso 10 del banco de Venezuela, parten de las necesidad de tener un espacio destinado para la asesoría de pequeños emprendedores de manera remota, por lo tanto el personal asignado maneja una alta demanda de personas, por ende había que considerar no solo puestos de trabajo, también disponer de almacenamiento suficiente para la cantidad de expedientes que deben analizar, el espacio en general al ser de planta cuadrada también está pensado para ser un lugar flexible, los puestos de los asesores se pueden cambiar de lugar, donde el trabajo en colaboración se genere de forma natural , por eso no existen divisiones opacas, el recinto es un espacio abierto bien iluminado, con zonas de descanso y lugares donde hacer reuniones, definidas por una serie&nbsp;de pérgolas que fueron diseñadas para dar la sensación de continuo movimiento, no existe cielorraso así que todas las instalaciones de aire acondicionado están a la vista lo que proporciona un diseño de carácter industrial y fresco, como en proyectos anteriores implementamos estrategias, mobiliarios y paleta de colores que sean reconocibles con el cambio de imagen solicitado de esta entidad bancaria lo que ofrece este proyecto es el resultado de un conjuntos de espacios que están&nbsp;alineados con las nuevas formas de ocupar las oficinas, lugares de encuentro entre el personal donde poder colaborar y compartir conocimiento y fomentar un abanico de posibilidades para la innovación.</p><p><br></p>

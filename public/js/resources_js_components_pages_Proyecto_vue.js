@@ -44,6 +44,7 @@ __webpack_require__.r(__webpack_exports__);
     if (this.$route.params.proyect) {
       this.proyecto = this.$route.params.proyect;
       this.texto = this.proyecto.body;
+      console.log(this.proyecto);
     } else {
       if (localStorage.slug) {
         var proy = {
@@ -83,6 +84,8 @@ __webpack_require__.r(__webpack_exports__);
       body.style.margin = "0 -15px";
     },
     renderSlider: function renderSlider() {
+      console.log("IMGS; ");
+      console.log(this.imgs);
       this.texto = this.auxtext;
       this.programa = [];
       this.getTitles();
@@ -151,6 +154,9 @@ __webpack_require__.r(__webpack_exports__);
         {
           this.slider = null;
         }
+
+      console.log("SLIDER; ");
+      console.log(this.slider);
     },
     getImg: function getImg() {
       var res = "";
@@ -199,11 +205,25 @@ __webpack_require__.r(__webpack_exports__);
         }
       }
 
-      this.imgs = this.imgsAfter;
       this.auxtext = this.texto;
       /*para retomar el body despues de quitarle las imagenes*/
 
-      this.activeTag = "After";
+      if (this.imgsAfter.length != 0) {
+        this.imgs = this.imgsAfter;
+        this.activeTag = "After";
+      } else if (this.imgsRender != 0) {
+        this.imgs = this.imgsRender;
+        this.activeTag = "Render";
+      } else if (this.imgsProcess != 0) {
+        this.imgs = this.imgsProcess;
+        this.activeTag = "Process";
+      } else if (this.imgsBefore != 0) {
+        this.imgs = this.imgsBefore;
+        this.activeTag = "Before";
+      } else {
+        this.$router.push('/portfolio');
+      }
+
       this.renderSlider();
     },
     removeTags: function removeTags() {

@@ -1,0 +1,25 @@
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/ENTREVISTAS.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/ESTACIONES--VISTA-1.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/ESTACIONES-VISTA-3.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/KITCHENETTE-VISTA-2.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/OPERACIONES.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/OPERACIONES-VISTA-2.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/PRESIDENCIA-VISTA-1.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/RECEPCION-VISTA-1.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/RECEPCION-VISTA-2.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/SALA-DE-REUNIONES-VISTA-3.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/SALA-SITUACIONAL-V2.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/SISTEMAS.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/VICE-VISTA-2.jpg"> <p>Render</p> </div>
+
+
+
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_5526.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_5536.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_5539.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_5560.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_5565.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_5573.jpg"> <p>After</p> </div>
+
+
+<p class=\"ql-align-justify\"><strong>Disciplina:&nbsp;&nbsp;</strong>Arquitectura e interiorismo</p><p class=\"ql-align-justify\"><strong>Nombre del Proyecto: </strong>&nbsp;OFICINA SEDE COBREMEX</p><p class=\"ql-align-justify\"><strong>Tipología: </strong>oficina</p><p class=\"ql-align-justify\"><strong>Superficie: 300 </strong>m2<strong>&nbsp;</strong></p><p class=\"ql-align-justify\"><strong>Estado:&nbsp;</strong>en construcción </p><p class=\"ql-align-justify\"><strong>Diseño de proyecto:&nbsp;</strong>2022</p><p class=\"ql-align-justify\"><strong>Cliente: </strong>Privado</p><p class=\"ql-align-justify\">&nbsp;</p><p class=\"ql-align-justify\"><strong>Programa: </strong></p><p class=\"ql-align-justify\">sede oficina Cobremex, con espacio para 50 trabajadores, entre personal operativo, gerentes de área, presidencia, vicepresidencia, Kitchenette corporativa, Sala de conferencias, espacio para entrevistas, sala situacional y call center.</p><p class=\"ql-align-justify\">&nbsp;</p><p class=\"ql-align-justify\">Cobremex es una empresa que ofrece tecnología de taquillas de peaje a otras empresas en el país, la propuesta conlleva la sede de su oficina comercial.</p><p class=\"ql-align-justify\">La idea consiste en crear espacios abiertos, la recepción se plantea como un espacio que comunique el objetivo visionario de la empresa tomando como referencia los colores corporativos para dar un sentido de pertenencia apoyado en la última tecnología para su estrategia de venta. Para los puestos operativos donde su rotación puede ser muy activa y la capacidad operativa puede superar los 30 puestos, decidimos ubicar las oficinas gerenciales y de mayor jerarquía en el perímetro y los puestos operativos focalizados en el centro, permitiendo generalizar la luz natural para todo el personal, lo que genera menor gasto de luz artificial, incorporando plantas colgantes para purificar el aire y hacer del espacio interno más agradable.</p><p><br></p>
