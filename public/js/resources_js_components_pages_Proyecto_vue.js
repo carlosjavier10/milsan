@@ -44,7 +44,6 @@ __webpack_require__.r(__webpack_exports__);
     if (this.$route.params.proyect) {
       this.proyecto = this.$route.params.proyect;
       this.texto = this.proyecto.body;
-      console.log(this.proyecto);
     } else {
       if (localStorage.slug) {
         var proy = {
@@ -84,8 +83,6 @@ __webpack_require__.r(__webpack_exports__);
       body.style.margin = "0 -15px";
     },
     renderSlider: function renderSlider() {
-      console.log("IMGS; ");
-      console.log(this.imgs);
       this.texto = this.auxtext;
       this.programa = [];
       this.getTitles();
@@ -154,9 +151,6 @@ __webpack_require__.r(__webpack_exports__);
         {
           this.slider = null;
         }
-
-      console.log("SLIDER; ");
-      console.log(this.slider);
     },
     getImg: function getImg() {
       var res = "";
@@ -164,6 +158,9 @@ __webpack_require__.r(__webpack_exports__);
       var fin = 0;
       var url = "";
       var tag = "";
+      var del = "";
+      /*para borrar*/
+
       this.texto.trim();
 
       if (this.proyecto.featured_image) {
@@ -191,6 +188,11 @@ __webpack_require__.r(__webpack_exports__);
         ini = res.indexOf('src=');
         fin = res.indexOf('">', ini + 5);
         url = res.substring(ini + 5, fin);
+        ini = this.texto.indexOf('<div ');
+        fin = this.texto.indexOf('</div>', ini);
+        del = this.texto.substring(ini, fin + 6);
+        this.texto = this.texto.replace(del, '').trim();
+        console.log(del);
         _img.url = url;
         _img.tag = tag;
 
@@ -203,6 +205,8 @@ __webpack_require__.r(__webpack_exports__);
         } else {
           this.imgsAfter.push(_img);
         }
+
+        console.log(this.texto);
       }
 
       this.auxtext = this.texto;
