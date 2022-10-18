@@ -2242,7 +2242,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
                 _context.next = 2;
                 return _this.axios.get('/api/proyectos/?filter=' + _this.$route.query.filter).then(function (response) {
                   _this.proyects = response.data.proyects;
-                  console.log(_this.proyects);
                 })["catch"](function (error) {
                   console.log(error);
                   _this.proyects = [];

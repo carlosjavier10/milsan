@@ -61,6 +61,7 @@ __webpack_require__.r(__webpack_exports__);
         proy.body = localStorage.body;
         proy.created_at = localStorage.created_at;
         proy.featured_image = localStorage.featured_image;
+        console.log(localStorage.featured_image);
         proy.id = localStorage.id;
         proy.published_at = localStorage.published_at;
         proy.summary = localStorage.summary;
@@ -162,14 +163,18 @@ __webpack_require__.r(__webpack_exports__);
       /*para borrar*/
 
       this.texto.trim();
+      console.log("en getim");
+      console.log(this.proyecto.featured_image);
 
-      if (this.proyecto.featured_image) {
+      if (this.proyecto.featured_image == null || this.proyecto.featured_image == "null" || this.proyecto.featured_image == undefined) {} else {
         var img = {
           url: "",
           tag: ""
         };
         img.url = this.proyecto.featured_image;
         img.tag = "Despues";
+        console.log("entro AL IF");
+        console.log(this.proyecto.featured_image);
         this.imgsAfter.unshift(img);
       }
 
@@ -192,7 +197,6 @@ __webpack_require__.r(__webpack_exports__);
         fin = this.texto.indexOf('</div>', ini);
         del = this.texto.substring(ini, fin + 6);
         this.texto = this.texto.replace(del, '').trim();
-        console.log(del);
         _img.url = url;
         _img.tag = tag;
 
@@ -205,8 +209,6 @@ __webpack_require__.r(__webpack_exports__);
         } else {
           this.imgsAfter.push(_img);
         }
-
-        console.log(this.texto);
       }
 
       this.auxtext = this.texto;

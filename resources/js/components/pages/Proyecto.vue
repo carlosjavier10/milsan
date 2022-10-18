@@ -199,6 +199,9 @@ export default{
 				proy.body=localStorage.body
 				proy.created_at=localStorage.created_at
 				proy.featured_image=localStorage.featured_image
+
+				console.log(localStorage.featured_image)
+
 				proy.id=localStorage.id
 				proy.published_at=localStorage.published_at
 				proy.summary=localStorage.summary
@@ -332,8 +335,14 @@ export default{
 			let del =""/*para borrar*/
 
 			this.texto.trim()
+			console.log("en getim")
+			console.log(this.proyecto.featured_image)
 
-			if(this.proyecto.featured_image){
+
+			if((this.proyecto.featured_image == null) || (this.proyecto.featured_image == "null") || (this.proyecto.featured_image == undefined)   ) {
+			}
+
+			else{
 				let img ={
 					url:"",
 					tag:""
@@ -342,8 +351,10 @@ export default{
 				img.url=this.proyecto.featured_image
 				img.tag="Despues"
 
-				this.imgsAfter.unshift(img)
+				console.log("entro AL IF")
+				console.log(this.proyecto.featured_image)
 
+				this.imgsAfter.unshift(img)
 			}
 
 
@@ -372,7 +383,7 @@ export default{
 				fin = this.texto.indexOf('</div>', ini)
 				del = this.texto.substring(ini,fin+6)
 				this.texto = this.texto.replace(del,'').trim()
-				console.log(del)
+
 
 
 				img.url = url
@@ -392,7 +403,7 @@ export default{
 				else{
 					this.imgsAfter.push(img)
 				}
-				console.log(this.texto)
+
 			}
 			this.auxtext = this.texto  /*para retomar el body despues de quitarle las imagenes*/
 

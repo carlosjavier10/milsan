@@ -1,17 +1,23 @@
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_7899.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_7900.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_7906.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_7909.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_7910.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/IMG_7911.jpg"> <p>After</p> </div>
+
+
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_20220223_132050.jpg"> <p>Before</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_20220223_132236.jpg"> <p>Before</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_20220223_132939.jpg"> <p>Before</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_20220223_132957.jpg"> <p>Before</p> </div>
 
 
-
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/01SALAESPERA.jpg"> <p>Render</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/04 GERENTE.png"> <p>Render</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/06 KITCHINETTE.png"> <p>Render</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/08 PASILLO.png"> <p>Render</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/10 OPERATIVOS.png"> <p>Render</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/15 SALA DE JUNTAS.png"> <p>Render</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/17 PLANTA.png"> <p>Render</p> </div>
-
-
 
 <p class=\"ql-align-justify\"><strong>Disciplina:&nbsp;&nbsp;</strong>Arquitectura e interiorismo</p><p class=\"ql-align-justify\"><strong>Nombre del Proyecto: </strong>OFICINA TALEL</p><p class=\"ql-align-justify\"><strong>Tipología: </strong>oficinas</p><p class=\"ql-align-justify\"><strong>Superficie: </strong>190m2<strong>&nbsp;</strong></p><p class=\"ql-align-justify\"><strong>Estado:&nbsp;</strong>En construcción</p><p class=\"ql-align-justify\"><strong>Diseño de proyecto:&nbsp;</strong>2022</p><p class=\"ql-align-justify\"><strong>Cliente: </strong>Privado</p><p class=\"ql-align-justify\">&nbsp;</p><p class=\"ql-align-justify\">Programa:</p><p class=\"ql-align-justify\">Ubicada en la zona del este de la ciudad de Barquisimeto, en el centro occidente del país, la Oficina TALEL tiene como función concentrar la logística y administración del aseo urbano, el espacio tiene la capacidad de una continua transformación, el número de empleados puede aumentar drásticamente, por ende, la propuesta debía tener una distribución flexible que se adaptará a las necesidades que la dinámica de la oficina demande.</p><p class=\"ql-align-justify\">En el acceso se encuentra la recepción con sala de espera, seguidamente se encuentra la sala de reuniones, que colinda con la oficina presidencial y un comedor para empleados con relación directa a pequeña cocina para facilitar su uso.</p><p class=\"ql-align-justify\">Los espacios para los puestos operativos y la gerencia están en el ala este que corresponde a la oficina en expansión, para este espacio fue necesario proponer elementos de control solar y vegetación para atenuar la incidencia directa de luz natural, usando una paleta de colores claros, donde el blanco predomina y reduce el nivel de absorción de calor por material, el resultado es un espacio de trabajo amplio, pulcro y atemporal, donde se aprovecharon los elementos que se tenían a disposición.</p><p><br></p>

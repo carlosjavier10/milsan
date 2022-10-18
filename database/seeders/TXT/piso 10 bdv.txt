@@ -6,7 +6,7 @@
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/8EFF679B-8CF3-4D4B-A49C-441CFB860692.jpg"> <p>After</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/95425216-80F0-4D6F-8794-C57FBB00D1EB.jpg"> <p>After</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/D5DC9DB4-D9FE-431C-A922-DD754F1E7C51.jpg"> <p>After</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/Foto 2022-10-06.jpg"> <p>After</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="After" src="/storage/canvas/images/Foto2022-10-06.jpg"> <p>After</p> </div>
 
 
 

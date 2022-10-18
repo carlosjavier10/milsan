@@ -5,7 +5,7 @@
 /vendor
 /public/js/app.js
 /public/js/app.css
-
+/database/seeders/TXT/
 
 
 .env

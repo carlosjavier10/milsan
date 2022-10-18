@@ -1,35 +1,32 @@
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render_final_01.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal02.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal03.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal04.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal05.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal06.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal07.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal08.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal09.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal10.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal11.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal12.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal13.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal14.jpg"> <p>Render</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/renderfinal15.jpg"> <p>Render</p> </div>
 
 
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 02.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 03.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 04.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 05.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 06.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 07.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 08.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 09.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 10.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 11.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 12.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 13.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 14.png"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Render" src="/storage/canvas/images/render final 15.png"> <p>Render</p> </div>
 
-
-
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/be4f5277-0176-4d28-8a7e-b2dde9d73f0f.JPG"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/Diapositiva2.JPG"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/Diapositiva3.JPG"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/I (1).jpeg"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_2561.jpg"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7363.jpg"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7370.jpg"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7371.jpg"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7372.jpg"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7376.jpg"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7384.jpg"> <p>Render</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7388.jpg"> <p>Render</p> </div>
-
-
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/be4f5277.jpg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/Diapositiva2.jpg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/Diapositiva3.jpg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/I (1).jpeg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_2561.jpg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7363.jpg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7370.jpg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7371.jpg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7372.jpg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7376.jpg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7384.jpg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7388.jpg"> <p>Before</p> </div>
 
 <p class=\"ql-align-justify\"><strong>Disciplina:&nbsp;&nbsp;</strong>Arquitectura e interiorismo</p><p class=\"ql-align-justify\"><strong>Nombre del Proyecto: </strong>&nbsp;Vivienda unifamiliar Escobar</p><p class=\"ql-align-justify\"><strong>Tipología: </strong>residencial</p><p class=\"ql-align-justify\"><strong>Superficie: 300 </strong>m2<strong>&nbsp;</strong></p><p class=\"ql-align-justify\"><strong>Estado:&nbsp;</strong>en construcción </p><p class=\"ql-align-justify\"><strong>Diseño de proyecto:&nbsp;</strong>2022</p><p class=\"ql-align-justify\"><strong>Cliente: </strong>Privado</p><p class=\"ql-align-justify\">&nbsp;</p><p class=\"ql-align-justify\"><strong>Programa:</strong>&nbsp;</p><p class=\"ql-align-justify\">Vivienda unifamiliar, Salón de fiestas con baños privados, Bar, terrazas cubiertas, terrazas para piscina, renovación de baños nuevos para bañistas, área de parrilla, Bar exterior, área de descanso piscina, Habitación de Huéspedes, Salón principal, cocina, Comedor, Sala de lavado, habitaciones para niños con baño integrado, habitación principal con terraza privada, vestidor y baño principal</p><p class=\"ql-align-justify\">La Casa Escobar ha sido un proyecto desafiante desde el principio, nos hizo preguntarnos como hacer una vivienda donde la estructura existente debe modificarse casi por completo, lo que requirió elaborar varios análisis estructurales buscando una solución eficiente y económica.</p><p class=\"ql-align-justify\">El sitio cuenta con unas vistas hermosas hacia el valle del turbio que se usaron como punto de partida para generar un proyecto arquitectónico abordando una propuesta con un programa complejo, una habitación de huéspedes en el nivel mas inferior de la vivienda seguido del área de la piscina que fue reacondicionada para ganar mas superficie creando una terraza para el mobiliario exterior y una pérgola para definir el acceso a la piscina.</p><p class=\"ql-align-justify\">En planta baja se encuentra el salón de fiestas con un espacio definido en cristales correderos, que colindan con una terraza cubierta que permite según el requerimiento del espacio, desplazar los ventanales y vincularse con la terraza aumentando considerablemente la superficie construida.</p><p class=\"ql-align-justify\">En los niveles superiores se encuentran las áreas sociales del interior de la vivienda, con una terraza para disfrutar de las vistas de la ciudad, una ubicación con un valor escenográfico importante. La organización de los espacios consta de 3 Volúmenes blancos de 6 metros de altura orientados en diferentes direcciones que contienen la escalera de acceso, un salón a doble altura, comedor, cocina y área de lavado y las habitaciones infantiles las cuales están implícitas en unos muebles multipropósito, por un lado, están para guardado de ropa de cama y platería y en otro sector funciona como estantería de exhibición para objetos de valor sentimental.</p><p class=\"ql-align-justify\">En el nivel Superior está la Habitación principal, posee un ventanal que funciona como galería de arte que se relaciona visualmente con el salón, la terraza exterior y al fondo el paisaje larense logrando dominio visual interesante. El dormitorio posee una terraza privada, para desayunar o relajarse. Un gran vestidor que cubre todas las necesidades de la pareja con un patio interno que proporciona un segundo acceso al baño principal.</p><p class=\"ql-align-justify\">El resultado es una vivienda imponente, con todas las comodidades y entretenimiento que una familia puede desear, aprovechando las condiciones del lugar.</p><p><br></p>

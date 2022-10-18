@@ -50,11 +50,11 @@ export default {
 
 			await this.axios.get('/api/proyectos/?filter='+ this.$route.query.filter).then(response=>{
 				this.proyects = response.data.proyects
-				console.log(this.proyects)
 
 			}).catch(error=>{
 				console.log(error)
 				this.proyects = []
+
 			})
 		},
 		created() {
