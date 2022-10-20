@@ -30,15 +30,24 @@
         <div class="carousel-inner">
 
           <div class="carousel-item active" data-bs-interval="3000">
-            <img src="{{ asset('/images/portada/MSarquitecta cover image 1.jpg') }}" class="d-block wh-img" alt="...">
+            <img src="{{ asset('/images/portada/MSarquitecta-cover image1.jpg') }}" class="d-block wh-img" alt="...">
           </div>
 
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="{{ asset('/images/portada/MSarquitecta-cover-image-2.jpg') }}" class="d-block wh-img" alt="...">
+            <img src="{{ asset('/images/portada/MSarquitecta-cover image2.jpg') }}" class="d-block wh-img" alt="...">
           </div>
 
           <div class="carousel-item"data-bs-interval="3000">
-            <img src="{{ asset('/images/portada/MSarquitecta cover image 3.jpg') }}" class="d-block wh-img" alt="CCCCCCCCcc">
+            <img src="{{ asset('/images/portada/MSarquitecta-cover image3.jpg') }}" class="d-block wh-img" alt="..">
+          </div>
+          <div class="carousel-item"data-bs-interval="3000">
+            <img src="{{ asset('/images/portada/MSarquitecta-cover image4.jpg') }}" class="d-block wh-img" alt="..">
+          </div>
+          <div class="carousel-item"data-bs-interval="3000">
+            <img src="{{ asset('/images/portada/MSarquitecta-cover image5.jpg') }}" class="d-block wh-img" alt="..">
+          </div>
+          <div class="carousel-item"data-bs-interval="3000">
+            <img src="{{ asset('/images/portada/MSarquitecta-cover image6.jpg') }}" class="d-block wh-img" alt="..">
           </div>
 
         </div>
