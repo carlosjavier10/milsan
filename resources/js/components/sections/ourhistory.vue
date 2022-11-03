@@ -45,8 +45,6 @@
 
 <style>
 
-.marketing{
-  margin-top:2.5rem;
-}
+
 
 </style>

@@ -1,0 +1,239 @@
+/* TEAM SECTION   */
+
+#team .member img {
+
+  border-radius: 30px
+}
+
+#team .my-5 {
+  margin-top: 0;
+  ,margin-bottom: 0;
+
+}
+
+
+
+#team .member .member-info-content {
+  margin-top: -50px;
+  transition: margin 0.2s;
+}
+
+#team .member:hover .member-info {
+/*  background: rgba(0, 0, 0, 0.7);*/
+  opacity: 1;
+  transition: 0.4s;
+}
+
+#team .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+#team .member .social {
+  margin-top: 15px;
+}
+
+#team .member .social a {
+  transition: none;
+  color: #fff;
+}
+
+#team .member .social a:hover {
+  color: #2c2c2c;
+}
+
+#team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+
+/* Team Section
+--------------------------------*/
+
+#team {
+  background: #fff;
+  padding: 60px 0;
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: rgba(255,255,255,0);
+  position: relative;
+}
+
+#team .member .member-info {
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+/*Responsive CSS*/
+
+@media (min-width: 3996px) {
+
+  #team .section-header h3{
+    font-size: 6rem;
+  }
+
+  #team .section-header p{
+    font-size: 4rem;
+  }
+
+  #team .img-fluid{
+    width: 900px
+  }
+
+  #team .member-info-content h4 {
+    font-size: 4rem
+  }
+
+  #team .member-info-content span{
+    font-size: 3rem;
+  }
+  #team .member-info-content .social i{
+    font-size: 3rem
+  }
+}
+
+
+@media only screen and (min-width: 2304px) and (max-width: 3200px){
+
+    #team .section-header h3{
+    font-size: 5rem;
+  }
+
+  #team .section-header p{
+    font-size: 3rem;
+  }
+
+  #team .img-fluid{
+    width: 500px;
+  }
+
+  #team .member-info-content h4 {
+    font-size: 2.5rem
+  }
+
+  #team .member-info-content span{
+    font-size: 2rem;
+  }
+  #team .member-info-content .social i{
+    font-size: 2rem
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1760px) and (max-width: 2304px){
+
+    #team .section-header h3{
+    font-size: 4rem;
+  }
+
+  #team .section-header p{
+    font-size: 2.5rem;
+  }
+
+  #team .img-fluid{
+    width: 400px;
+  }
+
+  #team .member-info-content h4 {
+    font-size: 2rem
+  }
+
+  #team .member-info-content span{
+    font-size: 1.8rem;
+  }
+  #team .member-info-content .social i{
+    font-size: 2rem
+  }
+   }
+
+
+   @media only screen and (min-width: 1500px) and (max-width: 1760px){
+
+         #team .section-header h3{
+    font-size: 3rem;
+  }
+
+  #team .section-header p{
+    font-size: 2rem;
+  }
+
+  #team .img-fluid{
+    width: 300px;
+  }
+
+  #team .member-info-content h4 {
+    font-size: 1.5rem
+  }
+
+  #team .member-info-content span{
+    font-size: 1.5rem;
+  }
+  #team .member-info-content .social i{
+    font-size: 1.5rem
+  }
+   }
+
+
+   @media only screen and (min-width: 1340px) and (max-width: 1500px){
+
+           #team .section-header h3{
+    font-size: 2.5rem;
+  }
+
+  #team .section-header p{
+    font-size: 1.5rem;
+  }
+
+  #team .img-fluid{
+    width: 250px;
+  }
+
+  #team .member-info-content h4 {
+    font-size: 1.2rem
+  }
+
+  #team .member-info-content span{
+    font-size: 1.2rem;
+  }
+  #team .member-info-content .social i{
+    font-size: 1.2rem
+  }
+
+   }

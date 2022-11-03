@@ -55,25 +55,8 @@ body {
 /* rtl:end:ignore */
 
 
-/* Featurettes
-------------------------- */
 
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
 
-.nobotonmargin {
-  margin-bottom: 0 ;
-
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  /* rtl:remove */
-  letter-spacing: -.05rem;
-}
 
 
 .carousel-inner img {
@@ -98,22 +81,6 @@ body {
   height: 100%;
 }
 
-.col-md-5 {
-  background-color: rgba(0, 0, 0, 0.1);
-  box-shadow:
-  inset 0 -3em 3em rgba(0,0,0,0.1),
-  0 0  0 2px rgb(255,255,255),
-  0.3em 0.3em 1em rgba(0,0,0,0.3);
-}
-
-.featurette  {
-  --bs-gutter-x: 0 rem !important;;
-}
-
-.col-md-7 {
-  padding-left: 1em;
-  padding-right: 1em;
-}
 
 .lead{
   font-size: 1rem;
@@ -191,19 +158,12 @@ body {
 
 
 
-/*Our history block*/
-#ourhistory .lead {
-    padding: 0 50px
-}
+
 
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}
+
 
 @media (min-width: 40em) {
   /* Bump up size of carousel content */
@@ -213,7 +173,5 @@ body {
     line-height: 1.4;
   }
 
-  .featurette-heading {
-    font-size: 50px;
-  }
+
 }

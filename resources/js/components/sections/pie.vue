@@ -96,6 +96,9 @@
 
 											<img  v-if="fooproyect.featured_image" :src="fooproyect.featured_image" class="card-img-top" :alt="fooproyect.image_caption" :title="fooproyect.title">
 
+											<img  v-else src="/images/MSarquitecta favicon black.svg" class="card-img-top" :alt="fooproyect.image_caption" :title="fooproyect.title">
+
+
 											<!-- <img src="  images/no-image-post.jpg " class="card-img-top" alt="" title=" $proyect->title "> -->
 
 										</div>

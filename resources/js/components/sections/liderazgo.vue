@@ -35,16 +35,7 @@
 </template>
 
 <style>
-	#liderazgo .container{
-  margin-top: 0;
 
-}
-
-@media (max-width: 991px){
-  .p-lg-5 {
-    padding-top: 2em !important;
-  }
-}
 
 
 </style>

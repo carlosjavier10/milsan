@@ -43,6 +43,143 @@
 	color: white;
 }
 
+@media (min-width: 3996px) {
+	#nav-menu #right-menu{
+		font-size: 3rem;
+	}
+	#nav-menu #left-menu{
+		font-size: 3rem;
+	}
+	#nav-menu .menu-logo{
+		font-size: 3rem;
+
+	}
+
+	#nav-menu{
+		margin-top: 3.5rem
+	}
+}
+
+
+@media only screen and (min-width: 3200px) and (max-width: 3966px){
+	#nav-menu #right-menu{
+		font-size: 3rem;
+	}
+	#nav-menu #left-menu{
+		font-size: 3rem;
+	}
+	#nav-menu .menu-logo{
+		font-size: 3rem;
+
+	}
+
+	#nav-menu{
+		margin-top: 3.5rem
+	}
+
+}
+
+@media only screen and (min-width: 2304px) and (max-width: 3200px){
+
+	#nav-menu #right-menu{
+		font-size: 2rem;
+	}
+	#nav-menu #left-menu{
+		font-size: 2rem;
+	}
+	#nav-menu .menu-logo{
+		font-size: 2rem;
+
+	}
+
+	#nav-menu{
+		margin-top: 2.5rem
+	}
+
+}
+
+@media only screen and (min-width: 1984px) and (max-width: 2304px){
+
+		#nav-menu #right-menu{
+		font-size: 2rem;
+	}
+	#nav-menu #left-menu{
+		font-size: 2rem;
+	}
+	#nav-menu .menu-logo{
+		font-size: 2rem;
+
+	}
+
+	#nav-menu{
+		margin-top: 2.5rem
+	}
+
+}
+
+
+@media only screen and (min-width: 1760px) and (max-width: 1984px){
+		#nav-menu #right-menu{
+		font-size: 1.5rem;
+	}
+	#nav-menu #left-menu{
+		font-size: 1.5em;
+	}
+	#nav-menu .menu-logo{
+		font-size: 1.5rem;
+
+	}
+
+	#nav-menu{
+		margin-top: 2.5rem
+	}
+
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1760px){
+		#nav-menu #right-menu{
+		font-size: 1.3rem;
+	}
+	#nav-menu #left-menu{
+		font-size: 1.3em;
+	}
+	#nav-menu .menu-logo{
+		font-size: 1.3rem;
+
+	}
+
+	#nav-menu{
+		margin-top: 2rem
+	}
+
+
+}
+
+@media only screen and (min-width: 1340px) and (max-width: 1500px){
+
+			#nav-menu #right-menu{
+		font-size: 1.1rem;
+	}
+	#nav-menu #left-menu{
+		font-size: 1.1em;
+	}
+	#nav-menu .menu-logo{
+		font-size: 1.1rem;
+
+	}
+
+	#nav-menu{
+		margin-top: 2rem
+	}
+
+}
+
+
+@media only screen and (min-width: 1152px) and (max-width: 1340px){
+
+
+}
+
 
 @media (min-width:992px){
 	#nav-menu .menu-logo-up {

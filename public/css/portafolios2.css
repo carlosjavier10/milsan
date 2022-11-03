@@ -98,20 +98,80 @@ transition: all 0.8s;
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 3200px) {
  #portafolio .row .col{
-  width: 18em;
-  height: 18em;
+  width:  65rem;
+  height: 65rem;
 }
 
 
 }
-@media only screen and (min-width: 1080px) and (max-width: 1199px){
+
+
+@media only screen and (min-width: 3200px) and (max-width: 3966px){
  #portafolio .row .col{
-  width: 17rem;
-  height: 17rem;
+  width:  60rem;
+  height: 60rem;
+}
+
+}
+
+@media only screen and (min-width: 2304px) and (max-width: 3200px){
+ #portafolio .row .col{
+  width:  39rem;
+  height: 39rem;
+}
+
+}
+
+@media only screen and (min-width: 1984px) and (max-width: 2304px){
+ #portafolio .row .col{
+  width:  32rem;
+  height: 32rem;
 }
 }
+
+@media only screen and (min-width: 1760px) and (max-width: 1984px){
+
+   #portafolio .row .col{
+  width:  29rem;
+  height: 29rem;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1500px) and (max-width: 1760px){
+   #portafolio .row .col{
+  width:  24rem;
+  height: 24rem;
+}
+
+}
+
+
+@media only screen and (min-width: 1340px) and (max-width: 1500px){
+
+  #portafolio .row .col{
+  width:  21rem;
+  height: 21rem;
+}
+
+
+}
+
+@media only screen and (min-width: 1152px) and (max-width: 1340px){
+
+    #portafolio .row .col{
+  width:  19rem;
+  height: 19rem;
+}
+
+}
+
+
+
 
 @media (max-width:1080px){
   .card-title{
@@ -119,7 +179,7 @@ transition: all 0.8s;
   }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1079px){
+@media only screen and (min-width: 1000px) and (max-width: 1152px){
  #portafolio .row .col{
   width: 15rem;
   height: 15em;
@@ -142,8 +202,8 @@ transition: all 0.8s;
 
 @media only screen and (min-width: 768px) and (max-width: 869px){
  #portafolio .row .col{
-  width: 12rem;
-  height: 12rem;
+  width: 11rem;
+  height: 11rem;
 }
 
 

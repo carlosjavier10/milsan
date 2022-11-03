@@ -1,8 +1,8 @@
 .social {
-	position: relative;
+	position: absolute;
 /*	left: -35px;*/
 	top: 40%;
-	z-index: 2000;
+	z-index: 20000;
 }
 
 .social ul {
