@@ -1,8 +1,8 @@
 <template>
 
 	<div>
-			<mainmenu></mainmenu>
-			<portfolio></portfolio>
+		<mainmenu></mainmenu>
+		<portfolio></portfolio>
 
 	</div>
 
@@ -22,6 +22,9 @@ export default{
 			let body = document.querySelector('body');
 			body.style.overflow = "visible"
 			body.style.margin = "0px"
+
+			let containerfluid =document.querySelector('.container-fluid');
+			containerfluid.style.maxWidth="1280px"
 		}
 	},
 	watch:{

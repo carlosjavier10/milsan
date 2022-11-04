@@ -1,4 +1,4 @@
-/*WAWAAAWAWAWWAWA*/
+/* portfolio CSS */
 body{
 	margin: 0;
 
@@ -128,8 +128,8 @@ background-size: cover !important;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon{
-	width: 2.5rem !important;
-	height: 2.5rem !important;
+	width: 2.5rem;
+	height: 2.5rem;
 }
 
 .carousel-control-prev-icon {
@@ -142,25 +142,143 @@ background-size: cover !important;
 
 
 
+/*responsive CSS Querys*/
 
-@media only screen and (min-height: 800px) and (max-width: 1080px){
 
+@media (min-width: 3200px) {
+
+	#proyecto .leftarrow{
+		font-size: 7rem
+	}
+
+	#proyecto .botones a h6{
+		font-size: 3rem;
+	}
+
+	#proyecto .cover{
+		font-size: 4rem;
+		line-height: 1.2;
+	}
+
+	#proyecto .carousel-control-next-icon,#proyecto .carousel-control-prev-icon{
+	width: 6.5rem !important; ;
+	height: 6.5rem!important; ;
+}
+
+	#proyecto .programa h2{
+		font-size: 4rem
+	}
+
+		#proyecto .programa p{
+		font-size: 3rem;
+			line-height: 1.5
+	}
+	#proyecto #carouselExampleIndicators .carousel-indicators {
+
+	}
 
 
 }
 
-@media only screen and (min-height: 600px) and (max-width: 799px){
 
+@media only screen and (min-width: 2304px) and (max-width: 3200px){
+	#proyecto .leftarrow{
+		font-size: 5rem
+	}
 
+	#proyecto .botones a h6{
+		font-size: 2rem;
+	}
+
+	#proyecto .cover{
+		font-size: 3rem;
+		line-height: 1.2;
+	}
+
+	#proyecto .carousel-control-next-icon,#proyecto .carousel-control-prev-icon{
+	width: 5.5rem !important; ;
+	height:5.5rem !important; ;
 }
 
-@media (max-height: 599px){
+	#proyecto .programa h2{
+		font-size: 3rem
+	}
 
+		#proyecto .programa p{
+		font-size: 2rem;
+			line-height: 1.5
+	}
+	#proyecto #carouselExampleIndicators .carousel-indicators {
 
+	}
+	}
 
+@media only screen and (min-width: 1760px) and (max-width: 2304px){
+	#proyecto .leftarrow{
+		font-size: 4rem
+	}
 
+	#proyecto .botones a h6{
+		font-size: 1.5rem;
+	}
+
+	#proyecto .cover{
+		font-size: 2.5rem;
+		line-height: 1.2;
+	}
+
+	#proyecto .carousel-control-next-icon,#proyecto .carousel-control-prev-icon{
+	width: 4.5rem !important; ;
+	height:4.5rem !important; ;
 }
 
+	#proyecto .programa h2{
+		font-size: 2.5rem
+	}
+
+		#proyecto .programa p{
+		font-size: 1.8rem;
+			line-height: 1.5
+	}
+	#proyecto #carouselExampleIndicators .carousel-indicators {
+
+	}
+}
+
+
+@media only screen and (min-width: 1280px) and (max-width: 1760px){
+
+		#proyecto .leftarrow{
+		font-size: 3rem
+	}
+
+	#proyecto .botones a h6{
+		font-size: 1.3rem;
+	}
+
+	#proyecto .cover{
+		font-size: 2rem;
+		line-height: 1.2;
+	}
+
+	#proyecto .carousel-control-next-icon,#proyecto .carousel-control-prev-icon{
+	width: 3.5rem !important; ;
+	height:3.5rem !important; ;
+}
+
+	#proyecto .programa h2{
+		font-size: 2rem
+	}
+
+		#proyecto .programa p{
+		font-size: 1.3rem;
+			line-height: 1.5
+	}
+	#proyecto #carouselExampleIndicators .carousel-indicators {
+
+	}
+
+}
 
 
 @media (min-width: 1200px) {   /*desktop*/
@@ -174,6 +292,8 @@ background-size: cover !important;
 
 
 }
+
+
 
 @media (max-width: 1199px) {   /*desktop*/
 	.logobt{

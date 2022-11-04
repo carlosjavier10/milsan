@@ -3,16 +3,14 @@
 }
 
 #liderazgo .container{
-    margin-top: 0;
+  margin-top: 0;
 
-  }
+}
 
-  @media (max-width: 991px){
-    .p-lg-5 {
-      padding-top: 2em !important;
-    }
-  }
 
+
+/*  Responsive CSS */
+/*
   @media (min-width: 3200px) {
 
     #liderazgo h4{
@@ -149,4 +147,10 @@
       font-size: 1rem
     }
 
+    }*/
+
+    @media (max-width: 991px){
+      .p-lg-5 {
+        padding-top: 2em !important;
+      }
     }

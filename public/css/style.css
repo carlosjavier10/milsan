@@ -1296,7 +1296,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
-
+.container-fluid{
+  max-width: 1280px;
+}
 
 
 @media (min-width: 768px) {

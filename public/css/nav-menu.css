@@ -43,7 +43,7 @@
 	color: white;
 }
 
-@media (min-width: 3996px) {
+/*@media (min-width: 3996px) {
 	#nav-menu #right-menu{
 		font-size: 3rem;
 	}
@@ -173,7 +173,7 @@
 	}
 
 }
-
+*/
 
 @media only screen and (min-width: 1152px) and (max-width: 1340px){
 

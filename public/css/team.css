@@ -100,7 +100,7 @@
 }
 
 /*Responsive CSS*/
-
+/*
 @media (min-width: 3996px) {
 
   #team .section-header h3{
@@ -236,7 +236,7 @@
     font-size: 1.2rem
   }
 }
-
+*/
    @media only screen and (max-width: 991px){
      #team .member-info-mobil h4{
        color: #2c2c2c;

@@ -1,3 +1,5 @@
+
+
 #portafolio {
   padding-bottom: 20px !important;
 }
@@ -100,8 +102,8 @@ transition: all 0.8s;
 
 @media (min-width: 3200px) {
  #portafolio .row .col{
-  width:  65rem;
-  height: 65rem;
+  width:  17rem;
+  height: 17rem;
 }
 
 
@@ -251,4 +253,11 @@ transition: all 0.8s;
   padding-left: 0px;
 }
 }
+/*!!!!!!!!!!!!!!!!!!1*/
 
+@media only screen and (min-width: 1280px){
+#portafolio .row .col{
+  width: 19rem !important;
+  height: 19rem !important;
+}
+/*!!!!!!!!!!!!!!!!*/

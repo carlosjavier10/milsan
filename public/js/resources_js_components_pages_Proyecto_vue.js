@@ -82,6 +82,8 @@ __webpack_require__.r(__webpack_exports__);
       var body = document.querySelector('body');
       body.style.overflow = "hidden";
       body.style.margin = "0 -15px";
+      var containerfluid = document.querySelector('.container-fluid');
+      containerfluid.style.maxWidth = "100%";
     },
     renderSlider: function renderSlider() {
       this.texto = this.auxtext;

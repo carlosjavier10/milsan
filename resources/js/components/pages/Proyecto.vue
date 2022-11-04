@@ -230,6 +230,9 @@ export default{
 			body.style.overflow = "hidden"
 			body.style.margin = "0 -15px"
 
+			let containerfluid =document.querySelector('.container-fluid');
+			containerfluid.style.maxWidth="100%"
+
 		},
 
 		renderSlider(){
