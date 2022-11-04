@@ -166,7 +166,9 @@ __webpack_require__.r(__webpack_exports__);
       console.log("en getim");
       console.log(this.proyecto.featured_image);
 
-      if (this.proyecto.featured_image == null || this.proyecto.featured_image == "null" || this.proyecto.featured_image == undefined) {} else {
+      if (this.proyecto.featured_image == null || this.proyecto.featured_image == "null" || this.proyecto.featured_image == undefined) {
+        console.log("NO TIENE IMAGEN PRINCIPAL");
+      } else {
         var img = {
           url: "",
           tag: ""

@@ -340,6 +340,7 @@ export default{
 
 
 			if((this.proyecto.featured_image == null) || (this.proyecto.featured_image == "null") || (this.proyecto.featured_image == undefined)   ) {
+				console.log("NO TIENE IMAGEN PRINCIPAL")
 			}
 
 			else{
