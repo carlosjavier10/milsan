@@ -72,7 +72,8 @@ nav.vertical ul li {
 nav.horizontal ul li {	
 	display: inline-block;
 }/* horizontal menu */
-img {
+
+#contacto img {
 	max-width:100%;
 }
 

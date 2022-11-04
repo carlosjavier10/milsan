@@ -4,6 +4,15 @@ body{
   top: 0;
 }
 
+.wh-img {
+ width:100vw;
+ height:100vh;
+ background-position: center center;
+ background-size: cover;
+ margin: 0px;
+ padding: 0px;
+}
+
 @font-face {
  font-family: 'Rage Italic';
  src: url('/fonts/rage-italic.ttf') format("truetype");
@@ -34,8 +43,6 @@ font-style: normal;
   text-align: center !important;
 }
 
-
-
 #header {
   padding: 30px 0;
   height: 92px;
@@ -62,14 +69,12 @@ font-style: normal;
 
 .cb{
   position: relative;
-
-
 }
 
 #carousel .coverbutton {
   position: absolute;
-    top: 50%;
-    left: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, 350px);
   font-family: 'Qualy Bold';
   font-size: 1.2rem;
@@ -79,7 +84,7 @@ font-style: normal;
   letter-spacing: 3px;
   color: white;
   z-index: 1001;
-    transition: 0.5s;
+  transition: 0.5s;
   padding: 10px;
   background-color: #2c2c2c;
   border: none;
@@ -90,32 +95,6 @@ font-style: normal;
   background-color: white;
   border: none;
 }
-
-@media only screen and (min-height: 800px) and (max-width: 1080px){
-
-  #carousel .coverbutton {
-    transform: translate(-50%, 600px);
-  }
-
-}
-
-@media only screen and (min-height: 600px) and (max-width: 799px){
-
-  #carousel .coverbutton {
-    transform: translate(-50%, 400px);
-  }
-}
-
-@media (max-height: 599px){
-
-  #carousel .coverbutton {
-    transform: translate(-50%, 250px);
-  }
-
-
-}
-
-
 
 #header #logo h1 a,
 #header #logo h1 a:hover {
@@ -133,19 +112,11 @@ font-style: normal;
   text-align: center !important;
 }
 
-
-
-
-
 @media (min-width: 1200px) {   /*desktop*/
-  .wh-img {
-    width: 100% !important;
-  }
 
   .logobt{
     top: 30%;
   }
-
 
 }
 
@@ -156,8 +127,6 @@ font-style: normal;
 
 }
 
-
-
 @media (max-width: 768px) { /*tablets*/
 
 
@@ -166,4 +135,23 @@ font-style: normal;
   }
 }
 
+@media only screen and (min-height: 800px) and (max-width: 1080px){
 
+  #carousel .coverbutton {
+    transform: translate(-50%, 600px);
+  }
+}
+
+@media only screen and (min-height: 600px) and (max-width: 799px){
+
+  #carousel .coverbutton {
+    transform: translate(-50%, 400px);
+  }
+}
+
+@media (max-height: 599px){
+
+  #carousel .coverbutton {
+    transform: translate(-50%, 250px);
+  }
+}

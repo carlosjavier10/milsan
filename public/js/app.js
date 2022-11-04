@@ -3172,7 +3172,7 @@ var render = function render() {
   }, [_vm._v("\n\t\t\t\tEn MSArquitecta todas las voces son escuchadas, esto suma un valor agregado a cada una de las actividades y brinda un estímulo mayor a participar y a trabajar como equipo.")]), _vm._v(" "), _c("div", {
     staticClass: "d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3"
   }, [_c("router-link", {
-    staticClass: "btn btn-primary custombotto btn-lg px-4 me-md-2 fw-bold",
+    staticClass: "btn btn-dark custombotto btn-lg px-4 me-md-2 fw-bold",
     attrs: {
       to: "/foo",
       tag: "button"

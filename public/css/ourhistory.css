@@ -2,7 +2,7 @@
 
 /*Our history block*/
 #ourhistory .lead {
-    padding: 0 50px
+    /*! padding: 0 50px; */
 }
 
 /* Featurettes
@@ -138,6 +138,16 @@
   #ourhistory .featurette-heading{
     margin-top: 1rem
   }
+}
+
+
+  @media (max-width: 320px){
+
+    #ourhistory .lead{
+      padding: 0 0;
+      font-size: 1rem
+    }
+
 }
 
 

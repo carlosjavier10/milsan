@@ -16,7 +16,7 @@
 					<div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
 
 
-						<router-link to="/foo" tag="button"  class="btn btn-primary custombotto btn-lg px-4 me-md-2 fw-bold">
+						<router-link to="/foo" tag="button"  class="btn btn-dark custombotto btn-lg px-4 me-md-2 fw-bold">
 							Contacto
 						</router-link>
 

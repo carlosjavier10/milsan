@@ -235,5 +235,10 @@
   #team .member-info-content .social i{
     font-size: 1.2rem
   }
+}
 
+   @media only screen and (max-width: 991px){
+     #team .member-info-mobil h4{
+       color: #2c2c2c;
+     }
    }

@@ -4,7 +4,7 @@
 
 #footer {
   background: #000;
-  padding: 0px 10px 30px 10px;
+  padding: 0px 0px 30px 0px;
   color: #eee;
   font-size: 14px;
 
@@ -12,31 +12,17 @@
 
 #footer .footer-top {
   background: #111;
-  padding: 60px 0 30px 0;
-}
-
-#footer .footer-top .footer-info {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-info h3 {
-  font-size: 34px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 10px;
-  line-height: 1;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-  border-left: 4px solid #2c2c2c;
+  padding: 60px 0 60px 0;
 }
 
 #footer .footer-top .footer-info p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.2;
   margin-bottom: 0;
   font-family: "Montserrat", sans-serif;
   color: #eee;
   text-align: justify;
+  margin: 0px 1rem 0px 0px;
 }
 
 #footer .footer-top .social-links a {
@@ -66,6 +52,7 @@
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
+  padding-top: 20%;
 }
 
 #footer .footer-top h4::before,
@@ -98,7 +85,7 @@
 }
 
 #footer .footer-top .footer-links ul i {
-  padding-right: 8px;
+  padding-right: 28px;
   color: #ddd;
 }
 
@@ -121,10 +108,6 @@
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact p {
-  line-height: 26px;
 }
 
 #footer .footer-top .footer-newsletter {
@@ -167,9 +150,8 @@
   -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, .75);
 }
 
-
 /*Footer logo image*/
-.footer-logo {
+#footer .footer-logo {
   width: 45%;
   margin-bottom: 15px;
   display: block;
@@ -177,8 +159,338 @@
   margin-top: -50px
 }
 
-
 #footer .container{
   margin-left: 10px;
   margin-right: 10px;
+}
+
+#footer .card {
+  border-radius: 1em;
+}
+
+#footer .card-img-top {
+  border-radius: 1em;
+  width: 100%;
+  height: 100px;
+
+}
+
+/*responsive css*/
+
+@media (min-width: 3200px){
+
+  #footer{
+    font-size: 2.5rem;
+
+  }
+
+  #footer .footer-top .footer-info p {
+    font-size: 2.5rem;
+
+  }
+
+  #footer .footer-top h4{
+    font-size: 3rem;
+  }
+
+  #footer .footer-top .footer-contact p {
+    font-size: 2.5rem;
+
+  }
+
+  #footer .footer-top .social-links a{
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+  }
+  #footer .footer-top .social-links a img{
+    width: 3rem
+
+  }
+
+  #footer .footer-top .footer-links ul li{
+    border-bottom: 2px solid #333;
+  }
+
+  #footer .footer-top .footer-links {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #footer .card-img-top{
+    height: 19rem;
+  }
+
+  #footer .card{
+    border: 3px solid rgba(0,0,0,.125);
+  }
+
+  #footer .credits{
+    font-size: 2rem
+  }
+}
+
+@media only screen and (min-width: 2304px) and (max-width: 3200px){
+  #footer{
+    font-size: 2rem;
+
+  }
+
+  #footer .footer-top .footer-info p {
+    font-size: 2rem;
+
+  }
+
+  #footer .footer-top h4{
+    font-size: 2rem;
+  }
+
+  #footer .footer-top .footer-contact p {
+    font-size: 2rem;
+
+  }
+
+  #footer .footer-top .social-links a{
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  #footer .footer-top .social-links a img{
+    width: 2rem
+
+  }
+
+  #footer .footer-top .footer-links ul li{
+    border-bottom: 2px solid #333;
+  }
+
+  #footer .footer-top .footer-links {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  #footer .card-img-top{
+    height: 11rem;
+  }
+
+  #footer .card{
+    border: 2px solid rgba(0,0,0,.125);
+  }
+
+  #footer .credits{
+    font-size: 1.5rem
+  }
+
+}
+
+@media only screen and (min-width: 1984px) and (max-width: 2304px){
+
+  #footer{
+    font-size: 1.7rem;
+
+  }
+
+  #footer .footer-top .footer-info p {
+    font-size: 1.7rem;
+
+  }
+
+  #footer .footer-top h4{
+    font-size: 1.7rem;
+  }
+
+  #footer .footer-top .footer-contact p {
+    font-size: 1.7rem;
+
+  }
+
+  #footer .footer-top .social-links a{
+    font-size: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  #footer .footer-top .social-links a img{
+    width: 1.5rem
+
+  }
+
+  #footer .footer-top .footer-links ul li{
+    border-bottom: 2px solid #333;
+  }
+
+  #footer .footer-top .footer-links {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #footer .card-img-top{
+    height: 9rem;
+  }
+
+  #footer .card{
+    border: 2px solid rgba(0,0,0,.125);
+  }
+
+  #footer .credits{
+    font-size: 1.5rem
+  }
+
+}
+
+@media only screen and (min-width: 1760px) and (max-width: 1984px){
+
+  #footer{
+    font-size: 1.3rem;
+
+  }
+
+  #footer .footer-top .footer-info p {
+    font-size: 1.3rem;
+
+  }
+
+  #footer .footer-top h4{
+    font-size: 1.3rem;
+  }
+
+  #footer .footer-top .footer-contact p {
+    font-size: 1.3rem;
+
+  }
+
+  #footer .footer-top .social-links a{
+    font-size: 1.3rem;
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+  #footer .footer-top .social-links a img{
+    width: 1.3rem;
+
+  }
+
+  #footer .footer-top .footer-links ul li{
+    border-bottom: 2px solid #333;
+  }
+
+  #footer .footer-top .footer-links {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #footer .card-img-top{
+    height: 7rem;
+  }
+
+  #footer .card{
+    border: 2px solid rgba(0,0,0,.125);
+  }
+
+  #footer .credits{
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1759px){
+  #footer{
+    font-size: 1.1rem;
+
+  }
+
+  #footer .footer-top .footer-info p {
+    font-size: 1.1rem;
+
+  }
+
+  #footer .footer-top h4{
+    font-size: 1.1rem;
+  }
+
+  #footer .footer-top .footer-contact p {
+    font-size: 1.1rem;
+
+  }
+
+  #footer .footer-top .social-links a{
+    font-size: 1.1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  #footer .footer-top .social-links a img{
+    width: 1.1rem;
+
+  }
+
+  #footer .footer-top .footer-links ul li{
+    border-bottom: 2px solid #333;
+  }
+
+  #footer .footer-top .footer-links {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #footer .card-img-top{
+    height: 6rem;
+  }
+
+  #footer .card{
+    border: 2px solid rgba(0,0,0,.125);
+  }
+
+  #footer .credits{
+    font-size: 1.1rem;
+  }
+
+  #footer .footer-logo {
+   padding-top: 3rem
+ }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1340px){
+  #footer .card-img-top{
+    height: 5rem;
+  }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 767px){
+
+  #footer .col{
+    max-width: 3000px;
+    width: 105%;
+    padding-right: 2.2rem;
+    padding-left: 0px;
+    margin-left: -1rem
+  }
+
+  #footer .card-img-top{
+    height: 28rem;
+
+  }
+}
+
+@media (max-width: 320px){
+
+  #footer .col{
+    max-width: 3000px;
+    width: 20rem;
+    padding-right: 2.2rem;
+    padding-left: 0px;
+    margin-left: -1rem
+  }
+
+  #footer .card-img-top{
+
+    height: 14rem;
+
+  }
+
+  #footer .footer-top .footer-info p {
+
+  }
+  #footer .footer-logo{
+    margin-left: 20%;
+  }
+
 }

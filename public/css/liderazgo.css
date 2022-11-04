@@ -1,4 +1,8 @@
-  #liderazgo .container{
+#liderazgo{
+  padding-bottom: 2rem;
+}
+
+#liderazgo .container{
     margin-top: 0;
 
   }
@@ -136,3 +140,13 @@
     width:350px
   }
 }
+
+
+
+  @media (max-width: 320px){
+
+    #liderazgo .lead{
+      font-size: 1rem
+    }
+
+    }
