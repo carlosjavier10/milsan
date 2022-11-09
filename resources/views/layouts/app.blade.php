@@ -54,16 +54,61 @@
 
   {{-- loading page --}}
   <script type="text/javascript">
-    $(window).load(function() {
-      $(".loader").fadeOut("slow");
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log("DOMcontent")
+  // Lista de urls que deseas precargar
+  const LIST_IMAGES_PRELOAD = Array.from(document.querySelectorAll(".wait-loading"));
+  // Elemento visual del loading
+  const LOADING = document.querySelector('.loading');
+  // Tiempo de espera entre revisiones en ms
+  const SLEEP_CHECK = 50;
+
+  // Herramienta para esperar un tiempo determinado en una función asíncrona
+
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  // Comprueba de forma recursiva si todas las imágenes se han completado
+  // Si todas estan descargadas, quitará la clase 'loading--show' a 'loading' para ocultarlo
+
+  async function checkIfAllImagesCompleted() {
+    console.log("checkIfAllImagesCompleted")
+    // Obtiene todas las imágenes sin completar
+    const NO_COMPLETES = LIST_IMAGES_PRELOAD.filter((img) => {
+        return !img.complete;
     });
+        console.log (NO_COMPLETES)
+        console.log (NO_COMPLETES.length)
+
+    if (NO_COMPLETES.length !== 0) {
+      // Vuelve a iterar si existe alguna sin completar
+      await sleep(SLEEP_CHECK);
+      return checkIfAllImagesCompleted();
+      console.log("IF NO COMPLETE != 0")
+    } else {
+      // Oculta el loading
+      LOADING.classList.remove('loading--show');
+      $(".loader").fadeOut("slow");
+    }
+    return true;
+  }
+
+
+  // Inicia
+
+  checkIfAllImagesCompleted();
+
+});
 
   </script>
 
 </head>
 
 <body>
-  <div class="loader"></div>
+  <div class="loader loading loading--show"></div>
 
 
 
