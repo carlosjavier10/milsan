@@ -19,7 +19,7 @@
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/be4f5277.jpg"> <p>Before</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/Diapositiva2.jpg"> <p>Before</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/Diapositiva3.jpg"> <p>Before</p> </div>
-<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/I (1).jpeg"> <p>Before</p> </div>
+<div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/imageEA.jpg"> <p>Before</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_2561.jpg"> <p>Before</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7363.jpg"> <p>Before</p> </div>
 <div class="embedded_image" data-layout="default" contenteditable="false"> <img alt="Before" src="/storage/canvas/images/IMG_7370.jpg"> <p>Before</p> </div>

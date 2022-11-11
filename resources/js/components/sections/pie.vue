@@ -123,7 +123,7 @@
 					</div>
 					<div class="credits">
 
-						Designed by <a href="https://veneprint.com/">Veneprint</a>
+						Designed by <a href="https://veneprint.com/"><img src="https://3.231.179.227/wp-content/uploads/2022/11/logotipo-png-04.png"></a>
 					</div>
 				</div>
 				<!--  -->

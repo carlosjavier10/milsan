@@ -82,20 +82,9 @@
 							<div v-html="hoja.content"></div>
 
 						</div>
-
-
 					</div>
-
 				</div>
-
-
-
 			</div>
-
-
-
-
-
 		</div>
 
 		<button class="carousel-control-prev btn-lg" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

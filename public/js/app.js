@@ -3642,7 +3642,11 @@ var staticRenderFns = [function () {
     attrs: {
       href: "https://veneprint.com/"
     }
-  }, [_vm._v("Veneprint")])])]);
+  }, [_c("img", {
+    attrs: {
+      src: "https://3.231.179.227/wp-content/uploads/2022/11/logotipo-png-04.png"
+    }
+  })])])]);
 }, function () {
   var _vm = this,
       _c = _vm._self._c;
