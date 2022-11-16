@@ -17,10 +17,16 @@
 
 				<div class="botones">
 
-					<a @click="setSlisder('Before')" v-if="imgsBefore.length > 0"><h6>Antes</h6></a>
-					<a @click="setSlisder('After')" v-if="imgsAfter.length>0"><h6>Despues</h6></a>
-					<a @click="setSlisder('Process')" v-if="imgsProcess.length>0"><h6>Proceso</h6></a>
-					<a @click="setSlisder('Render')" v-if="imgsRender.length>0"><h6>Render</h6></a>
+
+
+
+					<a v-bind:class="{ active: beforeActive }"  @click="setSlisder('Before')" v-if="imgsBefore.length > 0"><h6>ANTES</h6></a>
+
+					<a v-bind:class="{ active: afterActive }" @click="setSlisder('After')" v-if="imgsAfter.length>0"><h6>DESPUES</h6></a>
+
+					<a v-bind:class="{ active: processActive }" @click="setSlisder('Process')" v-if="imgsProcess.length>0"><h6>PROCESO</h6></a>
+
+					<a v-bind:class="{ active: renderActive }" @click="setSlisder('Render')" v-if="imgsRender.length>0"><h6>RENDER</h6></a>
 				</div>
 
 
@@ -152,6 +158,10 @@ export default{
 			auxTexto:"",
 
 			activeTag:"",
+			beforeActive: false,
+			afterActive: false,
+			processActive: false,
+			renderActive: false,
 
 
 		}
@@ -189,7 +199,7 @@ export default{
 				proy.created_at=localStorage.created_at
 				proy.featured_image=localStorage.featured_image
 
-				console.log(localStorage.featured_image)
+
 
 				proy.id=localStorage.id
 				proy.published_at=localStorage.published_at
@@ -244,258 +254,312 @@ export default{
 				for (var i = 0; i < this.imgs.length; i++) {
 
 					var slide ={	index: 0,
-						img:"",
-						content:"",
-						classActive:"",
-						classcontent:""
-					}
-
-					slide.index= i
-					slide.img = this.imgs[i]
-
-					if (i==0) {
-						slide.content ='<p> <strong>Disciplina: </strong> '+ this.disciplina +' </p><p> <strong>Nombre del Proyecto: </strong>'+ this.nombreProyecto +' </p><p> <strong>Tipología: </strong> '+this.tipología+'</p><p> <strong>Superficie: </strong>'+ this.superficie +' </p><p> <strong>Estado: </strong>'+ this.estado+' </p><p> <strong>Diseño de proyecto: </strong>'+ this.disenoProyecto+' </p><p> <strong>Cliente: </strong>'+ this.cliente +'  </p>'
-						slide.classActive = "active"
-						slide.classcontent = "cover"
-					}else{
-
-
-						let aux=""
-						let j = 0
-						let contador = 0
-						let max = 1000
-						if (this.programa.length > 0) {
-							aux="<p>"+this.programa[j]+"</p>"
-							contador = aux.length
-							this.programa.shift()
-
-
-							if (this.programa[j]) {
-
-								let continuar = true
-								while(continuar){
-
-									if (aux.length+this.programa[j].length < max) {
-
-										aux = aux + "<p>"+this.programa[j]+"</p>"
-										this.programa.shift()
-
-										if (this.programa[j])
-											{continuar=true}
-										else
-											{continuar=false}
-									}else{
-
-										continuar = false
-									}
-								}
-								slide.content = aux;
-							}
-							else{
-								slide.content = aux
-							}
-
-
-
-						}
-						else{}
-
-							slide.classActive = false
-						slide.classcontent ="programa"
-
-					}
-
-					this.slider.push(slide)
+					img:"",
+					content:"",
+					classActive:"",
+					classcontent:""
 				}
 
+				slide.index= i
+				slide.img = this.imgs[i]
+
+				if (i==0) {
+					slide.content ='<p> <strong>Disciplina: </strong> '+ this.disciplina +' </p><p> <strong>Nombre del Proyecto: </strong>'+ this.nombreProyecto +' </p><p> <strong>Tipología: </strong> '+this.tipología+'</p><p> <strong>Superficie: </strong>'+ this.superficie +' </p><p> <strong>Estado: </strong>'+ this.estado+' </p><p> <strong>Diseño de proyecto: </strong>'+ this.disenoProyecto+' </p><p> <strong>Cliente: </strong>'+ this.cliente +'  </p>'
+					slide.classActive = "active"
+					slide.classcontent = "cover"
+				}else{
+
+
+					let aux=""
+					let j = 0
+					let contador = 0
+					let max = 700
+					if (this.programa.length > 0) {
+						aux="<p>"+this.programa[j]+"</p>"
+						contador = aux.length
+						this.programa.shift()
+
+
+						if (this.programa[j]) {
+
+							let continuar = true
+							while(continuar){
+
+								if (aux.length+this.programa[j].length < max) {
+
+									aux = aux + "<p>"+this.programa[j]+"</p>"
+									this.programa.shift()
+
+									if (this.programa[j])
+										{continuar=true}
+									else
+										{continuar=false}
+								}else{
+
+									continuar = false
+								}
+							}
+							slide.content = aux;
+						}
+						else{
+							slide.content = aux
+						}
+
+
+
+					}
+					else{}
+
+					slide.classActive = false
+					slide.classcontent ="programa"
+
+				}
+
+				this.slider.push(slide)
 			}
+
+		}
 			else /*NO HAY SLIDERS*/
-			{
-				this.slider = null
-			}
+		{
+			this.slider = null
+		}
 
 
 
-		},
-		getImg(){
+	},
+	getImg(){
 
-			let res = ""
-			let ini = 0
-			let fin = 0
-			let url =""
-			let tag =""
+		let res = ""
+		let ini = 0
+		let fin = 0
+		let url =""
+		let tag =""
 			let del =""/*para borrar*/
 
-			this.texto.trim()
-			console.log("en getim")
-			console.log(this.proyecto.featured_image)
+		this.texto.trim()
 
 
-			if((this.proyecto.featured_image == null) || (this.proyecto.featured_image == "null") || (this.proyecto.featured_image == undefined)   ) {
-				console.log("NO TIENE IMAGEN PRINCIPAL")
+
+
+		if((this.proyecto.featured_image == null) || (this.proyecto.featured_image == "null") || (this.proyecto.featured_image == undefined)   ) {
+
+		}
+
+		else{
+			let img ={
+				url:"",
+				tag:""
 			}
 
+			img.url=this.proyecto.featured_image
+			img.tag="Despues"
+
+
+
+
+			this.imgsAfter.unshift(img)
+		}
+
+
+		while ( this.texto.indexOf('<img ')!= -1 ){
+
+			let img ={
+				url:"",
+				tag:""
+			}
+
+
+			ini = this.texto.indexOf('<img ')
+			fin = this.texto.indexOf('>', ini)
+			res = this.texto.substring(ini,fin+1)
+			this.texto = this.texto.replace(res,'')
+
+			ini=res.indexOf('alt=')
+			fin=res.indexOf('src=',ini+5)
+			tag =res.substring(ini+5,fin-2)
+
+			ini=res.indexOf('src=')
+			fin=res.indexOf('">',ini+5)
+			url =res.substring(ini+5,fin)
+
+			ini = this.texto.indexOf('<div ')
+			fin = this.texto.indexOf('</div>', ini)
+			del = this.texto.substring(ini,fin+6)
+			this.texto = this.texto.replace(del,'').trim()
+
+
+
+			img.url = url
+			img.tag=tag
+
+			if (img.tag.indexOf('Before')!= -1 ) {
+
+				this.imgsBefore.push(img)
+
+			}
+			else if(img.tag.indexOf('Render')!= -1 ){
+				this.imgsRender.push(img)
+			}
+			else if(img.tag.indexOf('Process')!= -1 ){
+				this.imgsProcess.push(img)
+			}
 			else{
-				let img ={
-					url:"",
-					tag:""
-				}
-
-				img.url=this.proyecto.featured_image
-				img.tag="Despues"
-
-				console.log("entro AL IF")
-				console.log(this.proyecto.featured_image)
-
-				this.imgsAfter.unshift(img)
+				this.imgsAfter.push(img)
 			}
 
-
-			while ( this.texto.indexOf('<img ')!= -1 ){
-
-				let img ={
-					url:"",
-					tag:""
-				}
-
-
-				ini = this.texto.indexOf('<img ')
-				fin = this.texto.indexOf('>', ini)
-				res = this.texto.substring(ini,fin+1)
-				this.texto = this.texto.replace(res,'')
-
-				ini=res.indexOf('alt=')
-				fin=res.indexOf('src=',ini+5)
-				tag =res.substring(ini+5,fin-2)
-
-				ini=res.indexOf('src=')
-				fin=res.indexOf('">',ini+5)
-				url =res.substring(ini+5,fin)
-
-				ini = this.texto.indexOf('<div ')
-				fin = this.texto.indexOf('</div>', ini)
-				del = this.texto.substring(ini,fin+6)
-				this.texto = this.texto.replace(del,'').trim()
-
-
-
-				img.url = url
-				img.tag=tag
-
-				if (img.tag.indexOf('Before')!= -1 ) {
-
-					this.imgsBefore.push(img)
-
-				}
-				else if(img.tag.indexOf('Render')!= -1 ){
-					this.imgsRender.push(img)
-				}
-				else if(img.tag.indexOf('Process')!= -1 ){
-					this.imgsProcess.push(img)
-				}
-				else{
-					this.imgsAfter.push(img)
-				}
-
-			}
+		}
 			this.auxtext = this.texto  /*para retomar el body despues de quitarle las imagenes*/
 
-			if (this.imgsAfter.length !=0) {
-				this.imgs= this.imgsAfter
-				this.activeTag="After"
+		if (this.imgsAfter.length !=0) {
+			this.imgs= this.imgsAfter
+			this.activeTag="After"
+		}
+		else if(this.imgsRender!=0){
+			this.imgs= this.imgsRender
+			this.activeTag="Render"
+		}
+		else if(this.imgsProcess!=0){
+			this.imgs= this.imgsProcess
+			this.activeTag="Process"
+		}else if(this.imgsBefore!=0){
+			this.imgs= this.imgsBefore
+			this.activeTag="Before"
+		}
+		else{
+			this.$router.push('/portfolio');
+		}
+
+		this.renderSlider()
+
+
+	},
+	removeTags() {
+		let str
+
+		if ((this.texto === null) || (this.text ===''))
+			return false;
+		else
+
+			while ( this.texto.indexOf('&nbsp;') != -1){
+				this.texto = this.texto.replace('&nbsp;','')
 			}
-			else if(this.imgsRender!=0){
-				this.imgs= this.imgsRender
-				this.activeTag="Render"
-			}
-			else if(this.imgsProcess!=0){
-				this.imgs= this.imgsProcess
-				this.activeTag="Process"
-			}else if(this.imgsBefore!=0){
-				this.imgs= this.imgsBefore
-				this.activeTag="Before"
-			}
-			else{
-				this.$router.push('/portfolio');
-			}
-
-			this.renderSlider()
-
-
-		},
-		removeTags() {
-			let str
-
-			if ((this.texto === null) || (this.text ===''))
-				return false;
-			else
-
-				while ( this.texto.indexOf('&nbsp;') != -1){
-					this.texto = this.texto.replace('&nbsp;','')
-				}
-				str = this.texto.toString();
+			str = this.texto.toString();
 		    // Regular expression to identify HTML tags in
 		    // the input string. Replacing the identified
 		    // HTML tag with a null string.
 
-		    return str.replace( /(<([^>]+)>)/ig, '');
+			return str.replace( /(<([^>]+)>)/ig, '');
 
 
 		},
 		getTitles(){
 
-			let begin =""
+			let hasta = 0
 			let borra = ""
 			let auxtext =  this.texto
 
-			auxtext = this.removeTags(this.text) /*quita html
+			auxtext = this.removeTags(this.text)
+			console.log("aus antes : " + auxtext)
+			 /*quita html
 
 			/*-----------quita texto hasta disciplina--------------------*/
-			begin= auxtext.indexOf('Disciplina:')
-			borra = auxtext.substring (0,begin)
+			hasta= auxtext.search(/Disciplina:/i) +11
+			borra = auxtext.substring (0,hasta)
 			auxtext = auxtext.replace(borra,'')
 
+
+			console.log("begin : " +hasta)
+			console.log("borra : " + borra)
+			console.log("auxtext : " + auxtext)
+			console.log("///////////////QUITO titulo disciplina ////////////")
+
 			/*-----------quita texto hasta disciplina--------------------*/
 
 
 
-			let ini = 0
-			let del = ""
 
-			ini= auxtext.indexOf('Nombre del Proyecto:')
-			del = auxtext.substring (0,ini)
-			this.disciplina = del.replace('Disciplina:','').trim()
-			auxtext = auxtext.replace(del,'')
 
-			ini= auxtext.indexOf('Tipología:')
-			del = auxtext.substring (0,ini)
-			this.nombreProyecto = del.replace('Nombre del Proyecto:','').trim()
-			auxtext = auxtext.replace(del,'')
+			hasta= auxtext.indexOf('Nombre del Proyecto:')
+			this.disciplina = auxtext.substring (0,hasta)
+			borra = auxtext.substring(0,hasta+20)
+			auxtext = auxtext.replace(borra,'')
 
-			ini= auxtext.indexOf('Superficie:')
-			del = auxtext.substring (0,ini)
-			this.tipología = del.replace('Tipología:','').trim()
-			auxtext = auxtext.replace(del,'')
+			console.log("begin : " +hasta)
+			console.log("borra : " + borra)
+			console.log("auxtext : " + auxtext)
+			console.log("diciplina : " + this.disciplina)
+			console.log("/////QUITO titulo nombre proyecto y guargo this.diciplina ///////")
 
-			ini= auxtext.indexOf('Estado:')
-			del = auxtext.substring (0,ini)
-			this.superficie = del.replace('Superficie:','').trim()
-			auxtext = auxtext.replace(del,'')
 
-			ini= auxtext.indexOf('Diseño de proyecto:')
-			del = auxtext.substring (0,ini)
-			this.estado = del.replace('Estado:','').trim()
-			auxtext = auxtext.replace(del,'')
 
-			ini= auxtext.indexOf('Cliente:')
-			del = auxtext.substring (0,ini)
-			this.disenoProyecto = del.replace('Diseño de proyecto:','').trim()
-			auxtext = auxtext.replace(del,'')
+			hasta= auxtext.search(/Tipología:/i)
+			this.nombreProyecto = auxtext.substring (0,hasta)
+			borra = auxtext.substring(0,hasta+10)
+			auxtext = auxtext.replace(borra,'')
 
-			ini= auxtext.indexOf('Programa')
-			del = auxtext.substring (0,ini)
-			this.cliente = del.replace('Cliente:','').trim()
-			auxtext = auxtext.replace(del,'')
+			console.log("begin : " +hasta)
+			console.log("borra : " + borra)
+			console.log("auxtext : " + auxtext)
+			console.log("nombreProyecto : " + this.nombreProyecto)
+			console.log("/////QUITO titulo topologia y guargo this.nombreProyecto ///////")
+
+			hasta= auxtext.search(/Superficie:/i)
+			this.tipología = auxtext.substring (0,hasta)
+			borra = auxtext.substring(0,hasta+11)
+			auxtext = auxtext.replace(borra,'')
+
+
+			console.log("begin : " +hasta)
+			console.log("borra : " + borra)
+			console.log("auxtext : " + auxtext)
+			console.log("tipología : " + this.tipología)
+			console.log("/////QUITO titulo superficie y guargo this.nombreProyecto ///////")
+
+
+			hasta= auxtext.search(/Estado:/i)
+			this.superficie = auxtext.substring (0,hasta)
+			borra = auxtext.substring(0,hasta+7)
+			auxtext = auxtext.replace(borra,'')
+
+
+			console.log("begin : " +hasta)
+			console.log("borra : " + borra)
+			console.log("auxtext : " + auxtext)
+			console.log("superficie : " + this.superficie)
+			console.log("/////QUITO titulo estado y guargo this.superficie ///////")
+
+			hasta= auxtext.search(/Diseño de proyecto:/i)
+			this.estado = auxtext.substring (0,hasta)
+			borra = auxtext.substring(0,hasta+19)
+			auxtext = auxtext.replace(borra,'')
+
+			console.log("begin : " +hasta)
+			console.log("borra : " + borra)
+			console.log("auxtext : " + auxtext)
+			console.log("Estado : " + this.estado)
+			console.log("/////QUITO titulo diseño de proye y guargo this.estado ///////")
+
+			hasta= auxtext.search(/Cliente:/i)
+			this.disenoProyecto = auxtext.substring (0,hasta)
+			borra = auxtext.substring(0,hasta+8)
+			auxtext = auxtext.replace(borra,'')
+
+			console.log("begin : " +hasta)
+			console.log("borra : " + borra)
+			console.log("auxtext : " + auxtext)
+			console.log("diseño de proyecto : " + this.disenoProyecto)
+			console.log("/////QUITO titulo cliente de proye y guargo this.diseñoproyet ///////")
+
+			hasta= auxtext.search(/Programa/i)
+			this.cliente = auxtext.substring (0,hasta)
+			borra = auxtext.substring(0,hasta)
+			auxtext = auxtext.replace(borra,'')
+
+			console.log("begin : " +hasta)
+			console.log("borra : " + borra)
+			console.log("auxtext : " + auxtext)
+			console.log("diseño de proyecto : " + this.disenoProyecto)
+			console.log("/////SOlo guarda  this.cliente ///////")
 
 
 
@@ -506,39 +570,66 @@ export default{
 			let fin = 0
 			let del = ""
 
-			ini = this.texto.indexOf('Programa')
-			del = this.texto.substring(0,ini)
-			this.texto = this.texto.replace(del,'')
+			let hasta= 0
+			let borra =""
 
-			while(this.texto.indexOf('<strong>') != -1){
-				this.texto = this.texto.replace('<strong>','')
+			let auxtext = this.texto
+
+			console.log("//////////////////////////////////")
+			console.log("/////get programa ////////////////")
+			console.log("//////////////////////////////////")
+			console.log("auxtext before: "+ auxtext)
+
+			hasta = auxtext.search(/Programa:/i)
+			borra = auxtext.substring(0,hasta+9)
+			auxtext = auxtext.replace(borra,'')
+
+			console.log("ini : "+ ini)
+			console.log("fin : "+ fin)
+			console.log("del : "+ fin)
+			console.log("borra : "+ borra)
+			console.log("auxtext : "+ auxtext)
+
+
+			console.log("//////////////////////////////////")
+			console.log("//////////////////////////////////")
+			console.log("//////////////////////////////////")
+
+
+			while(auxtext.indexOf('<strong>') != -1){
+				auxtext = auxtext.replace('<strong>','')
 			}
 
-			while(this.texto.indexOf('</strong>') != -1){
-				this.texto = this.texto.replace('</strong>','')
+			while(auxtext.indexOf('</strong>') != -1){
+				auxtext = auxtext.replace('</strong>','')
 			}
 
-			while(this.texto.indexOf('<br>') != -1){
-				this.texto = this.texto.replace('<br>','')
+			while(auxtext.indexOf('<br>') != -1){
+				auxtext = auxtext.replace('<br>','')
 			}
 
-			while(this.texto.indexOf('</br>') != -1){
-				this.texto = this.texto.replace('</br>','')
+			while(auxtext.indexOf('</br>') != -1){
+				auxtext = auxtext.replace('</br>','')
 			}
 
 			/*-----quitar basura antes del primer parrafo*/
+			console.log("/*-----quitar basura antes del primer parrafo*/")
+			console.log( auxtext )
+			console.log( "auxtextauxtextauxtextauxtextauxtext" )
+			ini = auxtext.indexOf('<p')
+			del = auxtext.substring(0,ini)
+			auxtext = auxtext.replace(del,"")
 
-			ini = this.texto.indexOf('<p')
-			del = this.texto.substring(0,ini)
-			this.texto = this.texto.replace(del)
+			console.log(" Ini: "+ ini )
+			console.log(" del: "+ del )
+			console.log( auxtext )
 
+			while (auxtext.indexOf('<p') != -1){
 
-			while (this.texto.indexOf('<p') != -1){
-
-				ini = this.texto.indexOf('<p')
-				fin = this.texto.indexOf('</p>')
-				del = this.texto.substring(ini,fin+4)
-				this.texto = this.texto.replace(del,'')
+				ini = auxtext.indexOf('<p')
+				fin = auxtext.indexOf('</p>')
+				del = auxtext.substring(ini,fin+4)
+				auxtext = auxtext.replace(del,'')
 				if (del.length >= 10) {
 					this.programa.push(del)
 				}
@@ -560,6 +651,7 @@ export default{
 
 
 			}
+			console.log(this.programa)
 
 
 		},
@@ -573,6 +665,11 @@ export default{
 					this.renderSlider()
 					this.activeTag="Before"
 
+					this.beforeActive=true
+					this.afterActive= false
+					this.processActive= false
+					this.renderActive= false
+
 				}
 
 			}
@@ -583,6 +680,11 @@ export default{
 					this.renderSlider()
 					this.activeTag="Process"
 
+					this.beforeActive=false
+					this.afterActive= false
+					this.processActive= true
+					this.renderActive= false
+
 				}
 			}
 			else if (tag=='Render'){
@@ -591,6 +693,11 @@ export default{
 					this.imgs= this.imgsRender
 					this.renderSlider()
 					this.activeTag="Render"
+
+					this.beforeActive=false
+					this.afterActive= false
+					this.processActive= false
+					this.renderActive= true
 
 				}
 			}
@@ -602,6 +709,11 @@ export default{
 					this.imgs= this.imgsAfter
 					this.renderSlider()
 					this.activeTag="After"
+
+					this.beforeActive=false
+					this.afterActive= true
+					this.processActive= false
+					this.renderActive= false
 
 				}
 

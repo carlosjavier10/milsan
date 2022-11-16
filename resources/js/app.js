@@ -9,6 +9,9 @@ window.Vue = require('vue').default;
 /*Menu Principal*/
 Vue.component('mainmenu',    	require('./components/headers/mainmenu.vue').default);
 
+/*Menu de Imagenes dentro de proyetos*/
+Vue.component('proyectsmenu',    	require('./components/headers/proyectsmenu.vue').default);
+
 /*Componentes de pagina "Nosotros*/
 Vue.component('aboutusheader',    	require('./components/headers/aboutusHeader.vue').default);
 Vue.component('ourhistory',    		require('./components/sections/ourhistory.vue').default);

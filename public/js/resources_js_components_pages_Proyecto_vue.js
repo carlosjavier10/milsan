@@ -36,7 +36,11 @@ __webpack_require__.r(__webpack_exports__);
       imgsProcess: [],
       imgsRender: [],
       auxTexto: "",
-      activeTag: ""
+      activeTag: "",
+      beforeActive: false,
+      afterActive: false,
+      processActive: false,
+      renderActive: false
     };
   },
   computed: {},
@@ -61,7 +65,6 @@ __webpack_require__.r(__webpack_exports__);
         proy.body = localStorage.body;
         proy.created_at = localStorage.created_at;
         proy.featured_image = localStorage.featured_image;
-        console.log(localStorage.featured_image);
         proy.id = localStorage.id;
         proy.published_at = localStorage.published_at;
         proy.summary = localStorage.summary;
@@ -112,7 +115,7 @@ __webpack_require__.r(__webpack_exports__);
             var aux = "";
             var j = 0;
             var contador = 0;
-            var max = 1000;
+            var max = 700;
 
             if (this.programa.length > 0) {
               aux = "<p>" + this.programa[j] + "</p>";
@@ -165,20 +168,14 @@ __webpack_require__.r(__webpack_exports__);
       /*para borrar*/
 
       this.texto.trim();
-      console.log("en getim");
-      console.log(this.proyecto.featured_image);
 
-      if (this.proyecto.featured_image == null || this.proyecto.featured_image == "null" || this.proyecto.featured_image == undefined) {
-        console.log("NO TIENE IMAGEN PRINCIPAL");
-      } else {
+      if (this.proyecto.featured_image == null || this.proyecto.featured_image == "null" || this.proyecto.featured_image == undefined) {} else {
         var img = {
           url: "",
           tag: ""
         };
         img.url = this.proyecto.featured_image;
         img.tag = "Despues";
-        console.log("entro AL IF");
-        console.log(this.proyecto.featured_image);
         this.imgsAfter.unshift(img);
       }
 
@@ -248,84 +245,143 @@ __webpack_require__.r(__webpack_exports__);
       return str.replace(/(<([^>]+)>)/ig, '');
     },
     getTitles: function getTitles() {
-      var begin = "";
+      var hasta = 0;
       var borra = "";
       var auxtext = this.texto;
       auxtext = this.removeTags(this.text);
+      console.log("aus antes : " + auxtext);
       /*quita html
       /*-----------quita texto hasta disciplina--------------------*/
 
-      begin = auxtext.indexOf('Disciplina:');
-      borra = auxtext.substring(0, begin);
+      hasta = auxtext.search(/Disciplina:/i) + 11;
+      borra = auxtext.substring(0, hasta);
       auxtext = auxtext.replace(borra, '');
+      console.log("begin : " + hasta);
+      console.log("borra : " + borra);
+      console.log("auxtext : " + auxtext);
+      console.log("///////////////QUITO titulo disciplina ////////////");
       /*-----------quita texto hasta disciplina--------------------*/
 
-      var ini = 0;
-      var del = "";
-      ini = auxtext.indexOf('Nombre del Proyecto:');
-      del = auxtext.substring(0, ini);
-      this.disciplina = del.replace('Disciplina:', '').trim();
-      auxtext = auxtext.replace(del, '');
-      ini = auxtext.indexOf('Tipología:');
-      del = auxtext.substring(0, ini);
-      this.nombreProyecto = del.replace('Nombre del Proyecto:', '').trim();
-      auxtext = auxtext.replace(del, '');
-      ini = auxtext.indexOf('Superficie:');
-      del = auxtext.substring(0, ini);
-      this.tipología = del.replace('Tipología:', '').trim();
-      auxtext = auxtext.replace(del, '');
-      ini = auxtext.indexOf('Estado:');
-      del = auxtext.substring(0, ini);
-      this.superficie = del.replace('Superficie:', '').trim();
-      auxtext = auxtext.replace(del, '');
-      ini = auxtext.indexOf('Diseño de proyecto:');
-      del = auxtext.substring(0, ini);
-      this.estado = del.replace('Estado:', '').trim();
-      auxtext = auxtext.replace(del, '');
-      ini = auxtext.indexOf('Cliente:');
-      del = auxtext.substring(0, ini);
-      this.disenoProyecto = del.replace('Diseño de proyecto:', '').trim();
-      auxtext = auxtext.replace(del, '');
-      ini = auxtext.indexOf('Programa');
-      del = auxtext.substring(0, ini);
-      this.cliente = del.replace('Cliente:', '').trim();
-      auxtext = auxtext.replace(del, '');
+      hasta = auxtext.indexOf('Nombre del Proyecto:');
+      this.disciplina = auxtext.substring(0, hasta);
+      borra = auxtext.substring(0, hasta + 20);
+      auxtext = auxtext.replace(borra, '');
+      console.log("begin : " + hasta);
+      console.log("borra : " + borra);
+      console.log("auxtext : " + auxtext);
+      console.log("diciplina : " + this.disciplina);
+      console.log("/////QUITO titulo nombre proyecto y guargo this.diciplina ///////");
+      hasta = auxtext.search(/Tipología:/i);
+      this.nombreProyecto = auxtext.substring(0, hasta);
+      borra = auxtext.substring(0, hasta + 10);
+      auxtext = auxtext.replace(borra, '');
+      console.log("begin : " + hasta);
+      console.log("borra : " + borra);
+      console.log("auxtext : " + auxtext);
+      console.log("nombreProyecto : " + this.nombreProyecto);
+      console.log("/////QUITO titulo topologia y guargo this.nombreProyecto ///////");
+      hasta = auxtext.search(/Superficie:/i);
+      this.tipología = auxtext.substring(0, hasta);
+      borra = auxtext.substring(0, hasta + 11);
+      auxtext = auxtext.replace(borra, '');
+      console.log("begin : " + hasta);
+      console.log("borra : " + borra);
+      console.log("auxtext : " + auxtext);
+      console.log("tipología : " + this.tipología);
+      console.log("/////QUITO titulo superficie y guargo this.nombreProyecto ///////");
+      hasta = auxtext.search(/Estado:/i);
+      this.superficie = auxtext.substring(0, hasta);
+      borra = auxtext.substring(0, hasta + 7);
+      auxtext = auxtext.replace(borra, '');
+      console.log("begin : " + hasta);
+      console.log("borra : " + borra);
+      console.log("auxtext : " + auxtext);
+      console.log("superficie : " + this.superficie);
+      console.log("/////QUITO titulo estado y guargo this.superficie ///////");
+      hasta = auxtext.search(/Diseño de proyecto:/i);
+      this.estado = auxtext.substring(0, hasta);
+      borra = auxtext.substring(0, hasta + 19);
+      auxtext = auxtext.replace(borra, '');
+      console.log("begin : " + hasta);
+      console.log("borra : " + borra);
+      console.log("auxtext : " + auxtext);
+      console.log("Estado : " + this.estado);
+      console.log("/////QUITO titulo diseño de proye y guargo this.estado ///////");
+      hasta = auxtext.search(/Cliente:/i);
+      this.disenoProyecto = auxtext.substring(0, hasta);
+      borra = auxtext.substring(0, hasta + 8);
+      auxtext = auxtext.replace(borra, '');
+      console.log("begin : " + hasta);
+      console.log("borra : " + borra);
+      console.log("auxtext : " + auxtext);
+      console.log("diseño de proyecto : " + this.disenoProyecto);
+      console.log("/////QUITO titulo cliente de proye y guargo this.diseñoproyet ///////");
+      hasta = auxtext.search(/Programa/i);
+      this.cliente = auxtext.substring(0, hasta);
+      borra = auxtext.substring(0, hasta);
+      auxtext = auxtext.replace(borra, '');
+      console.log("begin : " + hasta);
+      console.log("borra : " + borra);
+      console.log("auxtext : " + auxtext);
+      console.log("diseño de proyecto : " + this.disenoProyecto);
+      console.log("/////SOlo guarda  this.cliente ///////");
     },
     getPrograma: function getPrograma() {
       var ini = 0;
       var fin = 0;
       var del = "";
-      ini = this.texto.indexOf('Programa');
-      del = this.texto.substring(0, ini);
-      this.texto = this.texto.replace(del, '');
+      var hasta = 0;
+      var borra = "";
+      var auxtext = this.texto;
+      console.log("//////////////////////////////////");
+      console.log("/////get programa ////////////////");
+      console.log("//////////////////////////////////");
+      console.log("auxtext before: " + auxtext);
+      hasta = auxtext.search(/Programa:/i);
+      borra = auxtext.substring(0, hasta + 9);
+      auxtext = auxtext.replace(borra, '');
+      console.log("ini : " + ini);
+      console.log("fin : " + fin);
+      console.log("del : " + fin);
+      console.log("borra : " + borra);
+      console.log("auxtext : " + auxtext);
+      console.log("//////////////////////////////////");
+      console.log("//////////////////////////////////");
+      console.log("//////////////////////////////////");
 
-      while (this.texto.indexOf('<strong>') != -1) {
-        this.texto = this.texto.replace('<strong>', '');
+      while (auxtext.indexOf('<strong>') != -1) {
+        auxtext = auxtext.replace('<strong>', '');
       }
 
-      while (this.texto.indexOf('</strong>') != -1) {
-        this.texto = this.texto.replace('</strong>', '');
+      while (auxtext.indexOf('</strong>') != -1) {
+        auxtext = auxtext.replace('</strong>', '');
       }
 
-      while (this.texto.indexOf('<br>') != -1) {
-        this.texto = this.texto.replace('<br>', '');
+      while (auxtext.indexOf('<br>') != -1) {
+        auxtext = auxtext.replace('<br>', '');
       }
 
-      while (this.texto.indexOf('</br>') != -1) {
-        this.texto = this.texto.replace('</br>', '');
+      while (auxtext.indexOf('</br>') != -1) {
+        auxtext = auxtext.replace('</br>', '');
       }
       /*-----quitar basura antes del primer parrafo*/
 
 
-      ini = this.texto.indexOf('<p');
-      del = this.texto.substring(0, ini);
-      this.texto = this.texto.replace(del);
+      console.log("/*-----quitar basura antes del primer parrafo*/");
+      console.log(auxtext);
+      console.log("auxtextauxtextauxtextauxtextauxtext");
+      ini = auxtext.indexOf('<p');
+      del = auxtext.substring(0, ini);
+      auxtext = auxtext.replace(del, "");
+      console.log(" Ini: " + ini);
+      console.log(" del: " + del);
+      console.log(auxtext);
 
-      while (this.texto.indexOf('<p') != -1) {
-        ini = this.texto.indexOf('<p');
-        fin = this.texto.indexOf('</p>');
-        del = this.texto.substring(ini, fin + 4);
-        this.texto = this.texto.replace(del, '');
+      while (auxtext.indexOf('<p') != -1) {
+        ini = auxtext.indexOf('<p');
+        fin = auxtext.indexOf('</p>');
+        del = auxtext.substring(ini, fin + 4);
+        auxtext = auxtext.replace(del, '');
 
         if (del.length >= 10) {
           this.programa.push(del);
@@ -340,6 +396,8 @@ __webpack_require__.r(__webpack_exports__);
           this.programa[i] = this.programa[i].replace(del, '');
         }
       }
+
+      console.log(this.programa);
     },
     setSlisder: function setSlisder(tag) {
       if (tag == 'Before') {
@@ -347,24 +405,40 @@ __webpack_require__.r(__webpack_exports__);
           this.imgs = this.imgsBefore;
           this.renderSlider();
           this.activeTag = "Before";
+          this.beforeActive = true;
+          this.afterActive = false;
+          this.processActive = false;
+          this.renderActive = false;
         }
       } else if (tag == 'Process') {
         if (this.activeTag != "Process") {
           this.imgs = this.imgsProcess;
           this.renderSlider();
           this.activeTag = "Process";
+          this.beforeActive = false;
+          this.afterActive = false;
+          this.processActive = true;
+          this.renderActive = false;
         }
       } else if (tag == 'Render') {
         if (this.activeTag != "Render") {
           this.imgs = this.imgsRender;
           this.renderSlider();
           this.activeTag = "Render";
+          this.beforeActive = false;
+          this.afterActive = false;
+          this.processActive = false;
+          this.renderActive = true;
         }
       } else {
         if (this.activeTag != "After") {
           this.imgs = this.imgsAfter;
           this.renderSlider();
           this.activeTag = "After";
+          this.beforeActive = false;
+          this.afterActive = true;
+          this.processActive = false;
+          this.renderActive = false;
         }
       }
     }
@@ -434,30 +508,42 @@ var render = function render() {
   }, [_vm._v(" ⇽")])])], 1), _vm._v(" "), _c("div", {
     staticClass: "botones"
   }, [_vm.imgsBefore.length > 0 ? _c("a", {
+    "class": {
+      active: _vm.beforeActive
+    },
     on: {
       click: function click($event) {
         return _vm.setSlisder("Before");
       }
     }
-  }, [_c("h6", [_vm._v("Antes")])]) : _vm._e(), _vm._v(" "), _vm.imgsAfter.length > 0 ? _c("a", {
+  }, [_c("h6", [_vm._v("ANTES")])]) : _vm._e(), _vm._v(" "), _vm.imgsAfter.length > 0 ? _c("a", {
+    "class": {
+      active: _vm.afterActive
+    },
     on: {
       click: function click($event) {
         return _vm.setSlisder("After");
       }
     }
-  }, [_c("h6", [_vm._v("Despues")])]) : _vm._e(), _vm._v(" "), _vm.imgsProcess.length > 0 ? _c("a", {
+  }, [_c("h6", [_vm._v("DESPUES")])]) : _vm._e(), _vm._v(" "), _vm.imgsProcess.length > 0 ? _c("a", {
+    "class": {
+      active: _vm.processActive
+    },
     on: {
       click: function click($event) {
         return _vm.setSlisder("Process");
       }
     }
-  }, [_c("h6", [_vm._v("Proceso")])]) : _vm._e(), _vm._v(" "), _vm.imgsRender.length > 0 ? _c("a", {
+  }, [_c("h6", [_vm._v("PROCESO")])]) : _vm._e(), _vm._v(" "), _vm.imgsRender.length > 0 ? _c("a", {
+    "class": {
+      active: _vm.renderActive
+    },
     on: {
       click: function click($event) {
         return _vm.setSlisder("Render");
       }
     }
-  }, [_c("h6", [_vm._v("Render")])]) : _vm._e()])])]), _vm._v(" "), _c("div", [_c("div", {
+  }, [_c("h6", [_vm._v("RENDER")])]) : _vm._e()])])]), _vm._v(" "), _c("div", [_c("div", {
     staticClass: "carousel slide carousel-fade",
     attrs: {
       id: "carousel",

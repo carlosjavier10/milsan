@@ -3,8 +3,8 @@
 --------------------------------------------------------------*/
 
 @font-face {
- font-family: 'Qualy Bold';
- src: url('/fonts/Qualy Bold.ttf') format("truetype");
+ font-family: 'Roboto', sans-serif;
+/* src: url('/fonts/Qualy Bold.ttf') format("truetype");*/
  font-weight: normal;
  font-style: normal;
 
@@ -48,7 +48,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Qualy Bold", sans-serif;
+   font-family: 'Roboto', sans-serif;
+
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
