@@ -75,7 +75,6 @@ font-style: normal;
  z-index: 9 !important;
 }
 
-
 .cb{
   position: relative;
   text-align: center;
@@ -150,7 +149,7 @@ font-style: normal;
 .social-links a:hover{
 filter: invert(50%);
 }
-
+/*CSS responsive*/
 
 
 
