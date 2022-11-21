@@ -4,6 +4,15 @@ body{
   top: 0;
 }
 
+
+@font-face {
+ font-family: 'Qualy Bold';
+ src: url('/fonts/Qualy Bold.ttf') format("truetype");
+ font-weight: normal;
+ font-style: normal;
+
+}
+
 .wh-img {
  width:100vw;
  height:100vh;
@@ -30,7 +39,7 @@ font-style: normal;
   display: block;
   margin: auto;
   z-index: 10100;
-  width: 4em;
+  width: 10em;
 }
 
 .logobt:hover{
@@ -69,89 +78,88 @@ font-style: normal;
 
 .cb{
   position: relative;
+  text-align: center;
 }
-
-#carousel .coverbutton {
+.centrando{
+  height: 100vh;
+  z-index: 50000;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 350px);
-  font-family: 'Roboto', sans-serif;
+  transform: translate(-50%, 50%);
+
+
+
+}
+#carousel .coverbutton {
+
+  font-family: "Qualy Bold", sans-serif;
   font-size: 1.2rem;
   padding: 0;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 3px;
-  color: white;
+  color: #2c2c2c;
+  height: 2.7rem;
   z-index: 1001;
-  transition: 0.5s;
+  transition: 1.0s;
   padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 25rem;
+}
+
+#carousel .coverbutton:hover{
+  color: white;
   background-color: #2c2c2c;
   border: none;
 }
 
-#carousel .coverbutton:hover{
-  color: black;
-  background-color: white;
-  border: none;
+.footer{
+  height: 100vh;
+  width: 100%;
+  z-index: 10000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,80%);
+  background: rgba(0, 0, 0, 0.5);
 }
 
-#header #logo h1 a,
-#header #logo h1 a:hover {
-  color: #fff;
-  padding-left: 10px;
-  border-left: 4px solid #2c2c2c;
-}
 
-#header #logo img {
-  padding: 0;
-  margin: 0;
-}
-
-#logo {
-  text-align: center !important;
-}
-
-@media (min-width: 1200px) {   /*desktop*/
-
-  .logobt{
-    top: 30%;
-  }
+.social-links{
 
 }
 
-@media (max-width: 1199px) {   /*desktop*/
-  .logobt{
-    top: 22%;
-  }
 
+.social-links a{
+    font-size: 18px;
+  display: inline-block;
+  background: ;
+  color: #eee;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
 }
 
-@media (max-width: 768px) { /*tablets*/
-
-
-  #header #logo h1 {
-    font-size: 28px;
-  }
+.social-links a:hover{
+filter: invert(50%);
 }
 
-@media only screen and (min-height: 800px) and (max-width: 1080px){
 
-  #carousel .coverbutton {
-    transform: translate(-50%, 600px);
-  }
-}
 
-@media only screen and (min-height: 600px) and (max-width: 799px){
 
-  #carousel .coverbutton {
-    transform: translate(-50%, 400px);
-  }
-}
 
-@media (max-height: 599px){
 
-  #carousel .coverbutton {
-    transform: translate(-50%, 250px);
-  }
-}
+
+
+
+
+
+
+

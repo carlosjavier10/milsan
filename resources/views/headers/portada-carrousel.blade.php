@@ -12,7 +12,7 @@
         <h1><a href="#intro" class="scrollto">BizPage</a></h1>
       </div> --}}
 
-      <a href="#"><img class="logobt" src=" {{ asset('/images/MSarquitecta favicon white.svg') }}  " alt="" title="" /></a>
+      <a href="#"><img class="logobt" src=" {{ asset('/images/MSarquitecta logo square white.svg') }}  " alt="" title="" /></a>
 
     </header><!-- #header -->
     <div>
@@ -20,9 +20,30 @@
 
         <div class="cb position-relative">
 
-          <a href="{{ url('portfolio/') }}" class="">
-            <button type="button" class="coverbutton btn btn-secondary">Proyectos+</button>
-          </a>
+          <div class="centrando">
+
+            <h3>  Estrategia de Proyecto y Contrucción</h3>
+
+            <a href="{{ url('portfolio/') }}" class="">
+              <button type="button" class="coverbutton btn btn-secondary">Proyectos+</button>
+            </a>
+
+          </div>
+
+          <div class="footer">
+            <div class="social-links">
+              <a href="https://twitter.com/msarquitecto" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/ms.arquitecta" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/ms.arquitecta/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.tiktok.com/@ms.arquitecta" class="tiktok"><i class="fa fa-tiktok"><img src="/images/tik-tok.png" alt="" width="20em">  </i></a>
+
+            </div>
+            <p>Texto alternativo Texto alternativo Texto alternativo Texto alternativo<br>
+            <span> Dirección completa , contacto whatsapp</span> </p>
+            <p></p>
+          </div>
+
+
 
         </div>
 
@@ -70,3 +91,7 @@
         </div>
       </div>
     </div>
+
+
+
+
