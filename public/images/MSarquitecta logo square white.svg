@@ -33,13 +33,13 @@
 <clipPath id="CLIPPATH_7" >
 	<path transform="matrix(1 0 0 1 0 0) translate(-315.76, -334.23)" clip-path="url(#undefined)" d="M 315.751 334.242 L 315.775 334.242 L 315.775 334.22200000000004 L 315.751 334.22200000000004 z" stroke-linecap="round" />
 </clipPath>
-<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 0.1;" vector-effect="non-scaling-stroke"  transform=" translate(-0.01, -0.01)" d="M 0 0 L 0 0 C 0.008 0.006 0.016 0.013 0.023 0.019 Z" stroke-linecap="round" />
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 0.1;" vector-effect="non-scaling-stroke"  transform=" translate(-0.01, -0.01)" d="M 0 0 L 0 0 C 0.008 0.006 0.016 0.013 0.023 0.019 Z" stroke-linecap="round" />
 </g>
 		<g transform="matrix(0.67 0 0 -0.67 7.91 1.61)" clip-path="url(#CLIPPATH_8)"  >
 <clipPath id="CLIPPATH_8" >
 	<path transform="matrix(1 0 0 1 0 0) translate(-325.79, -321.07)" clip-path="url(#undefined)" d="M 324.7 321.884 L 326.89 321.884 L 326.89 320.265 L 324.7 320.265 z" stroke-linecap="round" />
 </clipPath>
-<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 0.1;" vector-effect="non-scaling-stroke"  transform=" translate(-1.09, -0.81)" d="M 0 0 C 1.401 1.089 2.068 1.525 2.19 1.603 C 2.186 1.609 2.177 1.62 2.177 1.62 C 2.177 1.62 1.297 1.015 0 0" stroke-linecap="round" />
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 0.1;" vector-effect="non-scaling-stroke"  transform=" translate(-1.09, -0.81)" d="M 0 0 C 1.401 1.089 2.068 1.525 2.19 1.603 C 2.186 1.609 2.177 1.62 2.177 1.62 C 2.177 1.62 1.297 1.015 0 0" stroke-linecap="round" />
 </g>
 		<g transform="matrix(0.67 0 0 -0.67 4.96 -3.06)" clip-path="url(#CLIPPATH_9)"  >
 <clipPath id="CLIPPATH_9" >
@@ -51,13 +51,13 @@
 <clipPath id="CLIPPATH_10" >
 	<path transform="matrix(1 0 0 1 0 0) translate(-331.36, -382.99)" clip-path="url(#undefined)" d="M 330.994 383.27 L 331.73100000000005 383.27 L 331.73100000000005 382.71099999999996 L 330.994 382.71099999999996 z" stroke-linecap="round" />
 </clipPath>
-<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 0.1;" vector-effect="non-scaling-stroke"  transform=" translate(0.37, -0.28)" d="M 0 0 C -0.24 0.195 -0.486 0.379 -0.738 0.559 C -0.457 0.354 -0.202 0.159 0 0" stroke-linecap="round" />
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 0.1;" vector-effect="non-scaling-stroke"  transform=" translate(0.37, -0.28)" d="M 0 0 C -0.24 0.195 -0.486 0.379 -0.738 0.559 C -0.457 0.354 -0.202 0.159 0 0" stroke-linecap="round" />
 </g>
 		<g transform="matrix(0.67 0 0 -0.67 10.85 -40.21)" clip-path="url(#CLIPPATH_11)"  >
 <clipPath id="CLIPPATH_11" >
 	<path transform="matrix(1 0 0 1 0 0) translate(-330.21, -383.81)" clip-path="url(#undefined)" d="M 330.127 383.853 L 330.286 383.853 L 330.286 383.757 L 330.127 383.757 z" stroke-linecap="round" />
 </clipPath>
-<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 0.1;" vector-effect="non-scaling-stroke"  transform=" translate(0.08, -0.05)" d="M 0 0 C -0.052 0.033 -0.105 0.064 -0.158 0.096 C -0.105 0.064 -0.054 0.034 0 0" stroke-linecap="round" />
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 0.1;" vector-effect="non-scaling-stroke"  transform=" translate(0.08, -0.05)" d="M 0 0 C -0.052 0.033 -0.105 0.064 -0.158 0.096 C -0.105 0.064 -0.054 0.034 0 0" stroke-linecap="round" />
 </g>
 		<g transform="matrix(0.67 0 0 -0.67 5.59 -44.92)" clip-path="url(#CLIPPATH_12)"  >
 <clipPath id="CLIPPATH_12" >
