@@ -73,17 +73,10 @@ body{
   position: relative;
   text-align: center;
 }
-.centrando{
-  height: 100vh;
-  z-index: 1003;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 50%);
 
 
 
-}
+
 #carousel .coverbutton {
 
   font-family: "Qualy Bold", sans-serif;
@@ -143,4 +136,34 @@ body{
 .social-links a:hover{
 filter: invert(50%);
 }
+
+.centrando{
+  height: 100vh;
+  z-index: 1003;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
 /*CSS responsive*/
+
+
+
+@media (orientation: portrait) {
+.centrando{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 35%);
+
+
+}
+
+
+.footer{
+
+   transform: translate(-50%, 74%);
+}
+
+
+}
