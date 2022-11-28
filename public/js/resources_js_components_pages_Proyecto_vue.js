@@ -41,12 +41,14 @@ __webpack_require__.r(__webpack_exports__);
       afterActive: false,
       processActive: false,
       renderActive: false,
-      screen: ""
+      screen: "",
+      alto: ""
     };
   },
   computed: {},
   mounted: function mounted() {
     this.screen = screen.width;
+    this.alto = screen.height;
 
     if (this.$route.params.proyect) {
       this.proyecto = this.$route.params.proyect;
@@ -547,7 +549,7 @@ var render = function render() {
         return _vm.setSlisder("Render");
       }
     }
-  }, [_c("h6", [_vm._v("RENDER")])]) : _vm._e(), _vm._v(" "), _c("h6", [_vm._v(_vm._s(_vm.screen))])])])]), _vm._v(" "), _c("div", [_c("div", {
+  }, [_c("h6", [_vm._v("RENDER")])]) : _vm._e(), _vm._v(" "), _c("h6", [_vm._v(_vm._s(_vm.screen))]), _vm._v(" "), _c("h6", [_vm._v(_vm._s(_vm.alto))])])])]), _vm._v(" "), _c("div", [_c("div", {
     staticClass: "carousel slide carousel-fade",
     attrs: {
       id: "carousel",

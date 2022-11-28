@@ -29,6 +29,7 @@
 					<a v-bind:class="{ active: renderActive }" @click="setSlisder('Render')" v-if="imgsRender.length>0"><h6>RENDER</h6></a>
 
 					<h6>{{ screen }}</h6>
+					<h6>{{ alto }}</h6>
 				</div>
 
 
@@ -167,6 +168,7 @@ export default{
 
 
 			screen:"",
+			alto:"",
 
 
 		}
@@ -178,6 +180,7 @@ export default{
 	mounted(){
 
 		this.screen = screen.width
+		this.alto = screen.height
 
 		if (this.$route.params.proyect) {
 
@@ -754,6 +757,7 @@ export default{
 			carousel.to("0")
 
 		}
+
 
 
 	},
