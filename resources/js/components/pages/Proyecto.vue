@@ -27,6 +27,8 @@
 					<a v-bind:class="{ active: processActive }" @click="setSlisder('Process')" v-if="imgsProcess.length>0"><h6>PROCESO</h6></a>
 
 					<a v-bind:class="{ active: renderActive }" @click="setSlisder('Render')" v-if="imgsRender.length>0"><h6>RENDER</h6></a>
+
+					<h6>{{ screen }}</h6>
 				</div>
 
 
@@ -164,6 +166,9 @@ export default{
 			renderActive: false,
 
 
+			screen:"",
+
+
 		}
 
 	},
@@ -171,6 +176,8 @@ export default{
 
 	},
 	mounted(){
+
+		this.screen = screen.width
 
 		if (this.$route.params.proyect) {
 
@@ -228,6 +235,7 @@ export default{
 			let body = document.querySelector('body');
 			body.style.overflow = "hidden"
 			body.style.margin = "0 -15px"
+			body.style.top = "0"
 
 			let containerfluid =document.querySelector('.container-fluid');
 			containerfluid.style.maxWidth="100%"

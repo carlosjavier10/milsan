@@ -40,11 +40,14 @@ __webpack_require__.r(__webpack_exports__);
       beforeActive: false,
       afterActive: false,
       processActive: false,
-      renderActive: false
+      renderActive: false,
+      screen: ""
     };
   },
   computed: {},
   mounted: function mounted() {
+    this.screen = screen.width;
+
     if (this.$route.params.proyect) {
       this.proyecto = this.$route.params.proyect;
       this.texto = this.proyecto.body;
@@ -85,6 +88,7 @@ __webpack_require__.r(__webpack_exports__);
       var body = document.querySelector('body');
       body.style.overflow = "hidden";
       body.style.margin = "0 -15px";
+      body.style.top = "0";
       var containerfluid = document.querySelector('.container-fluid');
       containerfluid.style.maxWidth = "100%";
     },
@@ -543,7 +547,7 @@ var render = function render() {
         return _vm.setSlisder("Render");
       }
     }
-  }, [_c("h6", [_vm._v("RENDER")])]) : _vm._e()])])]), _vm._v(" "), _c("div", [_c("div", {
+  }, [_c("h6", [_vm._v("RENDER")])]) : _vm._e(), _vm._v(" "), _c("h6", [_vm._v(_vm._s(_vm.screen))])])])]), _vm._v(" "), _c("div", [_c("div", {
     staticClass: "carousel slide carousel-fade",
     attrs: {
       id: "carousel",
