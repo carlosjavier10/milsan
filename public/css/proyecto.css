@@ -1513,6 +1513,8 @@
 		}
 
 
+
+
 	}
 
 	@media only screen and (min-width:3585px) {
@@ -1562,6 +1564,76 @@
 
 /*///////////////BEGIN PORTRAIT*/
 @media (orientation: portrait) {
+
+
+		@media only screen and (min-width: 300px) and (max-width: 340px) {
+
+		#proyecto #header{
+		padding: 15px 0;
+	}
+
+	#proyecto .botones {
+		margin: 0.5rem 0.5rem 0.5rem 0.1rem;
+	}
+	#proyecto .leftarrow{
+		font-size: 2rem;
+	}
+
+	#proyecto .botones a h6{
+		font-size: 0.9rem;
+
+	}
+
+	#proyecto .botones .active h6{
+		font-size: 1rem;
+	}
+
+	#proyecto .cover{
+		font-size: 1rem;
+		line-height: 1.5;
+		padding: 15% 17% 1% 5%;
+	}
+
+	#proyecto .carousel-control-next-icon,#proyecto .carousel-control-prev-icon{
+		width: 2rem !important;
+		height:2rem !important;
+	}
+
+	#proyecto .programa{
+		padding-top: 15%;
+		padding-left: 5%
+	}
+
+	#proyecto .programa h2{
+		font-size: 1rem;
+		font-weight: bold;
+		margin-bottom: 0.3rem;
+	}
+
+	#proyecto .programa p{
+		font-size: 0.9rem;
+		line-height: 1.2;
+	}
+
+	#proyecto .col-md-7{
+		padding-left: 3rem;
+		padding-top: 2.8rem;
+	}
+
+	#proyecto .col-md-5{
+		display: none;
+	}
+
+	#proyecto .col-md-7 p{
+		margin-bottom: 0.4rem;
+	}
+
+	  #proyecto .carousel-indicators{
+		  top:85%;
+	  }
+	}
+
+
 
 	@media only screen and (min-width: 340px) and (max-width: 380px) {
 
@@ -1689,6 +1761,10 @@
 	#proyecto .col-md-7 p{
 		margin-bottom: 0.4rem;
 	}
+
+			  #proyecto .carousel-indicators{
+		  top:87%;
+	  }
 	}
 
 
@@ -1754,10 +1830,19 @@
 	#proyecto .col-md-7 p{
 		margin-bottom: 0.7rem;
 	}
+					  #proyecto .carousel-indicators{
+		  top:92%;
+	  }
+
+		.carousel-indicators [data-bs-target]{
+			height: 0.5rem ;
+		}
+
+
 	}
 
 
-	@media only screen and (min-width: 460px) and (max-width: 500px) {
+	@media only screen and (min-width: 501px) {
 
 		#proyecto #header{
 		padding: 25px 0;
@@ -1819,9 +1904,18 @@
 	#proyecto .col-md-7 p{
 		margin-bottom: 0.7rem;
 	}
+
+				  #proyecto .carousel-indicators{
+		  top:90%;
+	  }
+			.carousel-indicators [data-bs-target]{
+			height: 0.5rem ;
+		}
 	}
 
+
 }
+
 
 
 

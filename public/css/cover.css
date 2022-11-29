@@ -164,7 +164,26 @@ filter: invert(50%);
    transform: translate(-50%, 84%);
 }
 
-  @media only screen and (min-width: 340px) and (max-width: 380px){
+
+   @media only screen and (min-width: 300px) and (max-width: 340px){
+
+ #carousel .coverbutton {
+  font-size: 0.7rem;
+  padding: 0px 10px;
+
+ }
+
+
+ .centrando h3{
+  font-size:0.9rem;
+ }
+
+    .footer{
+ font-size:0.8rem;
+   transform: translate(-50%, 68%);
+}
+   }
+  @media only screen and (min-width: 341px) and (max-width: 380px){
 
     .footer{
 
