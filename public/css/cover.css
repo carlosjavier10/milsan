@@ -159,11 +159,42 @@ filter: invert(50%);
 
 }
 
-
 .footer{
 
-   transform: translate(-50%, 74%);
+   transform: translate(-50%, 84%);
 }
+
+  @media only screen and (min-width: 340px) and (max-width: 380px){
+
+    .footer{
+
+   transform: translate(-50%, 76%);
+}
+
+  }
+  @media only screen and (min-width: 380px) and (max-width: 420px){
+   .footer{
+
+   transform: translate(-50%, 78%);
+}
+
+  }
+  @media only screen and (min-width: 420px) and (max-width: 460px){
+        .footer{
+   transform: translate(-50%, 80%);
+}
+  }
+
+
+  @media only screen and (min-width: 460px) and (max-width: 500px){
+
+    .footer{
+   transform: translate(-50%, 82%);
+}
+  }
+
+
+
 
 
 }
