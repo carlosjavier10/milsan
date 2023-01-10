@@ -470,7 +470,7 @@ export default{
 			let auxtext =  this.texto
 
 			auxtext = this.removeTags(this.text)
-			console.log("aus antes : " + auxtext)
+
 			 /*quita html
 
 			/*-----------quita texto hasta disciplina--------------------*/
@@ -479,10 +479,7 @@ export default{
 			auxtext = auxtext.replace(borra,'')
 
 
-			console.log("begin : " +hasta)
-			console.log("borra : " + borra)
-			console.log("auxtext : " + auxtext)
-			console.log("///////////////QUITO titulo disciplina ////////////")
+
 
 			/*-----------quita texto hasta disciplina--------------------*/
 
@@ -495,11 +492,7 @@ export default{
 			borra = auxtext.substring(0,hasta+20)
 			auxtext = auxtext.replace(borra,'')
 
-			console.log("begin : " +hasta)
-			console.log("borra : " + borra)
-			console.log("auxtext : " + auxtext)
-			console.log("diciplina : " + this.disciplina)
-			console.log("/////QUITO titulo nombre proyecto y guargo this.diciplina ///////")
+
 
 
 
@@ -508,11 +501,7 @@ export default{
 			borra = auxtext.substring(0,hasta+10)
 			auxtext = auxtext.replace(borra,'')
 
-			console.log("begin : " +hasta)
-			console.log("borra : " + borra)
-			console.log("auxtext : " + auxtext)
-			console.log("nombreProyecto : " + this.nombreProyecto)
-			console.log("/////QUITO titulo topologia y guargo this.nombreProyecto ///////")
+
 
 			hasta= auxtext.search(/Superficie:/i)
 			this.tipología = auxtext.substring (0,hasta)
@@ -520,11 +509,7 @@ export default{
 			auxtext = auxtext.replace(borra,'')
 
 
-			console.log("begin : " +hasta)
-			console.log("borra : " + borra)
-			console.log("auxtext : " + auxtext)
-			console.log("tipología : " + this.tipología)
-			console.log("/////QUITO titulo superficie y guargo this.nombreProyecto ///////")
+
 
 
 			hasta= auxtext.search(/Estado:/i)
@@ -533,44 +518,26 @@ export default{
 			auxtext = auxtext.replace(borra,'')
 
 
-			console.log("begin : " +hasta)
-			console.log("borra : " + borra)
-			console.log("auxtext : " + auxtext)
-			console.log("superficie : " + this.superficie)
-			console.log("/////QUITO titulo estado y guargo this.superficie ///////")
+
 
 			hasta= auxtext.search(/Diseño de proyecto:/i)
 			this.estado = auxtext.substring (0,hasta)
 			borra = auxtext.substring(0,hasta+19)
 			auxtext = auxtext.replace(borra,'')
 
-			console.log("begin : " +hasta)
-			console.log("borra : " + borra)
-			console.log("auxtext : " + auxtext)
-			console.log("Estado : " + this.estado)
-			console.log("/////QUITO titulo diseño de proye y guargo this.estado ///////")
+
 
 			hasta= auxtext.search(/Cliente:/i)
 			this.disenoProyecto = auxtext.substring (0,hasta)
 			borra = auxtext.substring(0,hasta+8)
 			auxtext = auxtext.replace(borra,'')
 
-			console.log("begin : " +hasta)
-			console.log("borra : " + borra)
-			console.log("auxtext : " + auxtext)
-			console.log("diseño de proyecto : " + this.disenoProyecto)
-			console.log("/////QUITO titulo cliente de proye y guargo this.diseñoproyet ///////")
 
 			hasta= auxtext.search(/Programa/i)
 			this.cliente = auxtext.substring (0,hasta)
 			borra = auxtext.substring(0,hasta)
 			auxtext = auxtext.replace(borra,'')
 
-			console.log("begin : " +hasta)
-			console.log("borra : " + borra)
-			console.log("auxtext : " + auxtext)
-			console.log("diseño de proyecto : " + this.disenoProyecto)
-			console.log("/////SOlo guarda  this.cliente ///////")
 
 
 
@@ -586,25 +553,25 @@ export default{
 
 			let auxtext = this.texto
 
-			console.log("//////////////////////////////////")
-			console.log("/////get programa ////////////////")
-			console.log("//////////////////////////////////")
-			console.log("auxtext before: "+ auxtext)
+
+
+
+
 
 			hasta = auxtext.search(/Programa:/i)
 			borra = auxtext.substring(0,hasta+9)
 			auxtext = auxtext.replace(borra,'')
 
-			console.log("ini : "+ ini)
-			console.log("fin : "+ fin)
-			console.log("del : "+ fin)
-			console.log("borra : "+ borra)
-			console.log("auxtext : "+ auxtext)
 
 
-			console.log("//////////////////////////////////")
-			console.log("//////////////////////////////////")
-			console.log("//////////////////////////////////")
+
+
+
+
+
+
+
+
 
 
 			while(auxtext.indexOf('<strong>') != -1){
@@ -624,16 +591,16 @@ export default{
 			}
 
 			/*-----quitar basura antes del primer parrafo*/
-			console.log("/*-----quitar basura antes del primer parrafo*/")
-			console.log( auxtext )
-			console.log( "auxtextauxtextauxtextauxtextauxtext" )
+
+
+
 			ini = auxtext.indexOf('<p')
 			del = auxtext.substring(0,ini)
 			auxtext = auxtext.replace(del,"")
 
-			console.log(" Ini: "+ ini )
-			console.log(" del: "+ del )
-			console.log( auxtext )
+
+
+
 
 			while (auxtext.indexOf('<p') != -1){
 
@@ -662,7 +629,7 @@ export default{
 
 
 			}
-			console.log(this.programa)
+
 
 
 		},

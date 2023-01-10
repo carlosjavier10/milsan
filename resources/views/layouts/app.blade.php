@@ -61,7 +61,7 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log("DOMcontent")
+
   // Lista de urls que deseas precargar
   const LIST_IMAGES_PRELOAD = Array.from(document.querySelectorAll(".wait-loading"));
   // Elemento visual del loading
@@ -79,19 +79,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Si todas estan descargadas, quitará la clase 'loading--show' a 'loading' para ocultarlo
 
   async function checkIfAllImagesCompleted() {
-    console.log("checkIfAllImagesCompleted")
+
     // Obtiene todas las imágenes sin completar
     const NO_COMPLETES = LIST_IMAGES_PRELOAD.filter((img) => {
         return !img.complete;
     });
-        console.log (NO_COMPLETES)
-        console.log (NO_COMPLETES.length)
+
 
     if (NO_COMPLETES.length !== 0) {
       // Vuelve a iterar si existe alguna sin completar
       await sleep(SLEEP_CHECK);
       return checkIfAllImagesCompleted();
-      console.log("IF NO COMPLETE != 0")
+
     } else {
       // Oculta el loading
       LOADING.classList.remove('loading--show');
