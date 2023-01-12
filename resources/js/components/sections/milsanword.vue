@@ -27,7 +27,7 @@
 
 				<div class="col-10 col-sm-8 col-lg-6 msimgdiv">
 					<img src="/images/Arquitecta-Milagros-Sanchez-image-perfil.png" class="msimg d-block mx-lg-auto img-fluid"
-					alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+					alt="Milagros Sanchez Arquitecta" width="700" height="500" loading="lazy">
 				</div>
 
 

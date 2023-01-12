@@ -1,3 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+
+
 /*----------- custom style ------------*/
 #services-header {
     background-image: url('/images/Msarquitecta services header background.jpg');
@@ -32,9 +41,15 @@
     content: "";
     height: 2px;
     position: absolute;
-    right: 0;
     width: 50%;
     z-index: 999;
+ }
+
+#disenos2 h2::after{
+            right: 0;
+    }
+#construccion2 h2::after{
+        left: 0;
 }
 #disenos2 p, #construccion2  p {
     font-size: 16px;
@@ -76,12 +91,6 @@
 }
 
 /*Responsice CSS*/
-
-
-
-
-
-
 @media (min-width:768px) and (max-width:1024px)
 {
 
@@ -108,8 +117,13 @@
 
 @media (max-width:767px) {
     .invertir {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column-reverse
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse
     }
 
 }

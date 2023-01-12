@@ -40,24 +40,31 @@
 
   <!-- Main Stylesheet Files -->
 
- {{--  <link href=" {{ asset('css/socialbar.css') }}  " rel="stylesheet"> --}}
-  <link href=" {{ asset('css/nav-menu.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/portafolios2.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/aboutus.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/about.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/ourhistory.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/nosotros.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/liderazgo.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/team.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/servicios.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/style.css') }}  " rel="stylesheet">
+  {{--  <link href=" {{ asset('css/socialbar.css') }}  " rel="stylesheet"> --}}
+
+  <link href=" {{ asset('css/app.css') }}  " rel="stylesheet">
+ {{--  <link href=" {{ asset('css/nav-menu.css') }}  " rel="stylesheet"> --}}
+  {{-- <link href=" {{ asset('css/style.css') }}  " rel="stylesheet"> --}}
+{{--   <link href=" {{ asset('css/portafolios2.css') }}  " rel="stylesheet"> --}}
+{{--   <link href=" {{ asset('css/about.css') }}  " rel="stylesheet"> --}}
+{{--   <link href=" {{ asset('css/ourhistory.css') }}  " rel="stylesheet"> --}}
+{{--   <link href=" {{ asset('css/nosotros.css') }}  " rel="stylesheet"> --}}
+{{--   <link href=" {{ asset('css/liderazgo.css') }}  " rel="stylesheet"> --}}
+{{--   <link href=" {{ asset('css/team.css') }}  " rel="stylesheet"> --}}
+{{--   <link href=" {{ asset('css/servicios.css') }}  " rel="stylesheet"> --}}
   <link href=" {{ asset('css/milsanword.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/sublimecontact.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/blog.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/proyecto.css') }}  " rel="stylesheet">
-  <link href=" {{ asset('css/footer.css') }}  " rel="stylesheet">
+{{--   <link href=" {{ asset('css/sublimecontact.css') }}  " rel="stylesheet"> --}}
+
+ {{--  <link href=" {{ asset('css/footer.css') }}  " rel="stylesheet"> --}}
 
 
+{{-- al parecer este CCS no es necesario  --}}
+{{--   <link href=" {{ asset('css/proyecto.css') }}  " rel="stylesheet"> --}}
+
+
+
+{{-- blog fue retirado de la pagina --}}
+{{--   <link href=" {{ asset('css/blog.css') }}  " rel="stylesheet"> --}}
 
   {{-- Headers Scripts --}}
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>

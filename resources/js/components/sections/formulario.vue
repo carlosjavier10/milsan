@@ -1,5 +1,5 @@
 <template>
-    <div id="contacto">
+    <div id="contacto" name="contact">
 
         <section id="contact" class="section-bg wow fadeInUp">
             <div class="container">

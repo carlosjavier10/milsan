@@ -8,8 +8,10 @@
        <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInLeft animated" data-wow-delay=".5s">
 
                   <h2>Construcci&oacute;n</h2>
-        <p>  Supervisamos todos el proceso asegurando la calidad y el uso eficiente de los materiales</p>
-        <p>Integer sapien sed mauris nec, volutpat risus leo placerat elit at aliquet, a egestas ultrices, vitae non amet lacus etiam, malesuada pellentesque scelerisque. Neque fermentum parturient ante pede, a dui ut ultricies luctus non nobis, amet nibh et. Diam nunc in eleifend commodo ante, amet quam integer dolor sit volutpat faucibus, sed sem, et amet sed, vestibulum mollit et a ac nullam. Eu nunc voluptas risus dui et pellentesque.</p>
+        <p>El trabajo en equipo representa una de nuestras claves de éxito, siendo un método que nos lleva a resultados extraordinarios.
+        </p>
+        <p>
+        Nuestro equipo cuenta con la capacitación y experiencia  que  permite supervisar y asegurar la calidad de sus proyectos desde el principio hasta el final. Su enfoque en la comunicación continua y la colaboración con sus clientes asegura que el proyecto se desarrolla sin problemas y cumpla con las expectativas de todas las partes involucradas.</p>
 
        </div>
        <div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">

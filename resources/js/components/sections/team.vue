@@ -7,7 +7,7 @@
         <div class="container">
           <div class="section-header wow fadeInUp">
             <h3>Team</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+            <p>Mientras más grande el sueño, más importante el equipo</p>
           </div>
 
           <div class="container">

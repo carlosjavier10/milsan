@@ -62,10 +62,10 @@
 					<div class="col-lg-3 col-md-6 footer-contact">
 						<h4> Contacto</h4>
 						<p>
-							A108 Adam Street <br>
-							New York, NY 535022<br>
-							United States <br>
-							<strong>Phone:</strong> +1 5589 55488 55<br>
+							Carrera 25 entre Av. Morán y, Av. Concordia,<br>
+							Barquisimeto, Caracas<br>
+							Venezuela<br>
+							<strong>Phone:</strong>+58 0424-5308763<br>
 							<strong><a href="contacto"> Email: </a></strong> info@msarquictecta.com<br>
 						</p>
 
@@ -123,7 +123,7 @@
 					</div>
 					<div class="credits">
 
-						Designed by <a href="https://veneprint.com/"><img src="https://3.231.179.227/wp-content/uploads/2022/11/logotipo-png-04.png"></a>
+						Designed by <a href="https://marketingsupernova.com/">Marketing Supernova</a>
 					</div>
 				</div>
 				<!--  -->

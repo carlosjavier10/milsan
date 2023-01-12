@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 #portafolio {
@@ -12,27 +19,34 @@
 
 #portafolio .row .col {
 /**/
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: center center;
-align-items: center;
+-webkit-box-pack: center center;
+    -ms-flex-pack: center center;
+        justify-content: center center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 /**/
 background-repeat: no-repeat;
 background-size: fixed;
 background-position: center ;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
 background-size: cover;
 border-radius: 0;
 background-color: transparent;
 border: none;
 margin: -3px 5px;
 width: 100%;
+-webkit-transition: all 0.8s;
+-o-transition: all 0.8s;
 transition: all 0.8s;
-filter:brightness(0.8);
+-webkit-filter:brightness(0.8);
+        filter:brightness(0.8);
 }
 #portafolio .row .col:hover {
-  filter:brightness(1);
+  -webkit-filter:brightness(1);
+          filter:brightness(1);
 
 }
 
@@ -51,11 +65,10 @@ filter:brightness(0.8);
   text-align: center;
   opacity: 0;
   -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
   transition: opacity 500ms;
-  filter: brightness(1.0);
+  -webkit-filter: brightness(1.0);
+          filter: brightness(1.0);
   font-weight: bold;
   font-size: 1.6rem;
 }
@@ -63,9 +76,7 @@ filter:brightness(0.8);
 .card-title:hover{
   opacity: 1;
   -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
   -o-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
   transition: opacity 500ms;
 }
 
@@ -95,7 +106,8 @@ filter:brightness(0.8);
 
 
 .col-4 a:hover{
-  filter: invert(50%);
+  -webkit-filter: invert(50%);
+          filter: invert(50%);
 }
 
 .g-4, .gx-4 {
@@ -228,7 +240,8 @@ filter:brightness(0.8);
   }
 
   #portfolio-button{
-    box-sizing: unset;
+    -webkit-box-sizing: unset;
+            box-sizing: unset;
     width: 100%
   }
 }
@@ -262,5 +275,6 @@ filter:brightness(0.8);
 #portafolio .row .col{
   width: 19rem !important;
   height: 19rem !important;
+}
 }
 /*!!!!!!!!!!!!!!!!*/

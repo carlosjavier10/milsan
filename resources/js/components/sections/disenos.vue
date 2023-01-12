@@ -28,8 +28,10 @@
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 wow fadeInRight animated" data-wow-delay=".5s">
 					<h2>Dise&ntilde;os</h2>
-					<p>  Que se adapta a las necesidades de los propietarios en cada uno de los detalles</p>
-					<p>Integer sapien sed mauris nec, volutpat risus leo placerat elit at aliquet, a egestas ultrices, vitae non amet lacus etiam, malesuada pellentesque scelerisque. Neque fermentum parturient ante pede, a dui ut ultricies luctus non nobis, amet nibh et. Diam nunc in eleifend commodo ante, amet quam integer dolor sit volutpat faucibus, sed sem, et amet sed, vestibulum mollit et a ac nullam. Eu nunc voluptas risus dui et pellentesque.</p>
+					<p>  Toda nuestra creatividad e ingenio aplicada a visualizar y crear tus espacios soñados como si ya estuvieses en ellos. Buscamos el equilibrio entre la ciencia y el arte para hacer realidad lo imaginado, siempre con la vocación, la humildad y el amor como NORTE.
+					</p>
+					<p>
+					No paramos de aprender e innovar para crecer, continuamos estudiando la realidad y los avances tecnológicos que nos permitan brindarle una mejor experiencia y perfectos acabados para nuestros inversionistas.</p>
 				</div>
 
 			</div>
