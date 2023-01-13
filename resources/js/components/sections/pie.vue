@@ -63,7 +63,7 @@
 						<h4> Contacto</h4>
 						<p>
 							Carrera 25 entre Av. Morán y, Av. Concordia,<br>
-							Barquisimeto, Caracas<br>
+							Barquisimeto.<br>
 							Venezuela<br>
 							<strong>Phone:</strong>+58 0424-5308763<br>
 							<strong><a href="contacto"> Email: </a></strong> info@msarquictecta.com<br>

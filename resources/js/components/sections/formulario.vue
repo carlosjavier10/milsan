@@ -15,7 +15,7 @@
                         <div class="contact-address">
                             <i class="ion-ios-location-outline"></i>
                             <h3>Direcci&oacute;n</h3>
-                            <address>A108 Adam Street, NY 535022, USA</address>
+                            <address>Carrera 25 entre Av. Morán y, Av. Concordia, Barquisimeto, Venezuela</address>
                         </div>
                     </div>
 
@@ -23,7 +23,7 @@
                         <div class="contact-phone">
                             <i class="ion-ios-telephone-outline"></i>
                             <h3>Tel&eacute;fono</h3>
-                            <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+                            <p><a href="tel:+155895548855">+58 0424-5308763</a></p>
                         </div>
                     </div>
 

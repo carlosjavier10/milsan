@@ -3214,7 +3214,7 @@ var staticRenderFns = [function () {
     staticClass: "contact-address"
   }, [_c("i", {
     staticClass: "ion-ios-location-outline"
-  }), _vm._v(" "), _c("h3", [_vm._v("Dirección")]), _vm._v(" "), _c("address", [_vm._v("A108 Adam Street, NY 535022, USA")])])]), _vm._v(" "), _c("div", {
+  }), _vm._v(" "), _c("h3", [_vm._v("Dirección")]), _vm._v(" "), _c("address", [_vm._v("Carrera 25 entre Av. Morán y, Av. Concordia, Barquisimeto, Venezuela")])])]), _vm._v(" "), _c("div", {
     staticClass: "col-md-4"
   }, [_c("div", {
     staticClass: "contact-phone"
@@ -3224,7 +3224,7 @@ var staticRenderFns = [function () {
     attrs: {
       href: "tel:+155895548855"
     }
-  }, [_vm._v("+1 5589 55488 55")])])])]), _vm._v(" "), _c("div", {
+  }, [_vm._v("+58 0424-5308763")])])])]), _vm._v(" "), _c("div", {
     staticClass: "col-md-4"
   }, [_c("div", {
     staticClass: "contact-email"
@@ -3698,7 +3698,7 @@ var staticRenderFns = [function () {
 
   return _c("div", {
     staticClass: "col-lg-3 col-md-6 footer-contact"
-  }, [_c("h4", [_vm._v(" Contacto")]), _vm._v(" "), _c("p", [_vm._v("\n\t\t\t\t\t\tCarrera 25 entre Av. Morán y, Av. Concordia,"), _c("br"), _vm._v("\n\t\t\t\t\t\tBarquisimeto, Caracas"), _c("br"), _vm._v("\n\t\t\t\t\t\tVenezuela"), _c("br"), _vm._v(" "), _c("strong", [_vm._v("Phone:")]), _vm._v("+58 0424-5308763"), _c("br"), _vm._v(" "), _c("strong", [_c("a", {
+  }, [_c("h4", [_vm._v(" Contacto")]), _vm._v(" "), _c("p", [_vm._v("\n\t\t\t\t\t\tCarrera 25 entre Av. Morán y, Av. Concordia,"), _c("br"), _vm._v("\n\t\t\t\t\t\tBarquisimeto."), _c("br"), _vm._v("\n\t\t\t\t\t\tVenezuela"), _c("br"), _vm._v(" "), _c("strong", [_vm._v("Phone:")]), _vm._v("+58 0424-5308763"), _c("br"), _vm._v(" "), _c("strong", [_c("a", {
     attrs: {
       href: "contacto"
     }
